@@ -1,31 +1,52 @@
 body {
-  font-family: sans-serif;
-  margin: 0;
-  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f4f4;
 }
 
-header {
-  background: #003366;
-  color: white;
-  padding: 1em;
+h1 {
   text-align: center;
 }
 
-nav button {
-  margin: 0.5em;
-  padding: 0.5em 1em;
-  background: #0055aa;
-  color: white;
-  border: none;
-  cursor: pointer;
+h2 {
+  margin-top: 40px;
 }
 
-main {
-  padding: 2em;
-}
-
-.pantalla {
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
   background: white;
-  padding: 1em;
-  border-radius: 5px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+thead {
+  background: #eee;
+}table {
+  border: 1px solid #bbb;
+  margin-bottom: 20px;
+}
+th, td {
+  border: 1px solid #bbb;
+  padding: 6px 10px;
+}
+thead {
+  background: #f5f5f5;
+}
+tr:nth-child(even) {
+  background: #fafafa;
+}/* ...existing code... */
+.resultado-ganador {
+  background: #d4f8d4 !important;
+}
+.resultado-empate {
+  background: #fff9c4 !important;
+}
+.resultado-perdedor {
+  background: #ffd6d6 !important;
 }
