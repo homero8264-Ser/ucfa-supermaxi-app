@@ -337,49 +337,180 @@ tr:hover {
 /* Responsive design para móviles */
 @media (max-width: 768px) {
   body {
-    padding: 15px;
+    padding: 10px;
     font-size: 14px;
+    margin: 0;
+  }
+  
+  /* Header optimizado para móvil */
+  .header-principal {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
   }
   
   .escudos-header {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row; /* Mantener horizontal pero optimizado */
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
   }
   
   .escudo-mi-equipo, .escudo-liga {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+  }
+  
+  .titulo-principal {
+    flex: 1;
+    margin: 0 15px;
   }
   
   .titulo-principal h1 {
-    font-size: 2.2em;
+    font-size: 1.8em;
+    margin: 0;
+    line-height: 1.2;
   }
   
+  .titulo-principal p {
+    font-size: 1em;
+    margin: 5px 0 0 0;
+  }
+  
+  /* Pestañas optimizadas para móvil */
+  .pestanas-container {
+    margin-bottom: 15px;
+  }
+  
+  .pestanas {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    overflow-x: auto;
+    padding: 0 5px;
+  }
+  
+  .pestana {
+    flex: 1;
+    min-width: 80px;
+    padding: 12px 8px;
+    font-size: 13px;
+    white-space: nowrap;
+    border-radius: 8px;
+  }
+  
+  /* Títulos de sección para móvil */
   h2 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: center;
-    padding: 15px;
+    padding: 12px;
+    margin: 15px 0 10px 0;
+    border-radius: 10px;
   }
   
+  /* Tablas optimizadas para móvil */
   table {
-    font-size: 12px;
+    font-size: 11px;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
   }
   
-  .partido-proximo {
-    padding: 15px;
-    margin: 10px 0;
-    flex-direction: column;
-    gap: 15px;
+  table thead, table tbody, table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
   }
   
-  .escudo-resultado, .escudo-proximo {
-    width: 35px;
-    height: 35px;
+  th, td {
+    padding: 8px 4px;
+    text-align: center;
+  }
+  
+  /* Columna de equipo más ancha en móvil */
+  .equipo-con-escudo {
+    min-width: 120px;
+    text-align: left !important;
   }
   
   .escudo-equipo {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  /* Botones para móvil */
+  .boton-vista, .toggle-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  
+  /* Resultados y próxima fecha para móvil */
+  .partido-resultado, .partido-proximo {
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .equipo-resultado, .equipo-proximo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .escudo-resultado, .escudo-proximo {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+  
+  .nombre-equipo {
+    font-size: 0.9em;
+    line-height: 1.2;
+  }
+  
+  .goles-resultado {
+    font-size: 1.4em;
+    margin: 0 10px;
+    flex-shrink: 0;
+  }
+  
+  .info-partido {
+    font-size: 0.8em;
+    text-align: center;
+    flex: 0 0 auto;
+    min-width: 60px;
+  }
+  
+  /* Sección de resultados última fecha */
+  .resultados-ultima-fecha {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .resultados-ultima-fecha h2 {
+    margin: 15px 0 10px 0;
+    padding: 10px;
+    font-size: 1.1em;
+  }
+  
+  /* Contenedor principal para móvil */
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
   }
   
   .info-partido {
