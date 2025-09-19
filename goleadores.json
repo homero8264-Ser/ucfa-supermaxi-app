@@ -1,0 +1,65 @@
+{
+  "fechaActualizacion": "2025-09-19",
+  "jugadores": [
+    {
+      "posicion": 1,
+      "nombre": "FELICIA Orlando Daniel",
+      "equipo": "SANTOS",
+      "goles": 21
+    },
+    {
+      "posicion": 2,
+      "nombre": "CAPDEVILLA Marcelo Oscar",
+      "equipo": "LOS MATADORES",
+      "goles": 19
+    },
+    {
+      "posicion": 3,
+      "nombre": "ALAMO Hector",
+      "equipo": "PENAROL",
+      "goles": 14
+    },
+    {
+      "posicion": 4,
+      "nombre": "ANGULO Hector Mario",
+      "equipo": "CARASUCIAS",
+      "goles": 13
+    },
+    {
+      "posicion": 5,
+      "nombre": "CATIVELLI Pablo Gabriel",
+      "equipo": "NECAXA",
+      "goles": 13
+    },
+    {
+      "posicion": 6,
+      "nombre": "DEMARIA Daniel Jose",
+      "equipo": "LA SALLE",
+      "goles": 13
+    },
+    {
+      "posicion": 7,
+      "nombre": "TEUMACO Juan Marcelo",
+      "equipo": "CRUZ AZUL",
+      "goles": 13
+    },
+    {
+      "posicion": 8,
+      "nombre": "TULA Victor Justo",
+      "equipo": "CERVECEROS",
+      "goles": 13
+    },
+    {
+      "posicion": 9,
+      "nombre": "CARDOZO Nestor Orlando",
+      "equipo": "LA LOMITA",
+      "goles": 11
+    },
+    {
+      "posicion": 10,
+      "nombre": "AVILA BUTELER Agustin",
+      "equipo": "CLINICAS",
+      "goles": 10
+    }
+  ]
+}

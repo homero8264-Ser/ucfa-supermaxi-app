@@ -1,0 +1,104 @@
+{
+  "resultados": [
+    {
+      "etapa": 2,
+      "fecha": "3°",
+      "dia": "13/09",
+      "hora": "13:30",
+      "cancha": 13,
+      "local": "LA LOMITA",
+      "golesLocal": 1,
+      "golesVisitante": 1,
+      "visitante": "SAN MARTIN"
+    },
+    {
+      "etapa": 2,
+      "fecha": "3°",
+      "dia": "13/09",
+      "hora": "13:30",
+      "cancha": 12,
+      "local": "WARCALDE",
+      "golesLocal": 1,
+      "golesVisitante": 5,
+      "visitante": "LOS MATADORES"
+    },
+    {
+      "etapa": 2,
+      "fecha": "3°",
+      "dia": "13/09",
+      "hora": "13:30",
+      "cancha": 11,
+      "local": "HALCONES",
+      "golesLocal": 3,
+      "golesVisitante": 0,
+      "visitante": "DINAMO"
+    },
+    {
+      "etapa": 2,
+      "fecha": "3°",
+      "dia": "13/09",
+      "hora": "13:30",
+      "cancha": 1,
+      "local": "PENAROL",
+      "golesLocal": 2,
+      "golesVisitante": 2,
+      "visitante": "NECAXA"
+    },
+    {
+      "etapa": 2,
+      "fecha": "3°",
+      "dia": "13/09",
+      "hora": "13:30",
+      "cancha": 2,
+      "local": "CHAZON",
+      "golesLocal": 2,
+      "golesVisitante": 1,
+      "visitante": "CERVECEROS"
+    },
+    {
+      "etapa": 2,
+      "fecha": "3°",
+      "dia": "13/09",
+      "hora": "13:30",
+      "cancha": 3,
+      "local": "CRUZ AZUL",
+      "golesLocal": 2,
+      "golesVisitante": 2,
+      "visitante": "LA CORUNA"
+    },
+    {
+      "etapa": 2,
+      "fecha": "3°",
+      "dia": "13/09",
+      "hora": "13:30",
+      "cancha": 7,
+      "local": "SANTOS",
+      "golesLocal": 1,
+      "golesVisitante": 1,
+      "visitante": "CARASUCIAS"
+    },
+    {
+      "etapa": 2,
+      "fecha": "3°",
+      "dia": "13/09",
+      "hora": "13:30",
+      "cancha": 8,
+      "local": "CLINICAS",
+      "golesLocal": 2,
+      "golesVisitante": 2,
+      "visitante": "LA CANCHITA"
+    },
+    {
+      "etapa": 2,
+      "fecha": "3°",
+      "dia": "13/09",
+      "hora": "13:30",
+      "cancha": 9,
+      "local": "LA SALLE",
+      "golesLocal": 4,
+      "golesVisitante": 1,
+      "visitante": "UNION Y AMISTAD"
+    }
+  ],
+  "fechaActualizacion": "2025-09-19T12:00:00.000Z"
+}

@@ -1,0 +1,40 @@
+{
+  "sanciones": {
+    "aplicadas": [],
+    "pendientes": [
+      {
+        "equipo": "BICHOS VERDES",
+        "jugador": "ROSSI Adrian Alberto",
+        "partidos": 2,
+        "articulo": "ART 62 C"
+      },
+      {
+        "equipo": "CRUZ AZUL",
+        "jugador": "GOMEZ Daniel Alberto",
+        "partidos": 1,
+        "articulo": "ART 62"
+      },
+      {
+        "equipo": "HALCONES",
+        "jugador": "PALACIO Marcelo Raul",
+        "partidos": 8,
+        "articulo": "ART 63 B"
+      },
+      {
+        "equipo": "LA CORUNA",
+        "jugador": "MOLINA Sergio Alejandro",
+        "partidos": 1,
+        "articulo": "ART 62"
+      },
+      {
+        "equipo": "LA CORUNA",
+        "jugador": "VILLARROEL Javier Gustavo",
+        "partidos": 3,
+        "articulo": "ART 62 C"
+      }
+    ],
+    "amonestaciones": [],
+    "quitaPuntos": []
+  },
+  "fechaActualizacion": "2025-09-19T12:00:00.000Z"
+}

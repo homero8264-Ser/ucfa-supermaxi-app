@@ -1,52 +1,523 @@
+/* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px;
-  background: #f4f4f4;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: 0;
+  min-height: 100vh;
+  color: #333;
 }
 
-h1 {
+/* Header con escudos */
+.header-principal {
+  background: linear-gradient(135deg, #2E8B57 0%, #228B22 50%, #32CD32 100%);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border: 2px solid rgba(255,255,255,0.1);
+}
+
+.escudos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.escudo-mi-equipo, .escudo-liga {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 4px solid rgba(255,255,255,0.9);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+  background: white;
+  padding: 10px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajuste especial para escudos rectangulares como Los Matadores */
+.escudo-mi-equipo[src*="los-matadores"], 
+.escudo-liga[src*="los-matadores"] {
+  padding: 20px;
+  object-fit: scale-down;
+}
+
+.escudo-mi-equipo:hover, .escudo-liga:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+}
+
+.titulo-principal {
   text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
+.titulo-principal h1 {
+  background: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.titulo-principal p {
+  margin: 10px 0 0 0;
+  font-size: 1.3em;
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+/* Títulos de secciones */
 h2 {
-  margin-top: 40px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 20px;
+  margin: 30px 0 15px 0;
+  border-left: 6px solid #4CAF50;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 2px solid #e9ecef;
 }
 
+/* Tablas */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 30px;
   background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  border: none;
 }
 
 th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
+  border: none;
+  padding: 12px 8px;
   text-align: center;
+  border-bottom: 1px solid #e9ecef;
 }
 
 thead {
-  background: #eee;
-}table {
-  border: 1px solid #bbb;
-  margin-bottom: 20px;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
-th, td {
-  border: 1px solid #bbb;
-  padding: 6px 10px;
+
+thead th {
+  border-bottom: none;
 }
-thead {
-  background: #f5f5f5;
-}
+
 tr:nth-child(even) {
-  background: #fafafa;
-}/* ...existing code... */
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+tr:hover {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  transform: scale(1.01);
+  transition: all 0.2s ease;
+}
+
+/* Estilos para las primeras 3 posiciones */
+.posicion-1 {
+  background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%) !important;
+  border-left: 4px solid #4CAF50;
+}
+
+.posicion-2 {
+  background: linear-gradient(135deg, #dcedc8 0%, #c5e1a5 100%) !important;
+  border-left: 4px solid #8BC34A;
+}
+
+.posicion-3 {
+  background: linear-gradient(135deg, #e8f5e8 0%, #d4e9d4 100%) !important;
+  border-left: 4px solid #66BB6A;
+}
+
+.posicion-1:hover, .posicion-2:hover, .posicion-3:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+/* Escudos en tabla de posiciones */
+.equipo-con-escudo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px;
+  font-weight: 500;
+}
+
+.escudo-equipo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 2px solid #e9ecef;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  background: white;
+  padding: 4px;
+  transition: all 0.2s ease;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajuste especial para Los Matadores en tablas */
+.escudo-equipo[src*="los-matadores"] {
+  padding: 8px;
+  object-fit: scale-down;
+}
+
+.escudo-equipo:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Resultados */
+.resultado-partido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  margin: 12px 0;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #e9ecef;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.resultado-partido:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-color: #4CAF50;
+}
+
+.equipo-resultado {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.escudo-resultado {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 3px solid #e9ecef;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  background: white;
+  padding: 4px;
+  transition: all 0.2s ease;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajuste especial para Los Matadores en resultados */
+.escudo-resultado[src*="los-matadores"] {
+  padding: 10px;
+  object-fit: scale-down;
+}
+
+.escudo-resultado:hover {
+  transform: scale(1.1);
+  border-color: #4CAF50;
+}
+
+.nombre-equipo {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1.1em;
+}
+
+.goles-resultado {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #4CAF50;
+  margin: 0 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Próxima fecha */
+.partido-proximo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #e9ecef;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.partido-proximo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-color: #FF9800;
+}
+
+.equipo-proximo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.escudo-proximo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 3px solid #e9ecef;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  background: white;
+  padding: 4px;
+  transition: all 0.2s ease;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Ajuste especial para Los Matadores en próxima fecha */
+.escudo-proximo[src*="los-matadores"] {
+  padding: 10px;
+  object-fit: scale-down;
+}
+
+.escudo-proximo:hover {
+  transform: scale(1.1);
+  border-color: #FF9800;
+}
+
+.info-partido {
+  text-align: center;
+  color: #495057;
+  font-size: 1em;
+  font-weight: 500;
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ffcc80;
+}
+
+.vs {
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 1.2em;
+  color: #FF9800;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Colores para resultados */
 .resultado-ganador {
-  background: #d4f8d4 !important;
+  background: linear-gradient(135deg, #d4f8d4 0%, #c8e6c9 100%) !important;
+  border-color: #4CAF50 !important;
 }
+
 .resultado-empate {
-  background: #fff9c4 !important;
+  background: linear-gradient(135deg, #fff9c4 0%, #fff59d 100%) !important;
+  border-color: #FFC107 !important;
 }
+
 .resultado-perdedor {
-  background: #ffd6d6 !important;
+  background: linear-gradient(135deg, #ffd6d6 0%, #ffcdd2 100%) !important;
+  border-color: #f44336 !important;
+}
+
+/* Responsive design para móviles */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  .escudos-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .escudo-mi-equipo, .escudo-liga {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .titulo-principal h1 {
+    font-size: 2.2em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  table {
+    font-size: 12px;
+  }
+  
+  .partido-proximo {
+    padding: 15px;
+    margin: 10px 0;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .escudo-resultado, .escudo-proximo {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .escudo-equipo {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .info-partido {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+  
+  .goles-resultado {
+    font-size: 1.6em;
+  }
+  
+  .nombre-equipo {
+    font-size: 1em;
+  }
+}
+
+/* Animación de carga suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+table, .resultado-partido, .partido-proximo {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Mejora de accesibilidad */
+*:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+/* Botón para alternar vista de tabla */
+.boton-vista {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+  transition: all 0.3s ease;
+}
+
+.boton-vista:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+  background: linear-gradient(135deg, #45a049 0%, #4CAF50 100%);
+}
+
+.boton-vista:active {
+  transform: translateY(0);
+}
+
+/* Últimos resultados */
+.ultimos-resultados {
+  text-align: center;
+  padding: 8px 4px;
+  min-width: 80px;
+}
+
+/* Navegación por pestañas */
+.navegacion-pestanas {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  background: white;
+  border-radius: 15px;
+  padding: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.pestana {
+  background: transparent;
+  border: none;
+  padding: 12px 20px;
+  margin: 0 4px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex: 1;
+  min-width: max-content;
+}
+
+.pestana:hover {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4CAF50;
+}
+
+.pestana.active {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  box-shadow: 0 3px 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Contenido de pestañas */
+.contenido-pestana {
+  display: none;
+}
+
+.contenido-pestana.active {
+  display: block;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive para pestañas */
+@media (max-width: 768px) {
+  .navegacion-pestanas {
+    padding: 6px;
+    margin: 15px 0;
+  }
+  
+  .pestana {
+    padding: 10px 12px;
+    font-size: 12px;
+    margin: 0 2px;
+  }
+  
+  .contenido-pestana {
+    padding: 0 5px;
+  }
 }
