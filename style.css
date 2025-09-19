@@ -354,6 +354,108 @@ tr:hover {
   }
 }
 
+/* CSS específico para dispositivos plegables y pantallas muy angostas (Samsung Fold, etc.) */
+@media (max-width: 400px) {
+  body {
+    padding: 5px !important;
+    font-size: 12px !important;
+  }
+  
+  .header-principal {
+    padding: 10px 8px !important;
+    margin-bottom: 15px !important;
+    border-radius: 10px !important;
+  }
+  
+  .escudo-mi-equipo, .escudo-liga {
+    width: 55px !important;
+    height: 55px !important;
+    padding: 4px !important;
+    border: 1px solid rgba(255,255,255,0.9) !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+  }
+  
+  .titulo-principal h1 {
+    font-size: 1.4em !important;
+    line-height: 1.1 !important;
+  }
+  
+  .titulo-principal p {
+    font-size: 0.8em !important;
+  }
+  
+  /* Tablas ultra compactas para Fold */
+  table {
+    font-size: 8px !important;
+  }
+  
+  th, td {
+    padding: 4px 2px !important;
+    font-size: 8px !important;
+  }
+  
+  th:nth-child(1), td:nth-child(1) { /* Equipo */
+    width: 45% !important;
+    font-size: 8px !important;
+  }
+  
+  th:nth-child(2), td:nth-child(2) { /* Pts */
+    width: 12% !important;
+  }
+  
+  th:nth-child(3), td:nth-child(3) { /* PJ */
+    width: 10% !important;
+  }
+  
+  th:nth-child(4), td:nth-child(4) { /* PG */
+    width: 8% !important;
+  }
+  
+  th:nth-child(5), td:nth-child(5) { /* PE */
+    width: 8% !important;
+  }
+  
+  th:nth-child(6), td:nth-child(6) { /* PP */
+    width: 8% !important;
+  }
+  
+  th:nth-child(7), td:nth-child(7) { /* GF */
+    width: 8% !important;
+  }
+  
+  th:nth-child(8), td:nth-child(8) { /* GC */
+    width: 8% !important;
+  }
+  
+  th:nth-child(9), td:nth-child(9) { /* Dif */
+    width: 10% !important;
+  }
+  
+  .escudo-equipo {
+    width: 12px !important;
+    height: 12px !important;
+    margin-right: 3px !important;
+  }
+  
+  .ultimos-resultados-mobile {
+    margin-top: 1px !important;
+    font-size: 6px !important;
+  }
+  
+  .ultimos-resultados-mobile span {
+    padding: 1px 2px !important;
+    margin: 0.5px !important;
+    border-radius: 2px !important;
+    font-size: 6px !important;
+  }
+  
+  .pestana {
+    font-size: 10px !important;
+    padding: 8px 4px !important;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     padding: 10px;
