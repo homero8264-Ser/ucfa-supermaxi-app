@@ -11,7 +11,7 @@
       "posicion": 2,
       "nombre": "CAPDEVILLA Marcelo Oscar",
       "equipo": "LOS MATADORES",
-      "goles": 19
+      "goles": 16
     },
     {
       "posicion": 3,
@@ -60,6 +60,132 @@
       "nombre": "AVILA BUTELER Agustin",
       "equipo": "CLINICAS",
       "goles": 10
+    },
+    {
+      "posicion": 11,
+      "nombre": "CEBALLOS Pablo Wualberto",
+      "equipo": "PENAROL",
+      "goles": 10
+    },
+    {
+      "posicion": 12,
+      "nombre": "UNCINI Christian Alejandro",
+      "equipo": "DINAMO",
+      "goles": 10
+    },
+    {
+      "posicion": 13,
+      "nombre": "LOMBARDO Sergio Daniel",
+      "equipo": "SAN MARTIN",
+      "goles": 9
+    },
+    {
+      "posicion": 14,
+      "nombre": "CAPITAINE Raul Horacio",
+      "equipo": "SAN MARTIN",
+      "goles": 8
+    },
+    {
+      "posicion": 15,
+      "nombre": "COLAZO Luis Alberto",
+      "equipo": "UNION Y AMISTAD",
+      "goles": 8
+    },
+    {
+      "posicion": 16,
+      "nombre": "RUSSO Daniel Alejandro",
+      "equipo": "PENAROL",
+      "goles": 8
+    },
+    {
+      "posicion": 17,
+      "nombre": "ARANDA Javier Osvaldo",
+      "equipo": "LA CORUNA",
+      "goles": 7
+    },
+    {
+      "posicion": 18,
+      "nombre": "BRACAMONTE Antonio",
+      "equipo": "SAN MARTIN",
+      "goles": 7
+    },
+    {
+      "posicion": 19,
+      "nombre": "ORDONEZ Pablo Daniel",
+      "equipo": "UNION Y AMISTAD",
+      "goles": 7
+    },
+    {
+      "posicion": 20,
+      "nombre": "ORTIZ Hugo Fabian",
+      "equipo": "LA CANCHITA",
+      "goles": 7
+    },
+    {
+      "posicion": 21,
+      "nombre": "ESCANUELA Ariel Anselmo",
+      "equipo": "CLINICAS",
+      "goles": 6
+    },
+    {
+      "posicion": 22,
+      "nombre": "LOPEZ Jose Luciano",
+      "equipo": "SANTOS",
+      "goles": 6
+    },
+    {
+      "posicion": 23,
+      "nombre": "ROSSET Christian Dario",
+      "equipo": "LOS MATADORES",
+      "goles": 6
+    },
+    {
+      "posicion": 24,
+      "nombre": "CAMORS Paulo Marcelo",
+      "equipo": "HALCONES",
+      "goles": 5
+    },
+    {
+      "posicion": 25,
+      "nombre": "CARDOZO Arnaldo Cesar",
+      "equipo": "PENAROL",
+      "goles": 5
+    },
+    {
+      "posicion": 26,
+      "nombre": "ESCOBAR Cristian Marcelo",
+      "equipo": "CHAZON",
+      "goles": 5
+    },
+    {
+      "posicion": 27,
+      "nombre": "LONDERO Cristian Javier",
+      "equipo": "CHAZON",
+      "goles": 5
+    },
+    {
+      "posicion": 28,
+      "nombre": "MARAGNI Pablo Javier",
+      "equipo": "NECAXA",
+      "goles": 5
+    },
+    {
+      "posicion": 29,
+      "nombre": "ROSSI Adrian Alberto",
+      "equipo": "LA CORUNA",
+      "goles": 5
+    },
+    {
+      "posicion": 30,
+      "nombre": "SIMEONI Cesar Daniel",
+      "equipo": "CRUZ AZUL",
+      "goles": 5
+    },
+    {
+      "posicion": 31,
+      "nombre": "WATSON Sergio Edgard",
+      "equipo": "LOS MATADORES",
+      "goles": 5
     }
   ]
 }
