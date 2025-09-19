@@ -376,12 +376,13 @@ tr:hover {
   }
   
   .escudo-mi-equipo, .escudo-liga {
-    width: 70px;
-    height: 70px;
+    width: 70px !important;
+    height: 70px !important;
     flex-shrink: 0;
-    border-radius: 0;
-    background: transparent;
-    padding: 6px;
+    border-radius: 0 !important;
+    background: transparent !important;
+    padding: 6px !important;
+    border: 2px solid rgba(255,255,255,0.9) !important;
   }
   
   .titulo-principal {
@@ -457,46 +458,58 @@ tr:hover {
   
   /* Columnas específicas con anchos fijos */
   th:nth-child(1), td:nth-child(1) { /* Equipo */
-    width: 35%;
+    width: 40%;
     text-align: left !important;
     font-size: 9px;
   }
   
   th:nth-child(2), td:nth-child(2) { /* Pts */
-    width: 8%;
+    width: 10%;
     font-weight: bold;
   }
   
   th:nth-child(3), td:nth-child(3) { /* PJ */
-    width: 7%;
+    width: 8%;
   }
   
   th:nth-child(4), td:nth-child(4) { /* PG */
-    width: 7%;
+    width: 8%;
   }
   
   th:nth-child(5), td:nth-child(5) { /* PE */
-    width: 7%;
+    width: 8%;
   }
   
   th:nth-child(6), td:nth-child(6) { /* PP */
-    width: 7%;
+    width: 8%;
   }
   
   th:nth-child(7), td:nth-child(7) { /* GF */
-    width: 7%;
+    width: 8%;
   }
   
   th:nth-child(8), td:nth-child(8) { /* GC */
-    width: 7%;
+    width: 8%;
   }
   
   th:nth-child(9), td:nth-child(9) { /* Dif */
-    width: 8%;
+    width: 10%;
   }
   
   th:nth-child(10), td:nth-child(10) { /* Últimos 5 */
     width: 15%;
+    display: none; /* Ocultar en móvil */
+  }
+  
+  /* Mostrar últimos 5 debajo del nombre en móvil */
+  .ultimos-resultados-mobile {
+    display: block !important;
+    margin-top: 2px;
+    font-size: 8px;
+  }
+  
+  .ultimos-resultados-desktop {
+    display: none !important;
   }
   
 /* Columna de equipo más ancha en móvil */
