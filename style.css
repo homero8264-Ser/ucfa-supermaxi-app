@@ -27,14 +27,14 @@ body {
 }
 
 .escudo-mi-equipo, .escudo-liga {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  border: 4px solid rgba(255,255,255,0.9);
+  width: 100px;
+  height: 100px;
+  border-radius: 0;
+  border: 3px solid rgba(255,255,255,0.9);
   box-shadow: 0 8px 25px rgba(0,0,0,0.4);
   transition: all 0.3s ease;
-  background: white;
-  padding: 10px;
+  background: transparent;
+  padding: 8px;
   object-fit: contain;
   object-position: center;
 }
@@ -42,7 +42,7 @@ body {
 /* Ajuste especial para escudos rectangulares como Los Matadores */
 .escudo-mi-equipo[src*="los-matadores"], 
 .escudo-liga[src*="los-matadores"] {
-  padding: 20px;
+  padding: 12px;
   object-fit: scale-down;
 }
 
@@ -335,6 +335,25 @@ tr:hover {
 }
 
 /* Responsive design para móviles */
+@media (min-width: 769px) {
+  .ultimos-resultados-mobile {
+    display: none;
+  }
+  
+  .ultimos-resultados-desktop {
+    display: block;
+  }
+  
+  .equipo-info {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .equipo-nombre {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     padding: 10px;
@@ -357,9 +376,12 @@ tr:hover {
   }
   
   .escudo-mi-equipo, .escudo-liga {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     flex-shrink: 0;
+    border-radius: 0;
+    background: transparent;
+    padding: 6px;
   }
   
   .titulo-principal {
@@ -477,23 +499,41 @@ tr:hover {
     width: 15%;
   }
   
-  /* Columna de equipo más ancha en móvil */
-  .equipo-con-escudo {
-    min-width: 100px;
-    text-align: left !important;
-    padding-left: 5px !important;
-    word-wrap: break-word;
-    white-space: normal;
-  }
-  
-  .escudo-equipo {
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
-    vertical-align: middle;
-  }
-  
-  /* Botones para móvil */
+/* Columna de equipo más ancha en móvil */
+.equipo-con-escudo {
+  min-width: 100px;
+  text-align: left !important;
+  padding-left: 5px !important;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.equipo-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.equipo-nombre {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.ultimos-resultados-mobile {
+  display: block;
+  margin-top: 2px;
+}
+
+.ultimos-resultados-desktop {
+  display: none;
+}
+
+.escudo-equipo {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: middle;
+}  /* Botones para móvil */
   .boton-vista, .toggle-button {
     width: 100%;
     padding: 12px;
@@ -628,6 +668,40 @@ tr:hover {
   .escudo-goleador {
     width: 18px !important;
     height: 18px !important;
+  }
+  
+  /* Tabla de sanciones específica para móvil */
+  #contenido-sanciones table th:nth-child(1), 
+  #contenido-sanciones table td:nth-child(1) { /* JUGADOR */
+    width: 40%;
+    text-align: left !important;
+    font-size: 9px;
+    line-height: 1.1;
+    padding-left: 8px !important;
+  }
+  
+  #contenido-sanciones table th:nth-child(2), 
+  #contenido-sanciones table td:nth-child(2) { /* EQUIPO */
+    width: 15%;
+  }
+  
+  #contenido-sanciones table th:nth-child(3), 
+  #contenido-sanciones table td:nth-child(3) { /* FECHAS */
+    width: 15%;
+    font-weight: bold;
+  }
+  
+  #contenido-sanciones table th:nth-child(4), 
+  #contenido-sanciones table td:nth-child(4) { /* MOTIVO */
+    width: 30%;
+    font-size: 8px;
+    text-align: left !important;
+    padding-left: 5px !important;
+  }
+  
+  .escudo-sanciones {
+    width: 16px !important;
+    height: 16px !important;
   }
   
   .info-partido {
