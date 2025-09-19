@@ -411,11 +411,12 @@ tr:hover {
   
   /* Tablas optimizadas para móvil */
   table {
-    font-size: 11px;
+    font-size: 10px;
     width: 100%;
     overflow-x: auto;
     display: block;
     white-space: nowrap;
+    border-radius: 8px;
   }
   
   table thead, table tbody, table tr {
@@ -425,20 +426,71 @@ tr:hover {
   }
   
   th, td {
-    padding: 8px 4px;
+    padding: 6px 3px;
     text-align: center;
+    font-size: 10px;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Columnas específicas con anchos fijos */
+  th:nth-child(1), td:nth-child(1) { /* Equipo */
+    width: 35%;
+    text-align: left !important;
+    font-size: 9px;
+  }
+  
+  th:nth-child(2), td:nth-child(2) { /* Pts */
+    width: 8%;
+    font-weight: bold;
+  }
+  
+  th:nth-child(3), td:nth-child(3) { /* PJ */
+    width: 7%;
+  }
+  
+  th:nth-child(4), td:nth-child(4) { /* PG */
+    width: 7%;
+  }
+  
+  th:nth-child(5), td:nth-child(5) { /* PE */
+    width: 7%;
+  }
+  
+  th:nth-child(6), td:nth-child(6) { /* PP */
+    width: 7%;
+  }
+  
+  th:nth-child(7), td:nth-child(7) { /* GF */
+    width: 7%;
+  }
+  
+  th:nth-child(8), td:nth-child(8) { /* GC */
+    width: 7%;
+  }
+  
+  th:nth-child(9), td:nth-child(9) { /* Dif */
+    width: 8%;
+  }
+  
+  th:nth-child(10), td:nth-child(10) { /* Últimos 5 */
+    width: 15%;
   }
   
   /* Columna de equipo más ancha en móvil */
   .equipo-con-escudo {
-    min-width: 120px;
+    min-width: 100px;
     text-align: left !important;
+    padding-left: 5px !important;
+    word-wrap: break-word;
+    white-space: normal;
   }
   
   .escudo-equipo {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    vertical-align: middle;
   }
   
   /* Botones para móvil */
@@ -452,45 +504,79 @@ tr:hover {
   
   /* Resultados y próxima fecha para móvil */
   .partido-resultado, .partido-proximo {
-    padding: 12px;
+    padding: 10px;
     margin: 8px 0;
     border-radius: 10px;
     width: 100%;
     box-sizing: border-box;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
   }
   
   .equipo-resultado, .equipo-proximo {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    text-align: center;
+    margin: 5px 0;
   }
   
   .escudo-resultado, .escudo-proximo {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto 5px auto;
     flex-shrink: 0;
   }
   
   .nombre-equipo {
-    font-size: 0.9em;
-    line-height: 1.2;
+    font-size: 0.8em;
+    line-height: 1.1;
+    font-weight: 600;
   }
   
   .goles-resultado {
-    font-size: 1.4em;
-    margin: 0 10px;
+    font-size: 1.2em;
+    margin: 5px 0;
     flex-shrink: 0;
+    align-self: center;
   }
   
   .info-partido {
-    font-size: 0.8em;
+    font-size: 0.75em;
     text-align: center;
-    flex: 0 0 auto;
-    min-width: 60px;
+    padding: 5px;
+    background: rgba(0,0,0,0.05);
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  /* Layout específico para resultados en móvil */
+  .resultado-partido {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: 
+      "equipo1 goles equipo2"
+      "info info info";
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .equipo-resultado:first-child {
+    grid-area: equipo1;
+  }
+  
+  .goles-resultado {
+    grid-area: goles;
+    text-align: center;
+  }
+  
+  .equipo-resultado:last-child {
+    grid-area: equipo2;
+  }
+  
+  .info-partido {
+    grid-area: info;
   }
   
   /* Sección de resultados última fecha */
@@ -511,6 +597,37 @@ tr:hover {
     max-width: 100%;
     padding: 0;
     margin: 0;
+  }
+  
+  /* Tabla de goleadores específica para móvil */
+  #contenido-goleadores table th:nth-child(1), 
+  #contenido-goleadores table td:nth-child(1) { /* POS */
+    width: 15%;
+  }
+  
+  #contenido-goleadores table th:nth-child(2), 
+  #contenido-goleadores table td:nth-child(2) { /* JUGADOR */
+    width: 55%;
+    text-align: left !important;
+    font-size: 9px;
+    line-height: 1.1;
+    padding-left: 8px !important;
+  }
+  
+  #contenido-goleadores table th:nth-child(3), 
+  #contenido-goleadores table td:nth-child(3) { /* EQUIPO */
+    width: 15%;
+  }
+  
+  #contenido-goleadores table th:nth-child(4), 
+  #contenido-goleadores table td:nth-child(4) { /* GOLES */
+    width: 15%;
+    font-weight: bold;
+  }
+  
+  .escudo-goleador {
+    width: 18px !important;
+    height: 18px !important;
   }
   
   .info-partido {
