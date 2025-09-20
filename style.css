@@ -15,7 +15,8 @@ body {
   height: 100vh;
 }
 
-/* Header fijo */
+/* Header fijo - ELIMINADO para mostrar mejor los botones de navegación */
+/*
 .header-fijo {
   position: fixed;
   top: 0;
@@ -27,11 +28,12 @@ body {
   padding: 10px 20px;
   box-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
+*/
 
-/* Navegación fija */
+/* Navegación fija ahora en la parte superior */
 .navegacion-fija {
   position: fixed;
-  top: 120px; /* Reducido para que se vea mejor */
+  top: 0; /* Ahora en la parte superior */
   left: 0;
   right: 0;
   z-index: 999;
@@ -43,7 +45,7 @@ body {
 
 /* Contenido scrolleable */
 .contenido-scrolleable {
-  margin-top: 180px; /* Reducido también */
+  margin-top: 70px; /* Solo espacio para la navegación */
   padding: 20px;
   flex: 1;
   overflow-y: auto;
