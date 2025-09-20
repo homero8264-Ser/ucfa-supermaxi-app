@@ -151,18 +151,20 @@ body {
   font-weight: 500;
 }
 
-/* Títulos de secciones - SIN FONDO BLANCO */
+/* Títulos de secciones - SIN FONDO BLANCO - FORZADO */
 h2 {
-  background: transparent;
-  padding: 10px 0;
-  margin: 20px 0 10px 0;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 1.2em;
-  font-weight: 600;
-  color: #ffffff;
-  text-align: left;
+  background: transparent !important;
+  padding: 5px 0 !important;
+  margin: 10px 0 5px 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: 1.1em !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  text-align: left !important;
+  display: block !important;
+  width: 100% !important;
 }
 
 /* Tablas con alineamiento mejorado */
@@ -1019,6 +1021,14 @@ table, .resultado-partido, .partido-proximo {
 
 .boton-vista:active {
   transform: translateY(0);
+}
+
+/* FORZAR ALINEACIÓN A LA DERECHA DEL BOTÓN - NUEVO */
+.boton-vista-container {
+  text-align: right !important;
+  margin-bottom: 20px !important;
+  width: 100% !important;
+  display: block !important;
 }
 
 /* Últimos resultados */
