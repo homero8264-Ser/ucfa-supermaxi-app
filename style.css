@@ -1724,3 +1724,197 @@ table, .resultado-partido, .partido-proximo {
 .btn-eliminar:hover {
   background: #c82333;
 }
+
+/* ===== SAMSUNG FOLD 5 ESPECÍFICO ===== */
+
+/* Samsung Fold 5 CERRADO (344px aprox) - Ultra compacto */
+@media (max-width: 360px) {
+  /* Tabla completa para Fold cerrado */
+  .tabla-completa th:nth-child(1), .tabla-completa td:nth-child(1) { /* Equipo */
+    width: 32% !important;
+    padding-left: 3px !important;
+    font-size: 8px !important;
+  }
+  
+  .tabla-completa th:nth-child(2), .tabla-completa td:nth-child(2) { /* Pts */
+    width: 9% !important;
+    font-weight: bold;
+    font-size: 8px !important;
+  }
+  
+  .tabla-completa th:nth-child(3), .tabla-completa td:nth-child(3) { /* PJ */
+    width: 8% !important;
+    font-size: 7px !important;
+  }
+  
+  .tabla-completa th:nth-child(4), .tabla-completa td:nth-child(4) { /* PG */
+    width: 7% !important;
+    font-size: 7px !important;
+  }
+  
+  .tabla-completa th:nth-child(5), .tabla-completa td:nth-child(5) { /* PE */
+    width: 7% !important;
+    font-size: 7px !important;
+  }
+  
+  .tabla-completa th:nth-child(6), .tabla-completa td:nth-child(6) { /* PP */
+    width: 7% !important;
+    font-size: 7px !important;
+  }
+  
+  .tabla-completa th:nth-child(7), .tabla-completa td:nth-child(7) { /* GF */
+    width: 7% !important;
+    font-size: 7px !important;
+  }
+  
+  .tabla-completa th:nth-child(8), .tabla-completa td:nth-child(8) { /* GC */
+    width: 7% !important;
+    font-size: 7px !important;
+  }
+  
+  .tabla-completa th:nth-child(9), .tabla-completa td:nth-child(9) { /* Dif */
+    width: 8% !important;
+    font-size: 7px !important;
+  }
+  
+  .tabla-completa th:nth-child(10), .tabla-completa td:nth-child(10) { /* Últimos 5 */
+    width: 8% !important;
+    font-size: 6px !important;
+  }
+  
+  /* Tabla reducida para Fold cerrado */
+  .tabla-reducida th:nth-child(1), .tabla-reducida td:nth-child(1) { /* Equipo */
+    width: 50% !important;
+    padding-left: 4px !important;
+    font-size: 9px !important;
+  }
+  
+  .tabla-reducida th:nth-child(2), .tabla-reducida td:nth-child(2) { /* Pts */
+    width: 18% !important;
+    font-weight: bold;
+    font-size: 9px !important;
+  }
+  
+  .tabla-reducida th:nth-child(3), .tabla-reducida td:nth-child(3) { /* PJ */
+    width: 16% !important;
+    font-size: 8px !important;
+  }
+  
+  .tabla-reducida th:nth-child(4), .tabla-reducida td:nth-child(4) { /* Dif */
+    width: 16% !important;
+    font-size: 8px !important;
+  }
+  
+  /* Eliminar padding extra */
+  th, td {
+    padding: 2px 1px !important;
+    margin: 0 !important;
+  }
+  
+  /* Escudos más pequeños */
+  .escudo-equipo {
+    width: 12px !important;
+    height: 12px !important;
+    margin-right: 2px !important;
+  }
+  
+  /* Últimos resultados ultra compactos */
+  .ultimos-resultados-mobile span {
+    width: 6px !important;
+    height: 6px !important;
+    font-size: 5px !important;
+    padding: 0 !important;
+    margin: 0.5px !important;
+  }
+}
+
+/* Samsung Fold 5 ABIERTO (673px aprox) - Tablet mode */
+@media (min-width: 650px) and (max-width: 700px) {
+  /* Tabla completa para Fold abierto */
+  .tabla-completa th:nth-child(1), .tabla-completa td:nth-child(1) { /* Equipo */
+    width: 28% !important;
+    padding-left: 8px !important;
+    font-size: 11px !important;
+  }
+  
+  .tabla-completa th:nth-child(2), .tabla-completa td:nth-child(2) { /* Pts */
+    width: 8% !important;
+    font-weight: bold;
+    font-size: 11px !important;
+  }
+  
+  .tabla-completa th:nth-child(3), .tabla-completa td:nth-child(3) { /* PJ */
+    width: 8% !important;
+    font-size: 10px !important;
+  }
+  
+  .tabla-completa th:nth-child(4), .tabla-completa td:nth-child(4) { /* PG */
+    width: 8% !important;
+    font-size: 10px !important;
+  }
+  
+  .tabla-completa th:nth-child(5), .tabla-completa td:nth-child(5) { /* PE */
+    width: 8% !important;
+    font-size: 10px !important;
+  }
+  
+  .tabla-completa th:nth-child(6), .tabla-completa td:nth-child(6) { /* PP */
+    width: 8% !important;
+    font-size: 10px !important;
+  }
+  
+  .tabla-completa th:nth-child(7), .tabla-completa td:nth-child(7) { /* GF */
+    width: 8% !important;
+    font-size: 10px !important;
+  }
+  
+  .tabla-completa th:nth-child(8), .tabla-completa td:nth-child(8) { /* GC */
+    width: 8% !important;
+    font-size: 10px !important;
+  }
+  
+  .tabla-completa th:nth-child(9), .tabla-completa td:nth-child(9) { /* Dif */
+    width: 8% !important;
+    font-size: 10px !important;
+  }
+  
+  .tabla-completa th:nth-child(10), .tabla-completa td:nth-child(10) { /* Últimos 5 */
+    width: 10% !important;
+    font-size: 9px !important;
+  }
+  
+  /* Tabla reducida para Fold abierto */
+  .tabla-reducida th:nth-child(1), .tabla-reducida td:nth-child(1) { /* Equipo */
+    width: 45% !important;
+    padding-left: 10px !important;
+    font-size: 12px !important;
+  }
+  
+  .tabla-reducida th:nth-child(2), .tabla-reducida td:nth-child(2) { /* Pts */
+    width: 18% !important;
+    font-weight: bold;
+    font-size: 12px !important;
+  }
+  
+  .tabla-reducida th:nth-child(3), .tabla-reducida td:nth-child(3) { /* PJ */
+    width: 18% !important;
+    font-size: 11px !important;
+  }
+  
+  .tabla-reducida th:nth-child(4), .tabla-reducida td:nth-child(4) { /* Dif */
+    width: 19% !important;
+    font-size: 11px !important;
+  }
+  
+  /* Padding adecuado para tablet */
+  th, td {
+    padding: 5px 3px !important;
+  }
+  
+  /* Escudos tamaño intermedio */
+  .escudo-equipo {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 5px !important;
+  }
+}
