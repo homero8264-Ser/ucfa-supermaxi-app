@@ -667,6 +667,271 @@ tr:hover {
   }
 }
 
+/* Aplicar animación a las tablas */
+table {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* === MEJORAS ESPECÍFICAS SOLICITADAS === */
+
+/* CAMBIO: "TABLAS" en lugar de "TABLA DE POSICIONES" */
+.titulo-tabla {
+  font-size: 1.6em !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+}
+
+/* BOTÓN "VER MENOS" DEBAJO EN LUGAR DE EN LÍNEA */
+.titulo-con-boton {
+  display: block !important; /* Cambio de flex a block */
+  text-align: center !important;
+  margin-bottom: 15px !important;
+}
+
+.titulo-con-boton .titulo-tabla {
+  display: block !important;
+  text-align: center !important;
+  margin-bottom: 10px !important;
+}
+
+.titulo-con-boton .boton-vista,
+.titulo-con-boton #boton-ver-mas-container {
+  display: block !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  width: fit-content !important;
+}
+
+/* BOTÓN MEJORADO CON COLUMNAS VISIBLES */
+.boton-vista {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF5252 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  border-radius: 25px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  white-space: nowrap !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4) !important;
+}
+
+.boton-vista:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6) !important;
+}
+
+/* HEADER MÁS GRANDE Y PROMINENTE */
+.header-compacto {
+  height: 55px !important; /* Aumentado de 45px */
+  padding: 10px 15px !important;
+  gap: 20px !important;
+}
+
+.escudo-pequeno {
+  width: 42px !important; /* Aumentado de 36px */
+  height: 42px !important;
+  border: 3px solid rgba(255,255,255,0.9) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+}
+
+.titulo-compacto {
+  font-size: 22px !important; /* Aumentado de 18px */
+  font-weight: 900 !important;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.8) !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+
+/* AJUSTAR NAVEGACIÓN PARA EL HEADER MÁS GRANDE */
+.navegacion-fija {
+  top: 55px !important; /* Ajustado para el header más grande */
+}
+
+.contenido-scrolleable {
+  margin-top: 110px !important; /* Ajustado para el header más grande */
+}
+
+/* APROVECHAR ESPACIO VACÍO - LETRAS MÁS GRANDES */
+th, td {
+  font-size: 16px !important; /* Aumentado significativamente */
+  padding: 12px 8px !important;
+  line-height: 1.4 !important;
+  font-weight: 500 !important;
+}
+
+/* TÍTULOS DE COLUMNA MÁS PROMINENTES */
+th {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+}
+
+/* PRIMERA COLUMNA MEJORADA */
+.equipo-con-escudo {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.escudo-equipo {
+  width: 26px !important; /* Aumentado de 20px */
+  height: 26px !important;
+  margin-right: 10px !important;
+}
+
+/* NÚMEROS MÁS DESTACADOS */
+.tabla-completa th:nth-child(2), .tabla-completa td:nth-child(2) { 
+  font-size: 18px !important; /* Puntos más grandes */
+  font-weight: 900 !important;
+}
+
+/* === AJUSTES RESPONSIVOS MEJORADOS === */
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
+  th, td {
+    font-size: 15px !important;
+    padding: 10px 6px !important;
+  }
+  
+  .escudo-equipo {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}
+
+/* MÓVIL GRANDE */
+@media (max-width: 767px) {
+  .header-compacto {
+    height: 50px !important;
+    padding: 8px 12px !important;
+  }
+  
+  .escudo-pequeno {
+    width: 38px !important;
+    height: 38px !important;
+  }
+  
+  .titulo-compacto {
+    font-size: 19px !important;
+  }
+  
+  .navegacion-fija {
+    top: 50px !important;
+  }
+  
+  .contenido-scrolleable {
+    margin-top: 95px !important;
+  }
+  
+  th, td {
+    font-size: 14px !important;
+    padding: 10px 6px !important;
+  }
+  
+  .escudo-equipo {
+    width: 22px !important;
+    height: 22px !important;
+  }
+}
+
+/* MÓVIL PEQUEÑO */
+@media (max-width: 480px) {
+  .header-compacto {
+    height: 45px !important;
+    padding: 6px 10px !important;
+  }
+  
+  .escudo-pequeno {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  
+  .titulo-compacto {
+    font-size: 17px !important;
+  }
+  
+  .navegacion-fija {
+    top: 45px !important;
+  }
+  
+  .contenido-scrolleable {
+    margin-top: 85px !important;
+  }
+  
+  th, td {
+    font-size: 13px !important;
+    padding: 8px 5px !important;
+  }
+}
+
+/* FOLD CERRADO - MANTENER LEGIBILIDAD CON LETRAS GRANDES */
+@media (max-width: 360px) {
+  .header-compacto {
+    height: 40px !important;
+    padding: 5px 8px !important;
+  }
+  
+  .escudo-pequeno {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  
+  .titulo-compacto {
+    font-size: 15px !important;
+  }
+  
+  .navegacion-fija {
+    top: 40px !important;
+  }
+  
+  .contenido-scrolleable {
+    margin-top: 75px !important;
+  }
+  
+  /* MANTENER LETRAS RELATIVAMENTE GRANDES INCLUSO EN FOLD */
+  th, td {
+    font-size: 12px !important; /* Más grande que antes */
+    padding: 6px 3px !important;
+  }
+  
+  .tabla-completa th:nth-child(2), .tabla-completa td:nth-child(2) { 
+    font-size: 14px !important; /* Puntos destacados */
+  }
+}
+
+/* === EFECTOS VISUALES MEJORADOS === */
+.posicion-1, .posicion-2, .posicion-3 {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+  transform: scale(1.01) !important;
+}
+
+/* HOVER MEJORADO */
+tr:hover {
+  background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%) !important;
+  transform: scale(1.02) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+/* === UTILIDADES FINALES === */
+.text-center { text-align: center !important; }
+.text-left { text-align: left !important; }
+.text-right { text-align: right !important; }
+
+/* ACCESIBILIDAD */
+*:focus {
+  outline: 3px solid var(--color-primario) !important;
+  outline-offset: 2px !important;
+}
+
 .contenido-pestana {
   display: none;
 }
