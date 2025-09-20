@@ -151,18 +151,18 @@ body {
   font-weight: 500;
 }
 
-/* Títulos de secciones */
+/* Títulos de secciones - SIN FONDO BLANCO */
 h2 {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  padding: 20px;
-  margin: 30px 0 15px 0;
-  border-left: 6px solid #4CAF50;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  font-size: 0.5em; /* SUPER PEQUEÑO - IMPOSIBLE NO VERLO */
+  background: transparent;
+  padding: 10px 0;
+  margin: 20px 0 10px 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1.2em;
   font-weight: 600;
-  color: #2c3e50;
-  border-bottom: 2px solid #e9ecef;
+  color: #ffffff;
+  text-align: left;
 }
 
 /* Tablas con alineamiento mejorado */
