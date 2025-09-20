@@ -180,7 +180,7 @@
     "ultimos5": ["E", "-", "-", "-", "-"]
   },
   {
-    "grupo": "B",
+    "grupo": "C",
     "equipo": "SANTOS",
     "puntos": 21,
     "PJ": 20,
@@ -195,7 +195,7 @@
     "ultimos5": ["E", "-", "-", "-", "-"]
   },
   {
-    "grupo": "B",
+    "grupo": "C",
     "equipo": "NECAXA",
     "puntos": 20,
     "PJ": 20,
@@ -210,7 +210,7 @@
     "ultimos5": ["E", "-", "-", "-", "-"]
   },
   {
-    "grupo": "B",
+    "grupo": "C",
     "equipo": "CRUZAZUL",
     "puntos": 17,
     "PJ": 20,
@@ -225,7 +225,7 @@
     "ultimos5": ["E", "-", "-", "-", "-"]
   },
   {
-    "grupo": "B",
+    "grupo": "C",
     "equipo": "LA CORUÑA",
     "puntos": 16,
     "PJ": 20,
@@ -240,7 +240,7 @@
     "ultimos5": ["D", "-", "-", "-", "-"]
   },
   {
-    "grupo": "B",
+    "grupo": "C",
     "equipo": "LASALLE",
     "puntos": 14,
     "PJ": 20,
@@ -255,7 +255,7 @@
     "ultimos5": ["D", "-", "-", "-", "-"]
   },
   {
-    "grupo": "B",
+    "grupo": "C",
     "equipo": "UNION Y AMISTAD",
     "puntos": 12,
     "PJ": 20,
