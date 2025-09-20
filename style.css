@@ -589,10 +589,11 @@ th:first-child, td:first-child {
     margin-bottom: 1px !important;
   }
   
-  /* BOTONES ULTRA PEQUEÑOS */
+  /* BOTÓN CONSISTENTE CON PESTAÑAS EN MÓVIL */
   .boton-vista {
-    padding: 2px 4px !important;
-    font-size: 6px !important;
+    padding: 4px 8px !important; /* Consistente con .pestana en móvil */
+    font-size: 9px !important; /* Consistente con .pestana en móvil */
+    min-width: 50px !important; /* Consistente con .pestana en móvil */
   }
   
   /* NOMBRES DE EQUIPOS MÁS CORTOS */
@@ -705,26 +706,29 @@ table {
   width: fit-content !important;
 }
 
-/* BOTÓN MEJORADO CON COLUMNAS VISIBLES */
+/* BOTÓN VER MENOS - MISMO TAMAÑO QUE PESTAÑAS NAVEGACIÓN */
 .boton-vista {
-  background: linear-gradient(135deg, #FF6B6B 0%, #FF5252 100%) !important;
+  background: rgba(255, 107, 107, 0.9) !important;
   color: white !important;
-  border: none !important;
-  padding: 12px 20px !important;
-  border-radius: 25px !important;
-  font-size: 13px !important;
-  font-weight: 700 !important;
+  border: 1px solid rgba(255, 107, 107, 1) !important;
+  padding: 6px 12px !important; /* Mismo padding que .pestana */
+  border-radius: 6px !important; /* Mismo border-radius que .pestana */
+  font-size: 11px !important; /* Mismo font-size que .pestana */
+  font-weight: 600 !important; /* Mismo font-weight que .pestana */
   cursor: pointer !important;
   transition: all 0.3s ease !important;
   white-space: nowrap !important;
   text-transform: uppercase !important;
-  letter-spacing: 1px !important;
-  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4) !important;
+  min-width: 60px !important; /* Mismo min-width que .pestana */
+  text-align: center !important; /* Mismo text-align que .pestana */
+  letter-spacing: 0.5px !important;
+  box-shadow: none !important; /* Sin sombra para igualar pestañas */
 }
 
 .boton-vista:hover {
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6) !important;
+  background: rgba(255, 107, 107, 1) !important; /* Hover similar a .pestana pero con color rojo */
+  transform: none !important; /* Sin transformación para igualar pestañas */
+  box-shadow: none !important; /* Sin sombra para igualar pestañas */
 }
 
 /* HEADER MÁS GRANDE Y PROMINENTE */
