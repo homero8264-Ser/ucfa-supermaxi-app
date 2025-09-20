@@ -31,7 +31,7 @@ body {
 /* Navegación fija */
 .navegacion-fija {
   position: fixed;
-  top: 160px; /* Ajustar según altura del header */
+  top: 120px; /* Reducido para que se vea mejor */
   left: 0;
   right: 0;
   z-index: 999;
@@ -43,7 +43,7 @@ body {
 
 /* Contenido scrolleable */
 .contenido-scrolleable {
-  margin-top: 220px; /* Header + navegación */
+  margin-top: 180px; /* Reducido también */
   padding: 20px;
   flex: 1;
   overflow-y: auto;
@@ -851,29 +851,46 @@ tr:hover {
   }
   
   /* Tabla de goleadores específica para móvil */
+  #contenido-goleadores table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  
   #contenido-goleadores table th:nth-child(1), 
   #contenido-goleadores table td:nth-child(1) { /* POS */
-    width: 15%;
+    width: 12%;
+    text-align: center;
+    font-size: 11px;
+    padding: 6px 2px;
   }
-  
+
   #contenido-goleadores table th:nth-child(2), 
   #contenido-goleadores table td:nth-child(2) { /* JUGADOR */
-    width: 55%;
+    width: 50%;
     text-align: left !important;
-    font-size: 9px;
-    line-height: 1.1;
-    padding-left: 8px !important;
+    font-size: 10px;
+    line-height: 1.2;
+    padding: 6px 4px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
-  
+
   #contenido-goleadores table th:nth-child(3), 
   #contenido-goleadores table td:nth-child(3) { /* EQUIPO */
-    width: 15%;
+    width: 23%;
+    text-align: center;
+    font-size: 10px;
+    padding: 6px 2px;
   }
-  
+
   #contenido-goleadores table th:nth-child(4), 
   #contenido-goleadores table td:nth-child(4) { /* GOLES */
     width: 15%;
     font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    padding: 6px 2px;
   }
   
   .escudo-goleador {
@@ -1059,12 +1076,12 @@ table, .resultado-partido, .partido-proximo {
   }
   
   .navegacion-fija {
-    top: 120px;
+    top: 100px;
     padding: 6px 15px;
   }
   
   .contenido-scrolleable {
-    margin-top: 180px;
+    margin-top: 160px;
     padding: 15px;
   }
   
@@ -1101,16 +1118,24 @@ table, .resultado-partido, .partido-proximo {
     width: 8%;
   }
   
-  th:nth-child(4), td:nth-child(4) { /* PG o Dif */
+  th:nth-child(4), td:nth-child(4) { /* PG */
     width: 8%;
   }
   
-  /* Ocultar columnas menos importantes en móvil */
-  th:nth-child(5), td:nth-child(5),
-  th:nth-child(6), td:nth-child(6),
-  th:nth-child(7), td:nth-child(7),
-  th:nth-child(8), td:nth-child(8) {
-    display: none;
+  th:nth-child(5), td:nth-child(5) { /* PE */
+    width: 8%;
+  }
+  
+  th:nth-child(6), td:nth-child(6) { /* PP */
+    width: 8%;
+  }
+  
+  th:nth-child(7), td:nth-child(7) { /* GF */
+    width: 8%;
+  }
+  
+  th:nth-child(8), td:nth-child(8) { /* GC */
+    width: 8%;
   }
   
   th:nth-child(9), td:nth-child(9) { /* Dif */
@@ -1135,6 +1160,42 @@ table, .resultado-partido, .partido-proximo {
   .goleadores-section {
     grid-template-columns: 1fr;
     gap: 15px;
+  }
+}
+
+/* Media Query específica para pantallas muy pequeñas - ocultar columnas */
+@media (max-width: 500px) {
+  /* Ocultar solo PE, PP, GF, GC en pantallas muy pequeñas */
+  th:nth-child(5), td:nth-child(5), /* PE */
+  th:nth-child(6), td:nth-child(6), /* PP */
+  th:nth-child(7), td:nth-child(7), /* GF */
+  th:nth-child(8), td:nth-child(8)  /* GC */ {
+    display: none;
+  }
+  
+  /* Reajustar anchos para columnas visibles */
+  th:nth-child(1), td:nth-child(1) { /* Equipo */
+    width: 40%;
+  }
+  
+  th:nth-child(2), td:nth-child(2) { /* Pts */
+    width: 12%;
+  }
+  
+  th:nth-child(3), td:nth-child(3) { /* PJ */
+    width: 10%;
+  }
+  
+  th:nth-child(4), td:nth-child(4) { /* PG */
+    width: 10%;
+  }
+  
+  th:nth-child(9), td:nth-child(9) { /* Dif */
+    width: 12%;
+  }
+  
+  th:nth-child(10), td:nth-child(10) { /* Últimos 5 */
+    width: 16%;
   }
 }
 
@@ -1214,6 +1275,36 @@ table, .resultado-partido, .partido-proximo {
     width: 20px;
     height: 20px;
     margin-right: 8px;
+  }
+  
+  /* Tabla de goleadores ultra compacta para Samsung Fold */
+  #contenido-goleadores table th:nth-child(1), 
+  #contenido-goleadores table td:nth-child(1) { /* POS */
+    width: 10%;
+    font-size: 9px;
+    padding: 4px 1px;
+  }
+
+  #contenido-goleadores table th:nth-child(2), 
+  #contenido-goleadores table td:nth-child(2) { /* JUGADOR */
+    width: 55%;
+    font-size: 8px;
+    line-height: 1.1;
+    padding: 4px 2px !important;
+  }
+
+  #contenido-goleadores table th:nth-child(3), 
+  #contenido-goleadores table td:nth-child(3) { /* EQUIPO */
+    width: 20%;
+    font-size: 8px;
+    padding: 4px 1px;
+  }
+
+  #contenido-goleadores table th:nth-child(4), 
+  #contenido-goleadores table td:nth-child(4) { /* GOLES */
+    width: 15%;
+    font-size: 10px;
+    padding: 4px 1px;
   }
   
   /* Interfaz admin ultra compacta para Samsung Fold */
