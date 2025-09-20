@@ -1,5 +1,5 @@
 {
-  "fechaActualizacion": "2025-09-19T15:30:00",
+  "fechaActualizacion": "2025-09-20T10:00:00",
   "jugadores": [
     {
       "posicion": 1,
@@ -11,181 +11,235 @@
       "posicion": 2,
       "nombre": "CAPDEVILLA Marcelo Oscar",
       "equipo": "LOS MATADORES",
-      "goles": 16
+      "goles": 17
     },
     {
       "posicion": 3,
       "nombre": "ALAMO Hector",
       "equipo": "PENAROL",
-      "goles": 14
+      "goles": 16
     },
     {
       "posicion": 4,
+      "nombre": "TULA Victor Justo",
+      "equipo": "CERVECEROS",
+      "goles": 14
+    },
+    {
+      "posicion": 5,
       "nombre": "ANGULO Hector Mario",
       "equipo": "CARASUCIAS",
       "goles": 13
     },
     {
-      "posicion": 5,
+      "posicion": 6,
       "nombre": "CATIVELLI Pablo Gabriel",
       "equipo": "NECAXA",
       "goles": 13
     },
     {
-      "posicion": 6,
+      "posicion": 7,
       "nombre": "DEMARIA Daniel Jose",
       "equipo": "LA SALLE",
       "goles": 13
     },
     {
-      "posicion": 7,
+      "posicion": 8,
       "nombre": "TEUMACO Juan Marcelo",
       "equipo": "CRUZ AZUL",
       "goles": 13
     },
     {
-      "posicion": 8,
-      "nombre": "TULA Victor Justo",
-      "equipo": "CERVECEROS",
-      "goles": 13
-    },
-    {
       "posicion": 9,
-      "nombre": "CARDOZO Nestor Orlando",
+      "nombre": "FARAH Fabian Marcelo",
       "equipo": "LA LOMITA",
-      "goles": 11
+      "goles": 12
     },
     {
       "posicion": 10,
-      "nombre": "AVILA BUTELER Agustin",
-      "equipo": "CLINICAS",
-      "goles": 10
+      "nombre": "MANSILLA Hugo Gabriel",
+      "equipo": "DINAMO",
+      "goles": 12
     },
     {
       "posicion": 11,
-      "nombre": "CEBALLOS Pablo Wualberto",
-      "equipo": "PENAROL",
-      "goles": 10
+      "nombre": "ROSALES Dario Ernesto",
+      "equipo": "LOS MATADORES",
+      "goles": 11
     },
     {
       "posicion": 12,
-      "nombre": "UNCINI Christian Alejandro",
-      "equipo": "DINAMO",
+      "nombre": "BEAULIEU Hector Mauricio",
+      "equipo": "LOS MATADORES",
       "goles": 10
     },
     {
       "posicion": 13,
-      "nombre": "LOMBARDO Sergio Daniel",
-      "equipo": "SAN MARTIN",
-      "goles": 9
+      "nombre": "APARICIO Carlos Antonio",
+      "equipo": "PENAROL",
+      "goles": 10
     },
     {
       "posicion": 14,
-      "nombre": "CAPITAINE Raul Horacio",
-      "equipo": "SAN MARTIN",
-      "goles": 8
+      "nombre": "MARTINEZ Cristian Dario",
+      "equipo": "PENAROL",
+      "goles": 10
     },
     {
       "posicion": 15,
-      "nombre": "COLAZO Luis Alberto",
-      "equipo": "UNION Y AMISTAD",
-      "goles": 8
+      "nombre": "SOSA Pablo Hugo",
+      "equipo": "LA LOMITA",
+      "goles": 9
     },
     {
       "posicion": 16,
-      "nombre": "RUSSO Daniel Alejandro",
-      "equipo": "PENAROL",
+      "nombre": "LUNA Jose Gerardo",
+      "equipo": "HALCONES",
       "goles": 8
     },
     {
       "posicion": 17,
-      "nombre": "ARANDA Javier Osvaldo",
-      "equipo": "LA CORUNA",
-      "goles": 7
+      "nombre": "RIVADERO Claudio Alejandro",
+      "equipo": "SAN MARTIN",
+      "goles": 8
     },
     {
       "posicion": 18,
-      "nombre": "BRACAMONTE Antonio",
-      "equipo": "SAN MARTIN",
-      "goles": 7
+      "nombre": "UNCINI Christian Alejandro",
+      "equipo": "DINAMO",
+      "goles": 8
     },
     {
       "posicion": 19,
-      "nombre": "ORDONEZ Pablo Daniel",
-      "equipo": "UNION Y AMISTAD",
+      "nombre": "GUTIERREZ Jose Antonio",
+      "equipo": "LOS MATADORES",
       "goles": 7
     },
     {
       "posicion": 20,
-      "nombre": "ORTIZ Hugo Fabian",
-      "equipo": "LA CANCHITA",
+      "nombre": "MILLAN Marcelo",
+      "equipo": "DINAMO",
       "goles": 7
     },
     {
       "posicion": 21,
-      "nombre": "ESCANUELA Ariel Anselmo",
-      "equipo": "CLINICAS",
-      "goles": 6
+      "nombre": "CEBALLOS Pablo Wualberto",
+      "equipo": "PENAROL",
+      "goles": 7
     },
     {
       "posicion": 22,
+      "nombre": "GUTIERREZ Cristian Marcelo",
+      "equipo": "CHAZON",
+      "goles": 7
+    },
+    {
+      "posicion": 23,
+      "nombre": "LASCANO Fernando Ariel",
+      "equipo": "CHAZON",
+      "goles": 7
+    },
+    {
+      "posicion": 24,
+      "nombre": "WEBER Hector Dario",
+      "equipo": "CERVECEROS",
+      "goles": 7
+    },
+    {
+      "posicion": 25,
       "nombre": "LOPEZ Jose Luciano",
       "equipo": "SANTOS",
       "goles": 6
     },
     {
-      "posicion": 23,
-      "nombre": "ROSSET Christian Dario",
-      "equipo": "LOS MATADORES",
+      "posicion": 26,
+      "nombre": "GARCIA Gaston Ricardo",
+      "equipo": "CLINICAS",
       "goles": 6
     },
     {
-      "posicion": 24,
-      "nombre": "CAMORS Paulo Marcelo",
-      "equipo": "HALCONES",
+      "posicion": 27,
+      "nombre": "BARBARA Jorge Augusto",
+      "equipo": "CARASUCIAS",
+      "goles": 6
+    },
+    {
+      "posicion": 28,
+      "nombre": "FARIAS Luis Rodolfo",
+      "equipo": "CARASUCIAS",
+      "goles": 6
+    },
+    {
+      "posicion": 29,
+      "nombre": "BOSSIO Carlos Gustavo",
+      "equipo": "LA CANCHITA",
+      "goles": 6
+    },
+    {
+      "posicion": 30,
+      "nombre": "VALDEZ Walter Daniel",
+      "equipo": "LA CANCHITA",
+      "goles": 6
+    },
+    {
+      "posicion": 31,
+      "nombre": "BRACAMONTE Antonio",
+      "equipo": "SAN MARTIN",
       "goles": 5
     },
     {
-      "posicion": 25,
-      "nombre": "CARDOZO Arnaldo Cesar",
+      "posicion": 32,
+      "nombre": "GONZALEZ Daniel Carlos",
+      "equipo": "LA LOMITA",
+      "goles": 5
+    },
+    {
+      "posicion": 33,
+      "nombre": "FERREYRA Nicolas Gonzalo",
+      "equipo": "UNION Y AMISTAD",
+      "goles": 5
+    },
+    {
+      "posicion": 34,
+      "nombre": "SACCO Nicolas Emanuel",
+      "equipo": "CHAZON",
+      "goles": 5
+    },
+    {
+      "posicion": 35,
+      "nombre": "VILLEGAS Cristian Omar",
       "equipo": "PENAROL",
       "goles": 5
     },
     {
-      "posicion": 26,
-      "nombre": "ESCOBAR Cristian Marcelo",
-      "equipo": "CHAZON",
-      "goles": 5
-    },
-    {
-      "posicion": 27,
-      "nombre": "LONDERO Cristian Javier",
-      "equipo": "CHAZON",
-      "goles": 5
-    },
-    {
-      "posicion": 28,
-      "nombre": "MARAGNI Pablo Javier",
-      "equipo": "NECAXA",
-      "goles": 5
-    },
-    {
-      "posicion": 29,
-      "nombre": "ROSSI Adrian Alberto",
-      "equipo": "LA CORUNA",
-      "goles": 5
-    },
-    {
-      "posicion": 30,
-      "nombre": "SIMEONI Cesar Daniel",
-      "equipo": "CRUZ AZUL",
-      "goles": 5
-    },
-    {
-      "posicion": 31,
-      "nombre": "WATSON Sergio Edgard",
+      "posicion": 36,
+      "nombre": "CARDOZO Marcelo Oscar",
       "equipo": "LOS MATADORES",
-      "goles": 5
+      "goles": 4
+    },
+    {
+      "posicion": 37,
+      "nombre": "LEDESMA Cristian Daniel",
+      "equipo": "HALCONES",
+      "goles": 4
+    },
+    {
+      "posicion": 38,
+      "nombre": "ARCOS Nestor Alejandro",
+      "equipo": "SANTOS",
+      "goles": 4
+    },
+    {
+      "posicion": 39,
+      "nombre": "GOMEZ Pablo Daniel",
+      "equipo": "DINAMO",
+      "goles": 4
+    },
+    {
+      "posicion": 40,
+      "nombre": "VILLARREAL Juan Carlos",
+      "equipo": "CERVECEROS",
+      "goles": 4
     }
   ]
 }
