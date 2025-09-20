@@ -167,6 +167,39 @@ h2 {
   width: 100% !important;
 }
 
+/* NUEVA ESTRUCTURA: TITULO Y BOTON EN MISMA LINEA */
+.titulo-con-boton {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin-bottom: 15px !important;
+}
+
+.titulo-tabla {
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  font-size: 1.1em !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  flex-grow: 1 !important;
+  text-align: left !important;
+}
+
+/* TÍTULOS DE GRUPO CON MISMO TAMAÑO QUE TABLA */
+.titulo-grupo {
+  background: transparent !important;
+  padding: 5px 0 !important;
+  margin: 15px 0 5px 0 !important;
+  border: none !important;
+  font-size: 1.1em !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  text-align: left !important;
+}
+
 /* Tablas con alineamiento mejorado */
 table {
   width: 100%;
