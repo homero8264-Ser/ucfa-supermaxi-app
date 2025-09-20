@@ -66,19 +66,20 @@ body {
 /* Navegación fija ahora debajo del header compacto */
 .navegacion-fija {
   position: fixed;
-  top: 40px; /* Debajo del header compacto */
+  top: 48px; /* Más cerca del header compacto */
   left: 0;
   right: 0;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 8px 20px;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+  background: rgba(102, 126, 234, 0.6); /* Fondo azul semi-transparente */
+  backdrop-filter: blur(3px); /* Ligero blur */
+  padding: 5px 10px; /* Padding visible */
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2); /* Sombra sutil */
+  height: auto;
 }
 
 /* Contenido scrolleable */
 .contenido-scrolleable {
-  margin-top: 110px; /* Espacio para header compacto + navegación */
+  margin-top: 90px; /* Espacio suficiente para header compacto + navegación */
   padding: 20px;
   flex: 1;
   overflow-y: auto;
@@ -1031,39 +1032,50 @@ table, .resultado-partido, .partido-proximo {
 .navegacion-pestanas {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0;
   background: transparent;
-  border-radius: 15px;
-  padding: 8px;
-  overflow-x: auto;
+  border-radius: 0;
+  padding: 5px 10px;
+  overflow: visible;
+  gap: 10px; /* Espacio entre botones */
+  height: auto;
+  flex-wrap: nowrap; /* No permitir salto de línea */
 }
 
 .pestana {
-  background: transparent;
-  border: none;
-  padding: 12px 20px;
-  margin: 0 4px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 600;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 8px 14px; /* Botones visibles */
+  margin: 0;
+  border-radius: 6px;
+  font-size: 11px; /* Texto legible */
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s ease;
-  color: #666;
+  transition: all 0.2s ease;
+  color: #fff; /* Texto blanco */
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  flex: 1;
-  min-width: max-content;
+  letter-spacing: 0.3px;
+  flex: none; /* No expandir */
+  min-width: auto;
+  max-width: none;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8); /* Sombra fuerte para legibilidad */
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .pestana:hover {
-  background: rgba(76, 175, 80, 0.1);
-  color: #4CAF50;
+  background: rgba(255, 255, 255, 0.3); /* Hover con fondo semi-transparente */
+  color: #fff;
+  transform: none; /* Sin escala en hover */
 }
 
 .pestana.active {
-  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
-  color: white;
-  box-shadow: 0 3px 10px rgba(76, 175, 80, 0.3);
+  background: rgba(255, 68, 68, 0.8); /* Fondo rojo Los Matadores para activo */
+  color: #fff; /* Color blanco para activo */
+  box-shadow: 0 1px 4px rgba(255, 68, 68, 0.4);
+  transform: none; /* Sin escala */
+  border-color: rgba(255, 68, 68, 0.9);
 }
 
 /* Contenido de pestañas */
