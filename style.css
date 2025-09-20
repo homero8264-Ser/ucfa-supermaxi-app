@@ -174,6 +174,7 @@ h2 {
   align-items: center !important;
   width: 100% !important;
   margin-bottom: 15px !important;
+  flex-wrap: nowrap !important;
 }
 
 .titulo-tabla {
@@ -184,8 +185,15 @@ h2 {
   font-size: 1.1em !important;
   font-weight: 700 !important;
   color: #ffffff !important;
-  flex-grow: 1 !important;
+  flex: 1 !important;
   text-align: left !important;
+  white-space: nowrap !important;
+}
+
+/* CONTENEDOR DEL BOTON - FORZAR A LA DERECHA */
+#boton-ver-mas-container {
+  flex-shrink: 0 !important;
+  margin-left: 10px !important;
 }
 
 /* TÍTULOS DE GRUPO CON MISMO TAMAÑO QUE TABLA */
@@ -1062,6 +1070,20 @@ table, .resultado-partido, .partido-proximo {
   margin-bottom: 20px !important;
   width: 100% !important;
   display: block !important;
+}
+
+/* BOTON VER MAS - ASEGURAR QUE ESTE EN LINEA */
+.boton-vista {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%) !important;
+  color: white !important;
+  border: none !important;
+  padding: 8px 15px !important;
+  border-radius: 20px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
 }
 
 /* Últimos resultados */
