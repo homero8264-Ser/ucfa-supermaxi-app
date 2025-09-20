@@ -30,7 +30,7 @@ body {
 }
 */
 
-/* Header compacto con título y escudos pequeños */
+/* Header compacto con título y escudos pequeños - MAS COMPACTO */
 .header-compacto {
   position: fixed;
   top: 0;
@@ -39,13 +39,13 @@ body {
   z-index: 1001;
   background: rgba(102, 126, 234, 0.95);
   backdrop-filter: blur(10px);
-  padding: 8px 15px;
+  padding: 4px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  height: 40px;
+  gap: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+  height: 30px;
 }
 
 .escudo-pequeno {
@@ -63,24 +63,24 @@ body {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-/* Navegación fija ahora debajo del header compacto */
+/* Navegación fija ahora debajo del header compacto - MAS COMPACTA */
 .navegacion-fija {
   position: fixed;
-  top: 48px; /* Más cerca del header compacto */
+  top: 34px; /* Más cerca del header reducido */
   left: 0;
   right: 0;
   z-index: 999;
-  background: rgba(102, 126, 234, 0.6); /* Fondo azul semi-transparente */
-  backdrop-filter: blur(3px); /* Ligero blur */
-  padding: 5px 10px; /* Padding visible */
-  box-shadow: 0 1px 5px rgba(0,0,0,0.2); /* Sombra sutil */
+  background: rgba(102, 126, 234, 0.6);
+  backdrop-filter: blur(3px);
+  padding: 3px 8px; /* Padding más pequeño */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
   height: auto;
 }
 
-/* Contenido scrolleable */
+/* Contenido scrolleable - MENOS MARGEN */
 .contenido-scrolleable {
-  margin-top: 90px; /* Espacio suficiente para header compacto + navegación */
-  padding: 20px;
+  margin-top: 70px; /* Menos espacio arriba */
+  padding: 10px; /* Menos padding */
   flex: 1;
   overflow-y: auto;
 }
@@ -151,15 +151,15 @@ body {
   font-weight: 500;
 }
 
-/* Títulos de secciones - SIN FONDO BLANCO - FORZADO */
+/* Títulos de secciones - SIN FONDO BLANCO - FORZADO - MAS COMPACTO */
 h2 {
   background: transparent !important;
-  padding: 5px 0 !important;
-  margin: 10px 0 5px 0 !important;
+  padding: 2px 0 !important;
+  margin: 5px 0 2px 0 !important;
   border: none !important;
   border-radius: 0 !important;
   box-shadow: none !important;
-  font-size: 1.1em !important;
+  font-size: 1.0em !important;
   font-weight: 700 !important;
   color: #ffffff !important;
   text-align: left !important;
@@ -167,13 +167,13 @@ h2 {
   width: 100% !important;
 }
 
-/* NUEVA ESTRUCTURA: TITULO Y BOTON EN MISMA LINEA */
+/* NUEVA ESTRUCTURA: TITULO Y BOTON EN MISMA LINEA - MAS COMPACTO */
 .titulo-con-boton {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
   width: 100% !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 5px !important;
   flex-wrap: nowrap !important;
 }
 
@@ -196,37 +196,38 @@ h2 {
   margin-left: 10px !important;
 }
 
-/* TÍTULOS DE GRUPO CON MISMO TAMAÑO QUE TABLA */
+/* TÍTULOS DE GRUPO CON MISMO TAMAÑO QUE TABLA - MAS COMPACTO */
 .titulo-grupo {
   background: transparent !important;
-  padding: 5px 0 !important;
-  margin: 15px 0 5px 0 !important;
+  padding: 2px 0 !important;
+  margin: 8px 0 2px 0 !important;
   border: none !important;
-  font-size: 1.1em !important;
+  font-size: 1.0em !important;
   font-weight: 700 !important;
   color: #ffffff !important;
   text-align: left !important;
 }
 
-/* Tablas con alineamiento mejorado */
+/* Tablas con alineamiento mejorado - MAS COMPACTAS */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   background: white;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   border: none;
-  table-layout: fixed; /* Fuerza ancho fijo de columnas */
+  table-layout: fixed;
 }
 
 th, td {
   border: none;
-  padding: 12px 8px;
+  padding: 6px 4px;
   text-align: center;
   border-bottom: 1px solid #e9ecef;
   vertical-align: middle;
+  font-size: 13px;
 }
 
 /* Alineamiento específico por columna */
@@ -334,11 +335,11 @@ tr:hover {
 }
 
 .escudo-equipo {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  margin-right: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  margin-right: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   transition: all 0.2s ease;
   object-fit: contain;
   object-position: center;
@@ -1111,20 +1112,20 @@ table, .resultado-partido, .partido-proximo {
 .pestana {
   background: rgba(255, 255, 255, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 8px 14px; /* Botones visibles */
+  padding: 6px 10px; /* Botones más compactos */
   margin: 0;
-  border-radius: 6px;
-  font-size: 11px; /* Texto legible */
+  border-radius: 4px;
+  font-size: 10px; /* Texto más pequeño */
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
-  color: #fff; /* Texto blanco */
+  color: #fff;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
-  flex: none; /* No expandir */
+  letter-spacing: 0.2px;
+  flex: none;
   min-width: auto;
   max-width: none;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.8); /* Sombra fuerte para legibilidad */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
   white-space: nowrap;
   display: inline-block;
 }
