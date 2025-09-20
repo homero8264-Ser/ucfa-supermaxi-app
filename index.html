@@ -1,161 +1,321 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-ichos erdes  <meta name="viewport" content="width=device-width, initial-scale=1.    <script src="app.js?v=20250920-5"></script>, user-scalable=no, viewport-fit=cover" />
-  <title>UCFA Super Maxi 2025</title>
-  <link rel="stylesheet" href="style.css?v=20250920-5" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-  <!-- Meta tags para dispositivos plegables -->
-  <meta name="theme-color" content="#667eea" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-</head>
-<body>
-  <div class="app-container">
-    <!-- Header compacto con título y escudos -->
-    <div class="header-compacto">
-      <img src="imagenes/equipos/los-matadores.png" alt="Los Matadores" class="escudo-pequeno" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNTAiIGZpbGw9IiM0Q0FGNTB8LwpjaXJjbGU+PHRleHQgeD0iNTAiIHk9IjU1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5FU0NVRE88L3RleHQ+PC9zdmc+'">
-      <span class="titulo-compacto">UCFA Super Maxi 2025</span>
-      <img src="imagenes/equipos/liga/ucfa_2024.png" alt="UCFA" class="escudo-pequeno" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNTAiIGZpbGw9IiNGRkM3MDciLwpjaXJjbGU+PHRleHQgeD0iNTAiIHk9IjQ1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iYm9sZCI+VUNGQTwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjIwMjQ8L3RleHQ+PC9zdmc+'">
-    </div>
-    
-    <!-- Navegación fija -->
-    <div class="navegacion-fija">
-      <nav class="navegacion-pestanas">
-        <button class="pestana active" onclick="cambiarPestana('clasificacion')">CLASIFICACIÓN</button>
-        <button class="pestana" onclick="cambiarPestana('goleadores')">GOLEADORES</button>
-        <button class="pestana" onclick="cambiarPestana('sanciones')">SANCIONES</button>
-        <button class="pestana" onclick="cambiarPestana('resultados')">RESULTADOS</button>
-        <button class="pestana admin-tab" onclick="cambiarPestana('admin')" title="Administración">⚙️</button>
-      </nav>
-    </div>
+<!DOCTYPE html><!DOCTYPE html>
 
-    <!-- Contenido scrolleable -->
-    <div class="contenido-scrolleable">
+<html lang="es"><html lang="es">
 
-  <!-- Contenido de Clasificación -->
-  <div id="contenido-clasificacion" class="contenido-pestana active">
-    <h2>Tabla de Posiciones</h2>
-    <div id="contenedor-tablas"></div>
+<head><head>
 
-    <h2>Resultados Última Fecha</h2>
-    <div id="contenedor-resultados"></div>
+  <meta charset="UTF-8" />  <meta charset="UTF-8" />
 
-    <h2>Próxima Fecha</h2>
-    <div id="proxima-fecha-container"></div>
-  </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />ichos erdes  <meta name="viewport" content="width=device-width, initial-scale=1.    <script src="app.js?v=20250920-5"></script>, user-scalable=no, viewport-fit=cover" />
 
-  <!-- Contenido de Goleadores -->
-  <div id="contenido-goleadores" class="contenido-pestana">
-    <h2>Tabla de Goleadores</h2>
-    <div id="contenedor-goleadores"></div>
-  </div>
+  <title>UCFA Super Maxi 2025</title>  <title>UCFA Super Maxi 2025</title>
 
-  <!-- Contenido de Sanciones -->
-  <div id="contenido-sanciones" class="contenido-pestana">
-    <h2>Sanciones</h2>
-    <div id="contenedor-sanciones"></div>
-  </div>
+  <link rel="stylesheet" href="style.css?v=20250920-5" />  <link rel="stylesheet" href="style.css?v=20250920-5" />
 
-  <!-- Contenido de Resultados Anteriores -->
-  <div id="contenido-resultados" class="contenido-pestana">
-    <h2>Resultados Anteriores</h2>
-    <div id="contenedor-resultados-anteriores"></div>
-  </div>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 
-  <!-- Contenido de Administración -->
-  <div id="contenido-admin" class="contenido-pestana">
-    <h2>⚙️ Administración UCFA</h2>
-    
-    <div class="admin-section">
-      <h3>📝 Agregar Resultado</h3>
-      <div class="resultado-form">
-        <div class="equipo-input">
-          <label>Equipo Local:</label>
-          <select id="equipoLocal">
-            <option value="">Seleccionar equipo...</option>
-            <option value="LA CORUÑA">LA CORUÑA</option>
-            <option value="LOS MATADORES">LOS MATADORES</option>
-            <option value="SAN MARTIN">SAN MARTIN</option>
-            <option value="HALCONES">HALCONES</option>
-            <option value="DINAMO">DINAMO</option>
-            <option value="WARCALDE">WARCALDE</option>
-            <option value="SANTOS">SANTOS</option>
-            <option value="PENAROL">PENAROL</option>
-            <option value="NECAXA">NECAXA</option>
-            <option value="CARASUCIAS">CARASUCIAS</option>
-            <option value="CRUZAZUL">CRUZAZUL</option>
-            <option value="LA LOMITA">LA LOMITA</option>
-            <option value="CERVECEROS">CERVECEROS</option>
-            <option value="CHAZON">CHAZON</option>
-            <option value="LASALLE">LASALLE</option>
-            <option value="CLINICAS">CLINICAS</option>
-            <option value="LA CANCHITA">LA CANCHITA</option>
-            <option value="UNION Y AMISTAD">UNION Y AMISTAD</option>
-          </select>
-          <input type="number" id="golesLocal" placeholder="Goles" min="0" max="20">
-        </div>
+  <meta http-equiv="Pragma" content="no-cache" />  <meta http-equiv="Pragma" content="no-cache" />
+
+  <meta http-equiv="Expires" content="0" />  <meta http-equiv="Expires" content="0" />
+
+  <!-- Meta tags para dispositivos plegables -->  <!-- Meta tags para dispositivos plegables -->
+
+  <meta name="theme-color" content="#667eea" />  <meta name="theme-color" content="#667eea" />
+
+  <meta name="mobile-web-app-capable" content="yes" />  <meta name="mobile-web-app-capable" content="yes" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+</head></head>
+
+<body><body>
+
+  <div class="app-container">  <div class="app-container">
+
+    <!-- Header compacto con título y escudos -->    <!-- Header compacto con título y escudos -->
+
+    <div class="header-compacto">    <div class="header-compacto">
+
+      <img src="imagenes/equipos/los-matadores.png" alt="Los Matadores" class="escudo-pequeno" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNTAiIGZpbGw9IiM0Q0FGNTB8LwpjaXJjbGU+PHRleHQgeD0iNTAiIHk9IjU1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5FU0NVRE88L3RleHQ+PC9zdmc+'">      <img src="imagenes/equipos/los-matadores.png" alt="Los Matadores" class="escudo-pequeno" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNTAiIGZpbGw9IiM0Q0FGNTB8LwpjaXJjbGU+PHRleHQgeD0iNTAiIHk9IjU1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5FU0NVRE88L3RleHQ+PC9zdmc+'">
+
+      <span class="titulo-compacto">UCFA Super Maxi 2025</span>      <span class="titulo-compacto">UCFA Super Maxi 2025</span>
+
+      <img src="imagenes/equipos/liga/ucfa_2024.png" alt="UCFA" class="escudo-pequeno" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNTAiIGZpbGw9IiNGRkM3MDciLwpjaXJjbGU+PHRleHQgeD0iNTAiIHk9IjQ1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iYm9sZCI+VUNGQTwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjIwMjQ8L3RleHQ+PC9zdmc+'">      <img src="imagenes/equipos/liga/ucfa_2024.png" alt="UCFA" class="escudo-pequeno" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNTAiIGZpbGw9IiNGRkM3MDciLwpjaXJjbGU+PHRleHQgeD0iNTAiIHk9IjQ1IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iYm9sZCI+VUNGQTwvdGV4dD48dGV4dCB4PSI1MCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjIwMjQ8L3RleHQ+PC9zdmc+'">
+
+    </div>    </div>
+
         
-        <div class="vs-separator">VS</div>
-        
-        <div class="equipo-input">
-          <label>Equipo Visitante:</label>
-          <select id="equipoVisitante">
-            <option value="">Seleccionar equipo...</option>
-            <option value="LA CORUÑA">LA CORUÑA</option>
-            <option value="LOS MATADORES">LOS MATADORES</option>
-            <option value="SAN MARTIN">SAN MARTIN</option>
-            <option value="HALCONES">HALCONES</option>
-            <option value="DINAMO">DINAMO</option>
-            <option value="WARCALDE">WARCALDE</option>
-            <option value="SANTOS">SANTOS</option>
-            <option value="PENAROL">PENAROL</option>
-            <option value="NECAXA">NECAXA</option>
-            <option value="CARASUCIAS">CARASUCIAS</option>
-            <option value="CRUZAZUL">CRUZAZUL</option>
-            <option value="LA LOMITA">LA LOMITA</option>
-            <option value="CERVECEROS">CERVECEROS</option>
-            <option value="CHAZON">CHAZON</option>
-            <option value="LASALLE">LASALLE</option>
-            <option value="CLINICAS">CLINICAS</option>
-            <option value="LA CANCHITA">LA CANCHITA</option>
-            <option value="UNION Y AMISTAD">UNION Y AMISTAD</option>
-          </select>
-          <input type="number" id="golesVisitante" placeholder="Goles" min="0" max="20">
-        </div>
-      </div>
-      
-      <div class="goleadores-section">
-        <div class="goleadores-equipo">
-          <h4>Goleadores Local</h4>
-          <div id="goleadoresLocal"></div>
-          <button onclick="agregarGoleador('local')" class="btn-secundario">+ Agregar Goleador</button>
-        </div>
-        
-        <div class="goleadores-equipo">
-          <h4>Goleadores Visitante</h4>
-          <div id="goleadoresVisitante"></div>
-          <button onclick="agregarGoleador('visitante')" class="btn-secundario">+ Agregar Goleador</button>
-        </div>
-      </div>
-      
-      <button onclick="procesarResultado()" class="btn-principal">🚀 Procesar Resultado</button>
-    </div>
-    
-    <div class="admin-section">
-      <h3>📊 Pruebas del Sistema</h3>
-      <button onclick="ejemploActualizacion()" class="btn-test">🧪 Probar con Resultado de Ejemplo</button>
-      <p class="descripcion">Este botón agregará un resultado de prueba: Los Matadores 3-1 Santos</p>
-    </div>
-  </div>
 
-    </div> <!-- Cierre contenido-scrolleable -->
-  </div> <!-- Cierre app-container -->
+    <!-- Navegación fija -->    <!-- Navegación fija -->
 
-  <script src="app.js?v=20250920-7"></script>
-</body>
-</html>
+    <div class="navegacion-fija">    <div class="navegacion-fija">
+
+      <nav class="navegacion-pestanas">      <nav class="navegacion-pestanas">
+
+        <button class="pestana active" onclick="cambiarPestana('clasificacion')">CLASIFICACIÓN</button>        <button class="pestana active" onclick="cambiarPestana('clasificacion')">CLASIFICACIÓN</button>
+
+        <button class="pestana" onclick="cambiarPestana('goleadores')">GOLEADORES</button>        <button class="pestana" onclick="cambiarPestana('goleadores')">GOLEADORES</button>
+
+        <button class="pestana" onclick="cambiarPestana('sanciones')">SANCIONES</button>        <button class="pestana" onclick="cambiarPestana('sanciones')">SANCIONES</button>
+
+        <button class="pestana" onclick="cambiarPestana('resultados')">RESULTADOS</button>        <button class="pestana" onclick="cambiarPestana('resultados')">RESULTADOS</button>
+
+        <button class="pestana admin-tab" onclick="cambiarPestana('admin')" title="Administración">⚙️</button>        <button class="pestana admin-tab" onclick="cambiarPestana('admin')" title="Administración">⚙️</button>
+
+      </nav>      </nav>
+
+    </div>    </div>
+
+
+
+    <!-- Contenido scrolleable -->    <!-- Contenido scrolleable -->
+
+    <div class="contenido-scrolleable">    <div class="contenido-scrolleable">
+
+
+
+  <!-- Contenido de Clasificación -->  <!-- Contenido de Clasificación -->
+
+  <div id="contenido-clasificacion" class="contenido-pestana active">  <div id="contenido-clasificacion" class="contenido-pestana active">
+
+    <h2>Tabla de Posiciones</h2>    <h2>Tabla de Posiciones</h2>
+
+    <div id="contenedor-tablas"></div>    <div id="contenedor-tablas"></div>
+
+
+
+    <h2>Resultados Última Fecha</h2>    <h2>Resultados Última Fecha</h2>
+
+    <div id="contenedor-resultados"></div>    <div id="contenedor-resultados"></div>
+
+
+
+    <h2>Próxima Fecha</h2>    <h2>Próxima Fecha</h2>
+
+    <div id="proxima-fecha-container"></div>    <div id="proxima-fecha-container"></div>
+
+  </div>  </div>
+
+
+
+  <!-- Contenido de Goleadores -->  <!-- Contenido de Goleadores -->
+
+  <div id="contenido-goleadores" class="contenido-pestana">  <div id="contenido-goleadores" class="contenido-pestana">
+
+    <h2>Tabla de Goleadores</h2>    <h2>Tabla de Goleadores</h2>
+
+    <div id="contenedor-goleadores"></div>    <div id="contenedor-goleadores"></div>
+
+  </div>  </div>
+
+
+
+  <!-- Contenido de Sanciones -->  <!-- Contenido de Sanciones -->
+
+  <div id="contenido-sanciones" class="contenido-pestana">  <div id="contenido-sanciones" class="contenido-pestana">
+
+    <h2>Sanciones</h2>    <h2>Sanciones</h2>
+
+    <div id="contenedor-sanciones"></div>    <div id="contenedor-sanciones"></div>
+
+  </div>  </div>
+
+
+
+  <!-- Contenido de Resultados Anteriores -->  <!-- Contenido de Resultados Anteriores -->
+
+  <div id="contenido-resultados" class="contenido-pestana">  <div id="contenido-resultados" class="contenido-pestana">
+
+    <h2>Resultados Anteriores</h2>    <h2>Resultados Anteriores</h2>
+
+    <div id="contenedor-resultados-anteriores"></div>    <div id="contenedor-resultados-anteriores"></div>
+
+  </div>  </div>
+
+
+
+  <!-- Contenido de Administración -->  <!-- Contenido de Administración -->
+
+  <div id="contenido-admin" class="contenido-pestana">  <div id="contenido-admin" class="contenido-pestana">
+
+    <h2>⚙️ Administración UCFA</h2>    <h2>⚙️ Administración UCFA</h2>
+
+        
+
+    <div class="admin-section">    <div class="admin-section">
+
+      <h3>📝 Agregar Resultado</h3>      <h3>📝 Agregar Resultado</h3>
+
+      <div class="resultado-form">      <div class="resultado-form">
+
+        <div class="equipo-input">        <div class="equipo-input">
+
+          <label>Equipo Local:</label>          <label>Equipo Local:</label>
+
+          <select id="equipoLocal">          <select id="equipoLocal">
+
+            <option value="">Seleccionar equipo...</option>            <option value="">Seleccionar equipo...</option>
+
+            <option value="LA CORUÑA">LA CORUÑA</option>            <option value="LA CORUÑA">LA CORUÑA</option>
+
+            <option value="LOS MATADORES">LOS MATADORES</option>            <option value="LOS MATADORES">LOS MATADORES</option>
+
+            <option value="SAN MARTIN">SAN MARTIN</option>            <option value="SAN MARTIN">SAN MARTIN</option>
+
+            <option value="HALCONES">HALCONES</option>            <option value="HALCONES">HALCONES</option>
+
+            <option value="DINAMO">DINAMO</option>            <option value="DINAMO">DINAMO</option>
+
+            <option value="WARCALDE">WARCALDE</option>            <option value="WARCALDE">WARCALDE</option>
+
+            <option value="SANTOS">SANTOS</option>            <option value="SANTOS">SANTOS</option>
+
+            <option value="PENAROL">PENAROL</option>            <option value="PENAROL">PENAROL</option>
+
+            <option value="NECAXA">NECAXA</option>            <option value="NECAXA">NECAXA</option>
+
+            <option value="CARASUCIAS">CARASUCIAS</option>            <option value="CARASUCIAS">CARASUCIAS</option>
+
+            <option value="CRUZAZUL">CRUZAZUL</option>            <option value="CRUZAZUL">CRUZAZUL</option>
+
+            <option value="LA LOMITA">LA LOMITA</option>            <option value="LA LOMITA">LA LOMITA</option>
+
+            <option value="CERVECEROS">CERVECEROS</option>            <option value="CERVECEROS">CERVECEROS</option>
+
+            <option value="CHAZON">CHAZON</option>            <option value="CHAZON">CHAZON</option>
+
+            <option value="LASALLE">LASALLE</option>            <option value="LASALLE">LASALLE</option>
+
+            <option value="CLINICAS">CLINICAS</option>            <option value="CLINICAS">CLINICAS</option>
+
+            <option value="LA CANCHITA">LA CANCHITA</option>            <option value="LA CANCHITA">LA CANCHITA</option>
+
+            <option value="UNION Y AMISTAD">UNION Y AMISTAD</option>            <option value="UNION Y AMISTAD">UNION Y AMISTAD</option>
+
+          </select>          </select>
+
+          <input type="number" id="golesLocal" placeholder="Goles" min="0" max="20">          <input type="number" id="golesLocal" placeholder="Goles" min="0" max="20">
+
+        </div>        </div>
+
+                
+
+        <div class="vs-separator">VS</div>        <div class="vs-separator">VS</div>
+
+                
+
+        <div class="equipo-input">        <div class="equipo-input">
+
+          <label>Equipo Visitante:</label>          <label>Equipo Visitante:</label>
+
+          <select id="equipoVisitante">          <select id="equipoVisitante">
+
+            <option value="">Seleccionar equipo...</option>            <option value="">Seleccionar equipo...</option>
+
+            <option value="LA CORUÑA">LA CORUÑA</option>            <option value="LA CORUÑA">LA CORUÑA</option>
+
+            <option value="LOS MATADORES">LOS MATADORES</option>            <option value="LOS MATADORES">LOS MATADORES</option>
+
+            <option value="SAN MARTIN">SAN MARTIN</option>            <option value="SAN MARTIN">SAN MARTIN</option>
+
+            <option value="HALCONES">HALCONES</option>            <option value="HALCONES">HALCONES</option>
+
+            <option value="DINAMO">DINAMO</option>            <option value="DINAMO">DINAMO</option>
+
+            <option value="WARCALDE">WARCALDE</option>            <option value="WARCALDE">WARCALDE</option>
+
+            <option value="SANTOS">SANTOS</option>            <option value="SANTOS">SANTOS</option>
+
+            <option value="PENAROL">PENAROL</option>            <option value="PENAROL">PENAROL</option>
+
+            <option value="NECAXA">NECAXA</option>            <option value="NECAXA">NECAXA</option>
+
+            <option value="CARASUCIAS">CARASUCIAS</option>            <option value="CARASUCIAS">CARASUCIAS</option>
+
+            <option value="CRUZAZUL">CRUZAZUL</option>            <option value="CRUZAZUL">CRUZAZUL</option>
+
+            <option value="LA LOMITA">LA LOMITA</option>            <option value="LA LOMITA">LA LOMITA</option>
+
+            <option value="CERVECEROS">CERVECEROS</option>            <option value="CERVECEROS">CERVECEROS</option>
+
+            <option value="CHAZON">CHAZON</option>            <option value="CHAZON">CHAZON</option>
+
+            <option value="LASALLE">LASALLE</option>            <option value="LASALLE">LASALLE</option>
+
+            <option value="CLINICAS">CLINICAS</option>            <option value="CLINICAS">CLINICAS</option>
+
+            <option value="LA CANCHITA">LA CANCHITA</option>            <option value="LA CANCHITA">LA CANCHITA</option>
+
+            <option value="UNION Y AMISTAD">UNION Y AMISTAD</option>            <option value="UNION Y AMISTAD">UNION Y AMISTAD</option>
+
+          </select>          </select>
+
+          <input type="number" id="golesVisitante" placeholder="Goles" min="0" max="20">          <input type="number" id="golesVisitante" placeholder="Goles" min="0" max="20">
+
+        </div>        </div>
+
+      </div>      </div>
+
+            
+
+      <div class="goleadores-section">      <div class="goleadores-section">
+
+        <div class="goleadores-equipo">        <div class="goleadores-equipo">
+
+          <h4>Goleadores Local</h4>          <h4>Goleadores Local</h4>
+
+          <div id="goleadoresLocal"></div>          <div id="goleadoresLocal"></div>
+
+          <button onclick="agregarGoleador('local')" class="btn-secundario">+ Agregar Goleador</button>          <button onclick="agregarGoleador('local')" class="btn-secundario">+ Agregar Goleador</button>
+
+        </div>        </div>
+
+                
+
+        <div class="goleadores-equipo">        <div class="goleadores-equipo">
+
+          <h4>Goleadores Visitante</h4>          <h4>Goleadores Visitante</h4>
+
+          <div id="goleadoresVisitante"></div>          <div id="goleadoresVisitante"></div>
+
+          <button onclick="agregarGoleador('visitante')" class="btn-secundario">+ Agregar Goleador</button>          <button onclick="agregarGoleador('visitante')" class="btn-secundario">+ Agregar Goleador</button>
+
+        </div>        </div>
+
+      </div>      </div>
+
+            
+
+      <button onclick="procesarResultado()" class="btn-principal">🚀 Procesar Resultado</button>      <button onclick="procesarResultado()" class="btn-principal">🚀 Procesar Resultado</button>
+
+    </div>    </div>
+
+        
+
+    <div class="admin-section">    <div class="admin-section">
+
+      <h3>📊 Pruebas del Sistema</h3>      <h3>📊 Pruebas del Sistema</h3>
+
+      <button onclick="ejemploActualizacion()" class="btn-test">🧪 Probar con Resultado de Ejemplo</button>      <button onclick="ejemploActualizacion()" class="btn-test">🧪 Probar con Resultado de Ejemplo</button>
+
+      <p class="descripcion">Este botón agregará un resultado de prueba: Los Matadores 3-1 Santos</p>      <p class="descripcion">Este botón agregará un resultado de prueba: Los Matadores 3-1 Santos</p>
+
+    </div>    </div>
+
+  </div>  </div>
+
+
+
+    </div> <!-- Cierre contenido-scrolleable -->    </div> <!-- Cierre contenido-scrolleable -->
+
+  </div> <!-- Cierre app-container -->  </div> <!-- Cierre app-container -->
+
+
+
+  <script src="app.js?v=20250920-7"></script>  <script src="app.js?v=20250920-7"></script>
+
+</body></body>
+
+</html></html>
