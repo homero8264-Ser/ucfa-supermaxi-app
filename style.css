@@ -467,14 +467,15 @@ th:first-child, td:first-child {
     margin-right: 1px !important;
   }
   
-  /* FOLD CERRADO - 9 COLUMNAS (SIN ÚLTIMOS 5) MEJOR DISTRIBUIDAS */
+  /* FOLD CERRADO - LAYOUT OPTIMIZADO CON MEJOR TIPOGRAFÍA */
   .tabla-completa th:nth-child(1), 
   .tabla-completa td:nth-child(1),
   table.tabla-completa th:nth-child(1), 
   table.tabla-completa td:nth-child(1) { 
-    width: 30% !important; /* Equipo - MÁS ESPACIO PARA NOMBRES */
-    font-size: 6px !important;
-    padding: 1px 2px !important;
+    width: 32% !important; /* Equipo - APROVECHANDO EL ESPACIO MARCADO */
+    font-size: 8px !important; /* LETRA MÁS GRANDE */
+    padding: 2px 3px !important;
+    line-height: 1.1 !important;
   }
   .tabla-completa th:nth-child(2), 
   .tabla-completa td:nth-child(2),
@@ -482,36 +483,36 @@ th:first-child, td:first-child {
   table.tabla-completa td:nth-child(2) { 
     width: 10% !important; /* Pts */
     font-weight: bold; 
-    font-size: 7px !important;
+    font-size: 9px !important; /* MÁS LEGIBLE */
   }
   .tabla-completa th:nth-child(3), 
   .tabla-completa td:nth-child(3),
   table.tabla-completa th:nth-child(3), 
   table.tabla-completa td:nth-child(3) { 
     width: 8% !important; /* PJ */
-    font-size: 6px !important;
+    font-size: 8px !important;
   }
   .tabla-completa th:nth-child(4), 
   .tabla-completa td:nth-child(4),
   table.tabla-completa th:nth-child(4), 
   table.tabla-completa td:nth-child(4) { 
     width: 8% !important; /* PG */
-    font-size: 6px !important;
+    font-size: 8px !important;
   }
   .tabla-completa th:nth-child(5), 
   .tabla-completa td:nth-child(5),
   table.tabla-completa th:nth-child(5), 
   table.tabla-completa td:nth-child(5) { 
-    width: 8% !important; /* PE */
-    font-size: 6px !important;
+    width: 7% !important; /* PE */
+    font-size: 8px !important;
     display: table-cell !important;
   }
   .tabla-completa th:nth-child(6), 
   .tabla-completa td:nth-child(6),
   table.tabla-completa th:nth-child(6), 
   table.tabla-completa td:nth-child(6) { 
-    width: 8% !important; /* PP */
-    font-size: 6px !important;
+    width: 7% !important; /* PP */
+    font-size: 8px !important;
     display: table-cell !important;
   }
   .tabla-completa th:nth-child(7), 
@@ -519,7 +520,7 @@ th:first-child, td:first-child {
   table.tabla-completa th:nth-child(7), 
   table.tabla-completa td:nth-child(7) { 
     width: 9% !important; /* GF */
-    font-size: 6px !important;
+    font-size: 8px !important;
     display: table-cell !important;
   }
   .tabla-completa th:nth-child(8), 
@@ -527,7 +528,7 @@ th:first-child, td:first-child {
   table.tabla-completa th:nth-child(8), 
   table.tabla-completa td:nth-child(8) { 
     width: 9% !important; /* GC */
-    font-size: 6px !important;
+    font-size: 8px !important;
     display: table-cell !important;
   }
   .tabla-completa th:nth-child(9), 
@@ -535,15 +536,36 @@ th:first-child, td:first-child {
   table.tabla-completa th:nth-child(9), 
   table.tabla-completa td:nth-child(9) { 
     width: 10% !important; /* Dif */
-    font-size: 6px !important;
+    font-size: 8px !important;
     display: table-cell !important;
   }
+  
   /* OCULTAR COLUMNA ÚLTIMOS 5 EN FOLD CERRADO */
   .tabla-completa th:nth-child(10), 
   .tabla-completa td:nth-child(10),
   table.tabla-completa th:nth-child(10), 
   table.tabla-completa td:nth-child(10) { 
     display: none !important;
+  }
+  
+  /* OPTIMIZAR ÚLTIMOS RESULTADOS - EN LÍNEA HORIZONTAL */
+  .ultimos-resultados-mobile {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 1px !important;
+    margin-top: 2px !important;
+    flex-wrap: nowrap !important;
+  }
+  
+  .ultimos-resultados-mobile span {
+    width: 8px !important;
+    height: 8px !important;
+    font-size: 6px !important;
+    line-height: 8px !important;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+    display: inline-block !important;
   }
   
   /* ÚLTIMOS RESULTADOS ULTRA PEQUEÑOS */
