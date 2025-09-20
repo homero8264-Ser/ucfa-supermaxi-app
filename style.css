@@ -1345,42 +1345,74 @@ table, .resultado-partido, .partido-proximo {
   
   /* Tabla ultra compacta para Samsung Fold */
   th, td {
-    padding: 6px 2px;
-    font-size: 11px;
+    padding: 3px 1px !important;
+    font-size: 9px !important;
   }
   
   th:nth-child(1), td:nth-child(1) { /* Equipo */
-    width: 50%;
+    width: 30% !important;
     padding-left: 6px;
   }
   
   th:nth-child(2), td:nth-child(2) { /* Pts */
-    width: 12%;
+    width: 10% !important;
     font-weight: bold;
   }
   
   th:nth-child(3), td:nth-child(3) { /* PJ */
-    width: 10%;
+    width: 8% !important;
   }
   
-  th:nth-child(4), td:nth-child(4) { /* Dif */
-    width: 12%;
+  th:nth-child(4), td:nth-child(4) { /* PG */
+    width: 6% !important;
   }
   
-  /* Solo mostrar columnas esenciales en Samsung Fold */
-  th:nth-child(5), td:nth-child(5),
-  th:nth-child(6), td:nth-child(6),
-  th:nth-child(7), td:nth-child(7),
-  th:nth-child(8), td:nth-child(8),
-  th:nth-child(9), td:nth-child(9),
-  th:nth-child(10), td:nth-child(10) {
-    display: none;
+  /* Todas las columnas visibles en Samsung Fold */
+  th:nth-child(5), td:nth-child(5) { /* PE */
+    width: 6% !important;
+  }
+  
+  th:nth-child(6), td:nth-child(6) { /* PP */
+    width: 6% !important;
+  }
+  
+  th:nth-child(7), td:nth-child(7) { /* GF */
+    width: 6% !important;
+  }
+  
+  th:nth-child(8), td:nth-child(8) { /* GC */
+    width: 6% !important;
+  }
+  
+  th:nth-child(9), td:nth-child(9) { /* Dif */
+    width: 6% !important;
+  }
+  
+  th:nth-child(10), td:nth-child(10) { /* Últimos 5 - más compacto */
+    width: 8% !important;
   }
   
   .escudo-equipo {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
+    width: 15px !important;
+    height: 15px !important;
+    margin-right: 3px !important;
+  }
+  
+  /* Hacer los últimos resultados ultra compactos */
+  .ultimos-resultados-mobile {
+    margin-top: 1px !important;
+    font-size: 6px !important;
+  }
+  
+  .ultimos-resultados-mobile span {
+    padding: 1px 1px !important;
+    margin: 0.5px !important;
+    border-radius: 1px !important;
+    font-size: 6px !important;
+    width: 8px !important;
+    height: 8px !important;
+    display: inline-block !important;
+    text-align: center !important;
   }
   
   /* Tabla de goleadores ultra compacta para Samsung Fold */
