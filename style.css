@@ -30,7 +30,7 @@ body {
 }
 */
 
-/* Header compacto con título y escudos pequeños - MAS COMPACTO */
+/* Header compacto con título y escudos pequeños - SUPER COMPACTO MÓVIL */
 .header-compacto {
   position: fixed;
   top: 0;
@@ -39,13 +39,13 @@ body {
   z-index: 1001;
   background: rgba(102, 126, 234, 0.95);
   backdrop-filter: blur(10px);
-  padding: 4px 10px;
+  padding: 2px 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.3);
-  height: 30px;
+  gap: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  height: 25px;
 }
 
 .escudo-pequeno {
@@ -63,24 +63,24 @@ body {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-/* Navegación fija ahora debajo del header compacto - MAS COMPACTA */
+/* Navegación fija ahora debajo del header compacto - SUPER COMPACTA MÓVIL */
 .navegacion-fija {
   position: fixed;
-  top: 34px; /* Más cerca del header reducido */
+  top: 27px; /* Más cerca del header súper reducido */
   left: 0;
   right: 0;
   z-index: 999;
   background: rgba(102, 126, 234, 0.6);
   backdrop-filter: blur(3px);
-  padding: 3px 8px; /* Padding más pequeño */
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  padding: 2px 5px; /* Padding mínimo */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   height: auto;
 }
 
-/* Contenido scrolleable - MENOS MARGEN */
+/* Contenido scrolleable - MÍNIMO MARGEN */
 .contenido-scrolleable {
-  margin-top: 70px; /* Menos espacio arriba */
-  padding: 10px; /* Menos padding */
+  margin-top: 55px; /* Espacio mínimo */
+  padding: 5px; /* Padding mínimo */
   flex: 1;
   overflow-y: auto;
 }
@@ -208,26 +208,26 @@ h2 {
   text-align: left !important;
 }
 
-/* Tablas con alineamiento mejorado - MAS COMPACTAS */
+/* Tablas con alineamiento mejorado - ULTRA COMPACTAS */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   background: white;
-  border-radius: 8px;
+  border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   border: none;
   table-layout: fixed;
 }
 
 th, td {
   border: none;
-  padding: 6px 4px;
+  padding: 4px 2px;
   text-align: center;
   border-bottom: 1px solid #e9ecef;
   vertical-align: middle;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 /* Alineamiento específico por columna */
@@ -335,11 +335,11 @@ tr:hover {
 }
 
 .escudo-equipo {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  margin-right: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  margin-right: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
   transition: all 0.2s ease;
   object-fit: contain;
   object-position: center;
