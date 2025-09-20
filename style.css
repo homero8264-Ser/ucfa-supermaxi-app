@@ -230,57 +230,80 @@ th, td {
   font-size: 11px;
 }
 
-/* Alineamiento específico por columna */
-th:nth-child(1), td:nth-child(1) { /* Equipo */
+/* Alineamiento específico por columna - TABLA COMPLETA (10 columnas) */
+.tabla-completa th:nth-child(1), .tabla-completa td:nth-child(1) { /* Equipo */
   text-align: left;
   width: 35%;
   padding-left: 12px;
 }
 
-th:nth-child(2), td:nth-child(2) { /* Pts */
+.tabla-completa th:nth-child(2), .tabla-completa td:nth-child(2) { /* Pts */
   text-align: center;
   width: 8%;
   font-weight: bold;
 }
 
-th:nth-child(3), td:nth-child(3) { /* PJ */
+.tabla-completa th:nth-child(3), .tabla-completa td:nth-child(3) { /* PJ */
   text-align: center;
   width: 7%;
 }
 
-th:nth-child(4), td:nth-child(4) { /* PG o Dif */
+.tabla-completa th:nth-child(4), .tabla-completa td:nth-child(4) { /* PG */
   text-align: center;
   width: 7%;
 }
 
-th:nth-child(5), td:nth-child(5) { /* PE */
+.tabla-completa th:nth-child(5), .tabla-completa td:nth-child(5) { /* PE */
   text-align: center;
   width: 7%;
 }
 
-th:nth-child(6), td:nth-child(6) { /* PP */
+.tabla-completa th:nth-child(6), .tabla-completa td:nth-child(6) { /* PP */
   text-align: center;
   width: 7%;
 }
 
-th:nth-child(7), td:nth-child(7) { /* GF */
+.tabla-completa th:nth-child(7), .tabla-completa td:nth-child(7) { /* GF */
   text-align: center;
   width: 7%;
 }
 
-th:nth-child(8), td:nth-child(8) { /* GC */
+.tabla-completa th:nth-child(8), .tabla-completa td:nth-child(8) { /* GC */
   text-align: center;
   width: 7%;
 }
 
-th:nth-child(9), td:nth-child(9) { /* Dif */
+.tabla-completa th:nth-child(9), .tabla-completa td:nth-child(9) { /* Dif */
   text-align: center;
   width: 7%;
 }
 
-th:nth-child(10), td:nth-child(10) { /* Últimos 5 */
+.tabla-completa th:nth-child(10), .tabla-completa td:nth-child(10) { /* Últimos 5 */
   text-align: center;
   width: 15%;
+}
+
+/* Alineamiento específico por columna - TABLA REDUCIDA (4 columnas) */
+.tabla-reducida th:nth-child(1), .tabla-reducida td:nth-child(1) { /* Equipo */
+  text-align: left;
+  width: 50%;
+  padding-left: 12px;
+}
+
+.tabla-reducida th:nth-child(2), .tabla-reducida td:nth-child(2) { /* Pts */
+  text-align: center;
+  width: 15%;
+  font-weight: bold;
+}
+
+.tabla-reducida th:nth-child(3), .tabla-reducida td:nth-child(3) { /* PJ */
+  text-align: center;
+  width: 15%;
+}
+
+.tabla-reducida th:nth-child(4), .tabla-reducida td:nth-child(4) { /* Dif */
+  text-align: center;
+  width: 20%;
 }
 
 thead {
@@ -1349,47 +1372,67 @@ table, .resultado-partido, .partido-proximo {
     font-size: 9px !important;
   }
   
-  th:nth-child(1), td:nth-child(1) { /* Equipo */
+  /* Tabla completa ultra compacta para Samsung Fold */
+  .tabla-completa th:nth-child(1), .tabla-completa td:nth-child(1) { /* Equipo */
     width: 30% !important;
     padding-left: 6px;
   }
   
-  th:nth-child(2), td:nth-child(2) { /* Pts */
+  .tabla-completa th:nth-child(2), .tabla-completa td:nth-child(2) { /* Pts */
     width: 10% !important;
     font-weight: bold;
   }
   
-  th:nth-child(3), td:nth-child(3) { /* PJ */
+  .tabla-completa th:nth-child(3), .tabla-completa td:nth-child(3) { /* PJ */
     width: 8% !important;
   }
   
-  th:nth-child(4), td:nth-child(4) { /* PG */
+  .tabla-completa th:nth-child(4), .tabla-completa td:nth-child(4) { /* PG */
     width: 6% !important;
   }
   
   /* Todas las columnas visibles en Samsung Fold */
-  th:nth-child(5), td:nth-child(5) { /* PE */
+  .tabla-completa th:nth-child(5), .tabla-completa td:nth-child(5) { /* PE */
     width: 6% !important;
   }
   
-  th:nth-child(6), td:nth-child(6) { /* PP */
+  .tabla-completa th:nth-child(6), .tabla-completa td:nth-child(6) { /* PP */
     width: 6% !important;
   }
   
-  th:nth-child(7), td:nth-child(7) { /* GF */
+  .tabla-completa th:nth-child(7), .tabla-completa td:nth-child(7) { /* GF */
     width: 6% !important;
   }
   
-  th:nth-child(8), td:nth-child(8) { /* GC */
+  .tabla-completa th:nth-child(8), .tabla-completa td:nth-child(8) { /* GC */
     width: 6% !important;
   }
   
-  th:nth-child(9), td:nth-child(9) { /* Dif */
+  .tabla-completa th:nth-child(9), .tabla-completa td:nth-child(9) { /* Dif */
     width: 6% !important;
   }
   
-  th:nth-child(10), td:nth-child(10) { /* Últimos 5 - más compacto */
+  .tabla-completa th:nth-child(10), .tabla-completa td:nth-child(10) { /* Últimos 5 - más compacto */
     width: 8% !important;
+  }
+  
+  /* Tabla reducida para Samsung Fold */
+  .tabla-reducida th:nth-child(1), .tabla-reducida td:nth-child(1) { /* Equipo */
+    width: 45% !important;
+    padding-left: 6px;
+  }
+  
+  .tabla-reducida th:nth-child(2), .tabla-reducida td:nth-child(2) { /* Pts */
+    width: 20% !important;
+    font-weight: bold;
+  }
+  
+  .tabla-reducida th:nth-child(3), .tabla-reducida td:nth-child(3) { /* PJ */
+    width: 15% !important;
+  }
+  
+  .tabla-reducida th:nth-child(4), .tabla-reducida td:nth-child(4) { /* Dif */
+    width: 20% !important;
   }
   
   .escudo-equipo {
