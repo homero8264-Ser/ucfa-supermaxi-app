@@ -13,6 +13,18 @@
   --border-radius: 8px;
 }
 
+/* === OCULTAR SECCIONES NO DESEADAS === */
+#contenedor-resultados,
+#resultados-ultima-fecha,
+#proxima-fecha-container,
+.resultados-ultima-fecha,
+.proxima-fecha,
+.resultado-partido,
+.partido-proximo,
+.partido-resultado {
+  display: none !important;
+}
+
 /* === ESTILOS GENERALES === */
 * {
   box-sizing: border-box;
@@ -455,42 +467,42 @@ th:first-child, td:first-child {
     margin-right: 1px !important;
   }
   
-  /* FOLD CERRADO - MÁXIMA COMPRESIÓN - TODAS LAS 10 COLUMNAS */
+  /* FOLD CERRADO - 9 COLUMNAS (SIN ÚLTIMOS 5) MEJOR DISTRIBUIDAS */
   .tabla-completa th:nth-child(1), 
   .tabla-completa td:nth-child(1),
   table.tabla-completa th:nth-child(1), 
   table.tabla-completa td:nth-child(1) { 
-    width: 20% !important; /* Equipo - MÍNIMO POSIBLE */
-    font-size: 5px !important;
-    padding: 1px !important;
+    width: 30% !important; /* Equipo - MÁS ESPACIO PARA NOMBRES */
+    font-size: 6px !important;
+    padding: 1px 2px !important;
   }
   .tabla-completa th:nth-child(2), 
   .tabla-completa td:nth-child(2),
   table.tabla-completa th:nth-child(2), 
   table.tabla-completa td:nth-child(2) { 
-    width: 8% !important; /* Pts */
+    width: 10% !important; /* Pts */
     font-weight: bold; 
-    font-size: 6px !important;
+    font-size: 7px !important;
   }
   .tabla-completa th:nth-child(3), 
   .tabla-completa td:nth-child(3),
   table.tabla-completa th:nth-child(3), 
   table.tabla-completa td:nth-child(3) { 
-    width: 7% !important; /* PJ */
+    width: 8% !important; /* PJ */
     font-size: 6px !important;
   }
   .tabla-completa th:nth-child(4), 
   .tabla-completa td:nth-child(4),
   table.tabla-completa th:nth-child(4), 
   table.tabla-completa td:nth-child(4) { 
-    width: 7% !important; /* PG */
+    width: 8% !important; /* PG */
     font-size: 6px !important;
   }
   .tabla-completa th:nth-child(5), 
   .tabla-completa td:nth-child(5),
   table.tabla-completa th:nth-child(5), 
   table.tabla-completa td:nth-child(5) { 
-    width: 7% !important; /* PE */
+    width: 8% !important; /* PE */
     font-size: 6px !important;
     display: table-cell !important;
   }
@@ -498,7 +510,7 @@ th:first-child, td:first-child {
   .tabla-completa td:nth-child(6),
   table.tabla-completa th:nth-child(6), 
   table.tabla-completa td:nth-child(6) { 
-    width: 7% !important; /* PP */
+    width: 8% !important; /* PP */
     font-size: 6px !important;
     display: table-cell !important;
   }
@@ -506,7 +518,7 @@ th:first-child, td:first-child {
   .tabla-completa td:nth-child(7),
   table.tabla-completa th:nth-child(7), 
   table.tabla-completa td:nth-child(7) { 
-    width: 7% !important; /* GF */
+    width: 9% !important; /* GF */
     font-size: 6px !important;
     display: table-cell !important;
   }
@@ -514,7 +526,7 @@ th:first-child, td:first-child {
   .tabla-completa td:nth-child(8),
   table.tabla-completa th:nth-child(8), 
   table.tabla-completa td:nth-child(8) { 
-    width: 7% !important; /* GC */
+    width: 9% !important; /* GC */
     font-size: 6px !important;
     display: table-cell !important;
   }
@@ -522,18 +534,16 @@ th:first-child, td:first-child {
   .tabla-completa td:nth-child(9),
   table.tabla-completa th:nth-child(9), 
   table.tabla-completa td:nth-child(9) { 
-    width: 8% !important; /* Dif */
+    width: 10% !important; /* Dif */
     font-size: 6px !important;
     display: table-cell !important;
   }
+  /* OCULTAR COLUMNA ÚLTIMOS 5 EN FOLD CERRADO */
   .tabla-completa th:nth-child(10), 
   .tabla-completa td:nth-child(10),
   table.tabla-completa th:nth-child(10), 
   table.tabla-completa td:nth-child(10) { 
-    width: 22% !important; /* Últimos 5 - APROVECHAR TODO EL ESPACIO */
-    font-size: 4px !important;
-    display: table-cell !important;
-    padding: 1px !important;
+    display: none !important;
   }
   
   /* ÚLTIMOS RESULTADOS ULTRA PEQUEÑOS */
