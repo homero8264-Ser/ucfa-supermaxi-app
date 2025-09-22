@@ -873,7 +873,7 @@ th, td {
 
 /* TÍTULOS DE COLUMNA MÁS PROMINENTES */
 th {
-  font-size: 17px !important;
+  font-size: 19px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
@@ -1449,14 +1449,14 @@ table.tabla-completa, table.tabla-reducida {
   top: 50%;
   transform: translateY(-50%);
   
-  /* Estilos visuales */
+  /* Estilos visuales - NÚMERO PEQUEÑO */
   font-weight: bold;
-  font-size: 16px;
+  font-size: 12px;
   color: #333;
   background: rgba(76, 175, 80, 0.1);
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1471,5 +1471,5 @@ table.tabla-completa, table.tabla-reducida {
 
 .tabla-completa tbody tr td:first-child,
 .tabla-reducida tbody tr td:first-child {
-  padding-left: 40px !important; /* Espacio para el número */
+  padding-left: 36px !important; /* Espacio para el número más pequeño */
 }
