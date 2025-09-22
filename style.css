@@ -1069,50 +1069,58 @@ tr:hover {
   /* APLICAR A CUALQUIER TABLA SIN IMPORTAR LA CLASE */
   table th:nth-child(1), table td:nth-child(1) { 
     width: 28% !important; 
-    font-size: 6px !important;
     padding-left: 2px !important;
   }
-  table th:nth-child(2), table td:nth-child(2) { 
+  
+  /* HEADERS MÁS PEQUEÑOS */
+  table th:nth-child(1) { font-size: 10px !important; }
+  table th:nth-child(2) { font-size: 11px !important; }
+  table th:nth-child(3), table th:nth-child(4), table th:nth-child(5), 
+  table th:nth-child(6), table th:nth-child(7), table th:nth-child(8), 
+  table th:nth-child(9) { font-size: 10px !important; }
+  
+  /* NÚMEROS DE DATOS GRANDES Y NOTABLES */
+  table td:nth-child(1) { font-size: 12px !important; } /* Equipos */
+  table td:nth-child(2) { 
     width: 8% !important; 
-    font-weight: bold; 
-    font-size: 7px !important;
+    font-weight: 900 !important; 
+    font-size: 18px !important; /* PUNTOS MUY GRANDES */
+  }
+  table td:nth-child(3), table td:nth-child(4), table td:nth-child(5), 
+  table td:nth-child(6), table td:nth-child(7), table td:nth-child(8), 
+  table td:nth-child(9) { 
+    font-size: 16px !important; /* DATOS MUCHO MÁS GRANDES */
+    font-weight: 700 !important;
   }
   table th:nth-child(3), table td:nth-child(3) { 
     width: 7% !important; 
-    font-size: 6px !important;
   }
   table th:nth-child(4), table td:nth-child(4) { 
     width: 7% !important; 
-    font-size: 6px !important;
   }
   table th:nth-child(5), table td:nth-child(5) { 
     width: 6% !important; 
-    font-size: 6px !important;
     display: table-cell !important; /* FORZAR MOSTRAR */
   }
   table th:nth-child(6), table td:nth-child(6) { 
-    width: 6% !important; 
-    font-size: 6px !important;
+    width: 6% !important;
     display: table-cell !important; /* FORZAR MOSTRAR */
   }
   table th:nth-child(7), table td:nth-child(7) { 
     width: 7% !important; 
-    font-size: 6px !important;
     display: table-cell !important; /* FORZAR MOSTRAR */
   }
   table th:nth-child(8), table td:nth-child(8) { 
     width: 7% !important; 
-    font-size: 6px !important;
     display: table-cell !important; /* FORZAR MOSTRAR */
   }
   table th:nth-child(9), table td:nth-child(9) { 
     width: 8% !important; 
-    font-size: 6px !important;
     display: table-cell !important; /* FORZAR MOSTRAR */
   }
   table th:nth-child(10), table td:nth-child(10) { 
     width: 16% !important; 
-    font-size: 5px !important;
+    font-size: 12px !important; /* Últimos 5 resultados */
     display: table-cell !important; /* FORZAR MOSTRAR */
     padding: 2px 1px !important;
   }
