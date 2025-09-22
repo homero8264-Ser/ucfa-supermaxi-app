@@ -413,68 +413,79 @@ th:first-child, td:first-child {
     margin: 0 !important;
   }
   
-  /* TABLAS AL 100% SIN MÁRGENES */
+  /* TABLAS AL 100% SIN MÁRGENES - COMPACTAS */
   .tabla-completa, 
   #contenedor-goleadores table {
     width: 100% !important;
     margin: 0 !important;
     border-collapse: collapse !important;
     font-size: 0.95em !important;
+    table-layout: fixed !important; /* FORZAR distribución fija */
   }
   
   /* HEADERS ULTRA COMPACTOS */
   #contenedor-goleadores th {
-    padding: 6px 0px !important; /* Padding vertical mínimo, lateral CERO */
+    padding: 6px 2px !important; /* Padding mínimo pero uniforme */
     font-size: 0.8em !important;
     text-align: center !important;
+    white-space: nowrap !important;
   }
   
   /* CELDAS ULTRA COMPACTAS */
   #contenedor-goleadores td {
-    padding: 8px 0px !important; /* Padding vertical mínimo, lateral CERO */
+    padding: 8px 2px !important; /* Padding mínimo pero uniforme */
     border: none !important;
+    vertical-align: middle !important;
   }
   
-  /* POSICIÓN: 10% */
+  /* POSICIÓN: 8% - MÁS COMPACTO */
   #contenedor-goleadores td:nth-child(1),
   #contenedor-goleadores th:nth-child(1) {
-    width: 10% !important;
+    width: 8% !important;
     text-align: center !important;
     font-size: 0.85em !important;
+    padding: 6px 1px !important;
   }
   
-  /* JUGADOR: 65% - MÁXIMO ESPACIO */
+  /* JUGADOR: 55% - REDUCIDO PARA EVITAR ESPACIOS VACÍOS */
   #contenedor-goleadores td:nth-child(2),
   #contenedor-goleadores th:nth-child(2) {
-    width: 65% !important;
+    width: 55% !important;
     text-align: left !important;
-    padding-left: 3px !important; /* Mínimo espacio del borde */
+    padding: 8px 4px !important; /* Padding balanceado */
     font-weight: 600 !important;
-    line-height: 1.0 !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
   
-  /* EQUIPO: 15% */
+  /* EQUIPO: 25% - AUMENTADO PARA MEJOR BALANCE */
   #contenedor-goleadores td:nth-child(3),
   #contenedor-goleadores th:nth-child(3) {
-    width: 15% !important;
+    width: 25% !important;
     text-align: center !important;
     font-size: 0.8em !important;
+    padding: 8px 2px !important;
   }
   
-  /* GOLES: 10% */
+  /* GOLES: 12% - LIGERAMENTE AUMENTADO */
   #contenedor-goleadores td:nth-child(4),
   #contenedor-goleadores th:nth-child(4) {
-    width: 10% !important;
+    width: 12% !important;
     text-align: center !important;
     font-size: 1.0em !important;
     font-weight: bold !important;
+    padding: 8px 1px !important;
   }
   
-  /* ESCUDOS MÍNIMOS */
+  /* ESCUDOS OPTIMIZADOS PARA NUEVA DISTRIBUCIÓN */
   .escudo-goleador {
-    width: 16px !important;
-    height: 16px !important;
-    margin: 0 !important;
+    width: 18px !important;
+    height: 18px !important;
+    margin: 0 2px 0 0 !important; /* Pequeño margen derecho */
+    vertical-align: middle !important;
+    border-radius: 2px !important;
   }
   
   /* ELIMINAR ESPACIOS DE NAVEGACIÓN Y PESTAÑAS */
