@@ -1028,3 +1028,223 @@ tr:hover {
   outline: 2px solid var(--color-primario);
   outline-offset: 2px;
 }
+
+/* =============================================
+   ESTILOS PARA FECHA 20 - RESULTADOS ESPECIALES
+   ============================================= */
+
+/* Header de resultados con botones toggle */
+.resultados-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.resultados-header h2 {
+  margin: 0;
+  color: #D2691E;
+  font-size: 1.5em;
+}
+
+.resultados-toggle {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-resultado-toggle {
+  padding: 8px 15px;
+  border: 2px solid #D2691E;
+  background: transparent;
+  color: #D2691E;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-resultado-toggle:hover {
+  background: #D2691E;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.btn-resultado-toggle.active {
+  background: #D2691E;
+  color: white;
+  box-shadow: 0 2px 8px rgba(210, 105, 30, 0.3);
+}
+
+/* Contenedor de partidos fecha 20 */
+.partidos-fecha20 {
+  display: grid;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Cada partido individual */
+.partido-fecha20 {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border-left: 4px solid #D2691E;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.partido-fecha20:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* Header del partido con equipos y resultado */
+.partido-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.equipo-resultado {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.equipo-nombre {
+  font-weight: bold;
+  color: #333;
+  font-size: 1em;
+}
+
+.goles {
+  background: #D2691E;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.1em;
+  min-width: 35px;
+  text-align: center;
+}
+
+.vs {
+  font-weight: bold;
+  color: #666;
+  font-size: 0.9em;
+  opacity: 0.7;
+}
+
+/* Información del partido */
+.partido-info {
+  text-align: center;
+  margin: 10px 0;
+  padding: 5px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.fecha-hora {
+  color: #666;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+/* Sección de goleadores */
+.goleadores {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.goleadores-equipo {
+  margin: 8px 0;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.goleadores-equipo strong {
+  color: #D2691E;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.goleador {
+  display: inline-block;
+  background: #e9ecef;
+  padding: 3px 8px;
+  border-radius: 15px;
+  margin: 2px;
+  font-size: 0.85em;
+  color: #495057;
+  font-weight: 500;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .resultados-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .resultados-toggle {
+    justify-content: center;
+  }
+  
+  .btn-resultado-toggle {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .partido-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .equipo-resultado {
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 15px;
+  }
+  
+  .equipo-nombre {
+    font-size: 0.9em;
+  }
+  
+  .goles {
+    font-size: 1.3em;
+    padding: 8px 12px;
+  }
+  
+  .vs {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.partido-fecha20 {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+.partido-fecha20:nth-child(2) { animation-delay: 0.1s; }
+.partido-fecha20:nth-child(3) { animation-delay: 0.2s; }
+.partido-fecha20:nth-child(4) { animation-delay: 0.3s; }
+.partido-fecha20:nth-child(5) { animation-delay: 0.4s; }
