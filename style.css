@@ -1228,6 +1228,85 @@ tr:hover {
   }
 }
 
+/* === OPTIMIZACIÓN PARA PANTALLAS ANCHAS (FOLD 5 DESPLEGADO) === */
+@media (min-width: 900px) {
+  /* Contenedor principal más ancho */
+  .contenido-scrolleable {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 20px 30px;
+  }
+  
+  /* Tabla de goleadores optimizada para pantallas anchas */
+  #contenedor-goleadores table {
+    font-size: 1.1em !important;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  #contenedor-goleadores th {
+    padding: 15px 20px !important;
+    font-size: 1.2em !important;
+  }
+  
+  #contenedor-goleadores td {
+    padding: 18px 20px !important;
+  }
+  
+  /* Nombres de jugadores más grandes y mejor espaciados */
+  #contenedor-goleadores td:nth-child(2) {
+    font-size: 1.2em !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    padding-left: 25px !important;
+  }
+  
+  /* Escudos más grandes */
+  .escudo-goleador {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  
+  /* Números de goles más prominentes */
+  #contenedor-goleadores td:nth-child(4) {
+    font-size: 1.4em !important;
+    font-weight: bold !important;
+  }
+  
+  /* Hover effects para pantallas grandes */
+  #contenedor-goleadores tbody tr:hover {
+    background-color: #f8f9fa !important;
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+  }
+}
+
+/* === EXTRA ANCHO (TABLETS LANDSCAPE / FOLD 5 MÁXIMO) === */
+@media (min-width: 1200px) {
+  .contenido-scrolleable {
+    max-width: 90%;
+    padding: 25px 40px;
+  }
+  
+  #contenedor-goleadores table {
+    font-size: 1.3em !important;
+  }
+  
+  #contenedor-goleadores td:nth-child(2) {
+    font-size: 1.4em !important;
+    padding-left: 30px !important;
+  }
+  
+  .escudo-goleador {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  #contenedor-goleadores td:nth-child(4) {
+    font-size: 1.6em !important;
+  }
+}
+
 /* Animaciones */
 @keyframes fadeInUp {
   from {
