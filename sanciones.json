@@ -1,69 +1,69 @@
 {
-  "fechaActualizacion": "2025-09-19",
+  "fechaActualizacion": "2025-09-21",
   "sanciones": [
     {
-      "fecha": "13/09/25",
+      "fecha": "21/09/25",
       "jugador": "ROSSI Adrian Alberto",
       "equipo": "BICHOS VERDES",
+      "tarjetas": 0,
+      "fechas": 1,
+      "motivo": "ART 62 C."
+    },
+    {
+      "fecha": "21/09/25",
+      "jugador": "ARCE Aldo Alberto",
+      "equipo": "CARASUCIAS",
+      "tarjetas": 0,
+      "fechas": 1,
+      "motivo": "ART 64."
+    },
+    {
+      "fecha": "21/09/25",
+      "jugador": "HERNANDEZ Julio Cesar",
+      "equipo": "CERVECEROS",
+      "tarjetas": 0,
+      "fechas": 1,
+      "motivo": "ART 64."
+    },
+    {
+      "fecha": "21/09/25",
+      "jugador": "PALACIO Marcelo Raul",
+      "equipo": "HALCONES",
+      "tarjetas": 0,
+      "fechas": 7,
+      "motivo": "ART 63 B."
+    },
+    {
+      "fecha": "21/09/25",
+      "jugador": "VILLARROEL Javier Gustavo",
+      "equipo": "LA CORUNA",
       "tarjetas": 0,
       "fechas": 2,
       "motivo": "ART 62 C."
     },
     {
-      "fecha": "13/09/25",
-      "jugador": "GOMEZ Daniel Alberto",
-      "equipo": "CRUZ AZUL",
-      "tarjetas": 0,
-      "fechas": 1,
-      "motivo": "ART 62."
-    },
-    {
-      "fecha": "13/09/25",
-      "jugador": "PALACIO Marcelo Raul",
-      "equipo": "HALCONES",
-      "tarjetas": 0,
-      "fechas": 8,
-      "motivo": "ART 63 B."
-    },
-    {
-      "fecha": "13/09/25",
-      "jugador": "MOLINA Sergio Alejandro",
-      "equipo": "LA CORUNA",
-      "tarjetas": 0,
-      "fechas": 1,
-      "motivo": "ART 62."
-    },
-    {
-      "fecha": "13/09/25",
-      "jugador": "VILLARROEL Javier Gustavo",
-      "equipo": "LA CORUNA",
-      "tarjetas": 0,
-      "fechas": 3,
-      "motivo": "ART 62 C."
-    },
-    {
-      "fecha": "13/09/25",
+      "fecha": "21/09/25",
       "jugador": "REYES Ruben Gustavo",
       "equipo": "LA LOMITA",
       "tarjetas": 0,
-      "fechas": 3,
+      "fechas": 2,
       "motivo": "ART 63 B."
     },
     {
-      "fecha": "13/09/25",
-      "jugador": "SUELDO Victor Alejandro",
-      "equipo": "NECAXA",
-      "tarjetas": 0,
-      "fechas": 1,
-      "motivo": "ART 62 + 62 A."
-    },
-    {
-      "fecha": "13/09/25",
+      "fecha": "21/09/25",
       "jugador": "FREYTAS Javier Eduardo",
       "equipo": "PENAROL",
       "tarjetas": 0,
-      "fechas": 4,
+      "fechas": 3,
       "motivo": "ART 59 C."
+    },
+    {
+      "fecha": "21/09/25",
+      "jugador": "JIMENEZ Juan Marcos",
+      "equipo": "SANTOS",
+      "tarjetas": 0,
+      "fechas": 1,
+      "motivo": "ART 64."
     }
   ]
 }

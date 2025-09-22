@@ -1,6 +1,105 @@
 {
-  "fechaActualizacion": "2025-09-19",
+  "fechaActualizacion": "2025-09-21",
   "resultados": [
+    {
+      "etapa": "ETAPA 24",
+      "fecha": "19/09/25",
+      "dia": "Jueves",
+      "hora": "20:00",
+      "cancha": "17",
+      "local": "LA LOMITA",
+      "golesLocal": 3,
+      "visitante": "WARCALDE",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": "ETAPA 24",
+      "fecha": "19/09/25",
+      "dia": "Jueves",
+      "hora": "21:30",
+      "cancha": "19",
+      "local": "HALCONES",
+      "golesLocal": 1,
+      "visitante": "SAN MARTIN",
+      "golesVisitante": 2
+    },
+    {
+      "etapa": "ETAPA 24",
+      "fecha": "19/09/25",
+      "dia": "Jueves",
+      "hora": "21:30",
+      "cancha": "17",
+      "local": "DINAMO",
+      "golesLocal": 4,
+      "visitante": "LOS MATADORES",
+      "golesVisitante": 4
+    },
+    {
+      "etapa": "ETAPA 24",
+      "fecha": "19/09/25",
+      "dia": "Jueves",
+      "hora": "20:00",
+      "cancha": "16",
+      "local": "PENAROL",
+      "golesLocal": 5,
+      "visitante": "CHAZON",
+      "golesVisitante": 2
+    },
+    {
+      "etapa": "ETAPA 24",
+      "fecha": "19/09/25",
+      "dia": "Jueves",
+      "hora": "20:00",
+      "cancha": "19",
+      "local": "CRUZ AZUL",
+      "golesLocal": 0,
+      "visitante": "NECAXA",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": "ETAPA 24",
+      "fecha": "19/09/25",
+      "dia": "Jueves",
+      "hora": "21:30",
+      "cancha": "16",
+      "local": "LA CORUNA",
+      "golesLocal": 0,
+      "visitante": "CERVECEROS",
+      "golesVisitante": 2
+    },
+    {
+      "etapa": "ETAPA 24",
+      "fecha": "19/09/25",
+      "dia": "Jueves",
+      "hora": "20:00",
+      "cancha": "18",
+      "local": "SANTOS",
+      "golesLocal": 1,
+      "visitante": "CLINICAS",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": "ETAPA 24",
+      "fecha": "19/09/25",
+      "dia": "Jueves",
+      "hora": "20:00",
+      "cancha": "20",
+      "local": "LA SALLE",
+      "golesLocal": 0,
+      "visitante": "CARASUCIAS",
+      "golesVisitante": 2
+    },
+    {
+      "etapa": "ETAPA 24",
+      "fecha": "19/09/25",
+      "dia": "Jueves",
+      "hora": "21:30",
+      "cancha": "18",
+      "local": "UNION Y AMISTAD",
+      "golesLocal": 0,
+      "visitante": "LA CANCHITA",
+      "golesVisitante": 4
+    },
     {
       "etapa": "ETAPA 23",
       "fecha": "13/09/25",
