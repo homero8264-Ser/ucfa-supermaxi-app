@@ -1499,3 +1499,36 @@ table.tabla-completa, table.tabla-reducida {
 .tabla-reducida tbody tr td:first-child {
   padding-left: 36px !important; /* Espacio para el número más pequeño */
 }
+
+/* =============================================
+   FUERZA BRUTA - NÚMEROS GRANDES EN MÓVIL FOLD 5
+   ============================================= */
+@media screen and (max-width: 360px) {
+  /* MÁXIMA ESPECIFICIDAD - NO PUEDE SER SOBRESCRITO */
+  body .contenido-scrolleable table.tabla-completa tbody tr td,
+  body .contenido-scrolleable table.tabla-reducida tbody tr td,
+  body table.tabla-completa tbody tr td,
+  body table.tabla-reducida tbody tr td,
+  body table tbody tr td {
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    color: #000 !important;
+  }
+  
+  /* HEADERS MÁS PEQUEÑOS PARA CONTRASTE */
+  body .contenido-scrolleable table.tabla-completa thead tr th,
+  body .contenido-scrolleable table.tabla-reducida thead tr th,
+  body table.tabla-completa thead tr th,
+  body table.tabla-reducida thead tr th,
+  body table thead tr th {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+  }
+  
+  /* PUNTOS SÚPER DESTACADOS */
+  body table tbody tr td:nth-child(2) {
+    font-size: 22px !important;
+    font-weight: 900 !important;
+    color: #ff6600 !important;
+  }
+}
