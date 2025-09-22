@@ -1501,34 +1501,41 @@ table.tabla-completa, table.tabla-reducida {
 }
 
 /* =============================================
-   FUERZA BRUTA - NÚMEROS GRANDES EN MÓVIL FOLD 5
+   AJUSTE FINO - NÚMEROS PERFECTOS PARA MÓVIL FOLD 5
    ============================================= */
 @media screen and (max-width: 360px) {
-  /* MÁXIMA ESPECIFICIDAD - NO PUEDE SER SOBRESCRITO */
+  /* NÚMEROS DE DATOS - TAMAÑO PERFECTO Y ARMÓNICO */
   body .contenido-scrolleable table.tabla-completa tbody tr td,
   body .contenido-scrolleable table.tabla-reducida tbody tr td,
   body table.tabla-completa tbody tr td,
   body table.tabla-reducida tbody tr td,
   body table tbody tr td {
-    font-size: 20px !important;
-    font-weight: 800 !important;
-    color: #000 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important; /* Normal, no bold */
+    color: #333 !important;
   }
   
-  /* HEADERS MÁS PEQUEÑOS PARA CONTRASTE */
+  /* HEADERS EQUILIBRADOS */
   body .contenido-scrolleable table.tabla-completa thead tr th,
   body .contenido-scrolleable table.tabla-reducida thead tr th,
   body table.tabla-completa thead tr th,
   body table.tabla-reducida thead tr th,
   body table thead tr th {
-    font-size: 11px !important;
-    font-weight: 600 !important;
+    font-size: 12px !important;
+    font-weight: 700 !important; /* Bold para headers */
   }
   
-  /* PUNTOS SÚPER DESTACADOS */
+  /* SOLO PTS EN NEGRITA Y MÁS GRANDE */
   body table tbody tr td:nth-child(2) {
-    font-size: 22px !important;
-    font-weight: 900 !important;
-    color: #ff6600 !important;
+    font-size: 18px !important;
+    font-weight: 900 !important; /* Solo PTS en negrita */
+    color: #2E8B57 !important; /* Verde elegante */
+  }
+  
+  /* NOMBRES DE EQUIPOS EN NEGRITA */
+  body table tbody tr td:first-child,
+  body .equipo-con-escudo {
+    font-weight: 700 !important; /* Solo nombres en negrita */
+    font-size: 15px !important; /* Tamaño perfecto para equipos */
   }
 }
