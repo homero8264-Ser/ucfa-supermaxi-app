@@ -871,6 +871,12 @@ th, td {
   font-weight: 500 !important;
 }
 
+/* NÚMEROS DE DATOS MÁS GRANDES (sin afectar alineación) */
+td {
+  font-size: 18px !important; /* Solo números de datos más grandes */
+  font-weight: 600 !important; /* Un poco más bold para mejor legibilidad */
+}
+
 /* TÍTULOS DE COLUMNA MÁS PROMINENTES */
 th {
   font-size: 19px !important;
