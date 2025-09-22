@@ -1427,3 +1427,49 @@ tr:hover {
 .partido-ultima-fecha:nth-child(3) { animation-delay: 0.2s; }
 .partido-ultima-fecha:nth-child(4) { animation-delay: 0.3s; }
 .partido-ultima-fecha:nth-child(5) { animation-delay: 0.4s; }
+
+/* =============================================
+   NUMERACIÓN AUTOMÁTICA CON CSS - SIN TOCAR HTML
+   ============================================= */
+
+/* Contador para cada tabla */
+table.tabla-completa, table.tabla-reducida {
+  counter-reset: posicion;
+}
+
+/* Generar números automáticamente en la primera columna */
+.tabla-completa tbody tr::before,
+.tabla-reducida tbody tr::before {
+  counter-increment: posicion;
+  content: counter(posicion);
+  
+  /* Posicionamiento absoluto para colocarlo al inicio */
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  /* Estilos visuales */
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Hacer espacio para la numeración en la primera celda */
+.tabla-completa tbody tr,
+.tabla-reducida tbody tr {
+  position: relative;
+}
+
+.tabla-completa tbody tr td:first-child,
+.tabla-reducida tbody tr td:first-child {
+  padding-left: 40px !important; /* Espacio para el número */
+}
