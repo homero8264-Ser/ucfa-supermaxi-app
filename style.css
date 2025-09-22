@@ -1030,7 +1030,7 @@ tr:hover {
 }
 
 /* =============================================
-   ESTILOS PARA FECHA 20 - RESULTADOS ESPECIALES
+   ESTILOS PARA ULTIMA FECHA - RESULTADOS ESPECIALES
    ============================================= */
 
 /* Header de resultados con botones toggle */
@@ -1078,7 +1078,7 @@ tr:hover {
   box-shadow: 0 2px 8px rgba(210, 105, 30, 0.3);
 }
 
-/* Contenedor de partidos fecha 20 */
+/* Contenedor de partidos última fecha */
 .partidos-ultima-fecha {
   display: grid;
   gap: 15px;
