@@ -978,8 +978,14 @@ th {
     margin-top: 85px !important;
   }
   
-  th, td {
+  /* NÚMEROS MÁS NOTABLES EN MÓVIL MEDIANO */
+  th {
     font-size: 13px !important;
+  }
+  
+  td {
+    font-size: 16px !important; /* Números más grandes que headers */
+    font-weight: 650 !important; /* Más bold */
     padding: 8px 5px !important;
   }
 }
@@ -1008,14 +1014,19 @@ th {
     margin-top: 75px !important;
   }
   
-  /* MANTENER LETRAS RELATIVAMENTE GRANDES INCLUSO EN FOLD */
-  th, td {
-    font-size: 12px !important; /* Más grande que antes */
-    padding: 6px 3px !important;
+  /* LETRAS MÁS GRANDES PARA MÓVIL PEQUEÑO - NÚMEROS MÁS NOTABLES */
+  th {
+    font-size: 11px !important; /* Headers un poco más pequeños */
+  }
+  
+  td {
+    font-size: 15px !important; /* NÚMEROS DE DATOS MÁS GRANDES Y NOTABLES */
+    font-weight: 700 !important; /* Más bold para mayor contraste */
   }
   
   .tabla-completa th:nth-child(2), .tabla-completa td:nth-child(2) { 
-    font-size: 14px !important; /* Puntos destacados */
+    font-size: 16px !important; /* Puntos AÚN MÁS destacados */
+    font-weight: 900 !important;
   }
 }
 
