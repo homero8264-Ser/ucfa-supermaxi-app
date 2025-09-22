@@ -1,0 +1,56 @@
+[
+  {
+    "local": "PENAROL",
+    "visitante": "CHAZON",
+    "horario": "20:00",
+    "cancha": "S3"
+  },
+  {
+    "local": "LA LOMITA",
+    "visitante": "WARCALDE",
+    "horario": "20:00",
+    "cancha": "S4"
+  },
+  {
+    "local": "SANTOS",
+    "visitante": "CLINICAS",
+    "horario": "20:00",
+    "cancha": "S5"
+  },
+  {
+    "local": "CRUZ AZUL",
+    "visitante": "NECAXA",
+    "horario": "20:00",
+    "cancha": "S6"
+  },
+  {
+    "local": "LA SALLE",
+    "visitante": "CARASUCIAS",
+    "horario": "20:00",
+    "cancha": "S7"
+  },
+  {
+    "local": "LA CORUNA",
+    "visitante": "CERVECEROS",
+    "horario": "21:30",
+    "cancha": "S3"
+  },
+  {
+    "local": "DINAMO",
+    "visitante": "LOS MATADORES",
+    "horario": "21:30",
+    "cancha": "S4"
+  },
+  {
+    "local": "UNION Y AMISTAD",
+    "visitante": "LA CANCHITA",
+    "horario": "21:30",
+    "cancha": "S5"
+  },
+  {
+    "local": "HALCONES",
+    "visitante": "SAN MARTIN",
+    "horario": "21:30",
+    "cancha": "S6"
+  }
+]
