@@ -1079,14 +1079,14 @@ tr:hover {
 }
 
 /* Contenedor de partidos fecha 20 */
-.partidos-fecha20 {
+.partidos-ultima-fecha {
   display: grid;
   gap: 15px;
   margin-top: 20px;
 }
 
 /* Cada partido individual */
-.partido-fecha20 {
+.partido-ultima-fecha {
   background: white;
   border-radius: 12px;
   padding: 15px;
@@ -1095,7 +1095,7 @@ tr:hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.partido-fecha20:hover {
+.partido-ultima-fecha:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
@@ -1240,11 +1240,11 @@ tr:hover {
   }
 }
 
-.partido-fecha20 {
+.partido-ultima-fecha {
   animation: fadeInUp 0.4s ease forwards;
 }
 
-.partido-fecha20:nth-child(2) { animation-delay: 0.1s; }
-.partido-fecha20:nth-child(3) { animation-delay: 0.2s; }
-.partido-fecha20:nth-child(4) { animation-delay: 0.3s; }
-.partido-fecha20:nth-child(5) { animation-delay: 0.4s; }
+.partido-ultima-fecha:nth-child(2) { animation-delay: 0.1s; }
+.partido-ultima-fecha:nth-child(3) { animation-delay: 0.2s; }
+.partido-ultima-fecha:nth-child(4) { animation-delay: 0.3s; }
+.partido-ultima-fecha:nth-child(5) { animation-delay: 0.4s; }
