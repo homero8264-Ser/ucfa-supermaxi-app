@@ -1541,9 +1541,9 @@ table.tabla-completa, table.tabla-reducida {
 }
 
 /* =============================================
-   OPTIMIZACIÓN MÓVIL FOLD 5 - RESULTADOS COMPACTOS
+   OPTIMIZACIÓN MÓVIL - RESULTADOS COMPACTOS
    ============================================= */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   /* PARTIDOS MÁS COMPACTOS EN RESULTADOS */
   .partidos-ultima-fecha {
     gap: 8px !important;
