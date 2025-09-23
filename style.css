@@ -1544,10 +1544,7 @@ table.tabla-completa, table.tabla-reducida {
    OPTIMIZACIÓN MÓVIL - RESULTADOS COMPACTOS
    ============================================= */
 @media screen and (max-width: 1100px) {
-  /* INDICADOR VISUAL TEMPORAL - BORDE ROJO PARA VER SI SE APLICAN */
-  .partido-ultima-fecha {
-    border: 2px solid red !important;
-  }
+  /* PARTIDOS MÁS COMPACTOS EN RESULTADOS */
   /* PARTIDOS MÁS COMPACTOS EN RESULTADOS */
   .partidos-ultima-fecha {
     gap: 5px !important;
