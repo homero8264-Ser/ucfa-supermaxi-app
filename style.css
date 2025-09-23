@@ -1539,6 +1539,83 @@ table.tabla-completa, table.tabla-reducida {
     font-size: 15px !important; /* Tamaño perfecto para equipos */
   }
 }
+/* =============================================
+   SOLUCIÓN: BOTÓN .boton-vista MÁS PEQUEÑO SOLO EN MÓVIL
+   SIN AFECTAR LAYOUT DE TABLAS
+   ============================================= */
+
+/* Añadir al final del CSS existente */
+
+/* === MÓVIL PEQUEÑO - BOTÓN COMPACTO === */
+@media (max-width: 480px) {
+  .boton-vista {
+    /* Mantener todos los estilos existentes pero reducir solo el tamaño */
+    padding: 4px 8px !important; /* Reducido de 6px 12px */
+    font-size: 9px !important;   /* Reducido de 11px */
+    min-width: 45px !important;  /* Reducido de 60px */
+    
+    /* Mantener todos los demás estilos intactos */
+    background: rgba(255, 107, 107, 0.9) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 107, 107, 1) !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    white-space: nowrap !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    letter-spacing: 0.5px !important;
+    box-shadow: none !important;
+    
+    /* Asegurar que no afecte el layout */
+    display: block !important;
+    margin: 0 auto !important;
+    width: fit-content !important;
+  }
+  
+  .boton-vista:hover {
+    /* Mantener hover pero sin transformaciones que puedan afectar layout */
+    background: rgba(255, 107, 107, 1) !important;
+    transform: none !important; /* Eliminar cualquier transformación */
+    box-shadow: none !important;
+  }
+}
+
+/* === FOLD CERRADO - BOTÓN AÚN MÁS PEQUEÑO === */
+@media (max-width: 360px) {
+  .boton-vista {
+    padding: 3px 6px !important;   /* Aún más pequeño */
+    font-size: 8px !important;     /* Texto más pequeño */
+    min-width: 35px !important;    /* Ancho mínimo reducido */
+    letter-spacing: 0.2px !important; /* Menos espaciado */
+  }
+}
+
+/* === ALTERNATIVA: Si quieres mantener más legibilidad === */
+@media (max-width: 480px) {
+  .boton-vista-legible {
+    padding: 5px 10px !important;
+    font-size: 10px !important;
+    min-width: 50px !important;
+    
+    /* Mantener estilos visuales */
+    background: rgba(255, 107, 107, 0.9) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 107, 107, 1) !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    
+    /* Sin efectos que alteren layout */
+    transform: none !important;
+    box-shadow: none !important;
+    display: block !important;
+    margin: 0 auto !important;
+    width: fit-content !important;
+  }
+}
 /* BOTÓN MÓVIL PEQUEÑO - FORZAR CAMBIO */
 @media screen and (max-width: 480px) {
   body .contenido-scrolleable .titulo-con-boton .boton-vista,
