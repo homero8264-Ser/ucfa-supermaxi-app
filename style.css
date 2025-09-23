@@ -1539,3 +1539,66 @@ table.tabla-completa, table.tabla-reducida {
     font-size: 15px !important; /* Tamaño perfecto para equipos */
   }
 }
+
+/* =============================================
+   OPTIMIZACIÓN MÓVIL FOLD 5 - RESULTADOS COMPACTOS
+   ============================================= */
+@media screen and (max-width: 480px) {
+  /* PARTIDOS MÁS COMPACTOS EN RESULTADOS */
+  .partidos-ultima-fecha {
+    gap: 8px !important;
+  }
+  
+  .partido-ultima-fecha {
+    padding: 8px !important;
+    border-radius: 8px !important;
+  }
+  
+  /* OCULTAR FECHA EN RESULTADOS PARA ESPACIO */
+  .fecha-hora {
+    display: none !important;
+  }
+  
+  /* EQUIPOS MÁS COMPACTOS */
+  .equipo-nombre {
+    font-size: 0.85em !important;
+  }
+  
+  .goles {
+    font-size: 1em !important;
+    padding: 4px 8px !important;
+    min-width: 28px !important;
+  }
+  
+  /* TABLA TODO SIMPLIFICADA - OCULTAR COLUMNAS INNECESARIAS */
+  table thead th:nth-child(1), /* ETAPA */
+  table thead th:nth-child(3), /* DÍA */
+  table thead th:nth-child(4), /* HORA */
+  table thead th:nth-child(5), /* CANCHA */
+  table tbody td:nth-child(1), /* ETAPA */
+  table tbody td:nth-child(3), /* DÍA */
+  table tbody td:nth-child(4), /* HORA */
+  table tbody td:nth-child(5) { /* CANCHA */
+    display: none !important;
+  }
+  
+  /* AJUSTAR ANCHO DE COLUMNAS RESTANTES EN TODO */
+  table thead th:nth-child(2), /* FECHA */
+  table tbody td:nth-child(2) { /* FECHA */
+    width: 25% !important;
+  }
+  
+  table thead th:nth-child(6), /* EQUIPO LOCAL */
+  table thead th:nth-child(8), /* EQUIPO VISITANTE */
+  table tbody td:nth-child(6), /* EQUIPO LOCAL */
+  table tbody td:nth-child(8) { /* EQUIPO VISITANTE */
+    width: 20% !important;
+  }
+  
+  table thead th:nth-child(7), /* GOLES LOCAL */
+  table thead th:nth-child(9), /* GOLES VISITANTE */
+  table tbody td:nth-child(7), /* GOLES LOCAL */
+  table tbody td:nth-child(9) { /* GOLES VISITANTE */
+    width: 10% !important;
+  }
+}
