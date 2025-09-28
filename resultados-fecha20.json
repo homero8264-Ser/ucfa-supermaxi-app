@@ -1,133 +1,141 @@
 {
-  "fechaActualizacion": "2025-09-20T10:00:00",
-  "fecha": 20,
+  "fechaActualizacion": "2025-09-28T10:00:00",
+  "fecha": 25,
   "resultados": [
     {
       "local": "LA LOMITA",
-      "visitante": "WARCALDE",
+      "visitante": "DINAMO",
       "golesLocal": 3,
-      "golesVisitante": 0,
-      "fecha": "24/09/2025",
-      "hora": "20:00",
+      "golesVisitante": 1,
+      "fecha": "27/09/2025",
+      "hora": "13:30",
       "goleadoresLocal": [
-        {"nombre": "FABIAN MARCELO FARAH", "goles": 2},
-        {"nombre": "PABLO HUGO SOSA", "goles": 1}
+        {"nombre": "MARCOS ESTEBAN SEGOVIA", "goles": 1},
+        {"nombre": "GONZALO FERNANDO GARAY", "goles": 1},
+        {"nombre": "ESTEBAN FERREYRA", "goles": 1}
+      ],
+      "goleadoresVisitante": [
+        {"nombre": "LUIS ANDRES NOLLI", "goles": 1}
+      ]
+    },
+    {
+      "local": "SAN MARTIN",
+      "visitante": "WARCALDE",
+      "golesLocal": 7,
+      "golesVisitante": 0,
+      "fecha": "27/09/2025",
+      "hora": "13:30",
+      "goleadoresLocal": [
+        {"nombre": "RAUL HORACIO CAPITAINE", "goles": 1},
+        {"nombre": "DIEGO AROSSA", "goles": 1},
+        {"nombre": "LUIS MARTIN RIVADERO", "goles": 1},
+        {"nombre": "SERGIO DANIEL LOMBARDO", "goles": 2},
+        {"nombre": "JORGE NORBERTO CHAMORRO", "goles": 1},
+        {"nombre": "PABLO GABRIEL SCARPELLO", "goles": 1}
       ],
       "goleadoresVisitante": []
     },
     {
-      "local": "HALCONES",
-      "visitante": "SAN MARTIN",
+      "local": "LOS MATADORES",
+      "visitante": "HALCONES",
       "golesLocal": 1,
-      "golesVisitante": 2,
-      "fecha": "24/09/2025",
-      "hora": "21:30",
+      "golesVisitante": 0,
+      "fecha": "27/09/2025",
+      "hora": "13:30",
       "goleadoresLocal": [
-        {"nombre": "JOSE GERARDO LUNA", "goles": 1}
-      ],
-      "goleadoresVisitante": [
-        {"nombre": "CLAUDIO ALEJANDRO RIVADERO", "goles": 1},
-        {"nombre": "ANTONIO BRACAMONTE", "goles": 1}
-      ]
-    },
-    {
-      "local": "DINAMO",
-      "visitante": "LOS MATADORES",
-      "golesLocal": 4,
-      "golesVisitante": 4,
-      "fecha": "24/09/2025",
-      "hora": "21:30",
-      "goleadoresLocal": [
-        {"nombre": "HUGO GABRIEL MANSILLA", "goles": 2},
-        {"nombre": "CHRISTIAN ALEJANDRO UNCINI", "goles": 1},
-        {"nombre": "MARCELO MILLAN", "goles": 1}
-      ],
-      "goleadoresVisitante": [
-        {"nombre": "DARIO ERNESTO ROSALES", "goles": 1},
-        {"nombre": "JOSE ANTONIO GUTIERREZ", "goles": 1},
-        {"nombre": "HECTOR MAURICIO BEAULIEU", "goles": 1},
         {"nombre": "MARCELO OSCAR CAPDEVILLA", "goles": 1}
-      ]
+      ],
+      "goleadoresVisitante": []
     },
     {
       "local": "PENAROL",
-      "visitante": "CHAZON",
-      "golesLocal": 5,
-      "golesVisitante": 2,
-      "fecha": "24/09/2025",
-      "hora": "20:00",
+      "visitante": "LA CORUNA",
+      "golesLocal": 2,
+      "golesVisitante": 1,
+      "fecha": "27/09/2025",
+      "hora": "13:30",
       "goleadoresLocal": [
-        {"nombre": "HECTOR ALAMO", "goles": 2},
         {"nombre": "CRISTIAN DARIO MARTINEZ", "goles": 1},
-        {"nombre": "CARLOS ANTONIO APARICIO", "goles": 1},
-        {"nombre": "PABLO WUALBERTO CEBALLOS", "goles": 1}
+        {"nombre": "HECTOR ALAMO", "goles": 1}
       ],
       "goleadoresVisitante": [
-        {"nombre": "CRISTIAN MARCELO GUTIERREZ", "goles": 1},
-        {"nombre": "FERNANDO ARIEL LASCANO", "goles": 1}
+        {"nombre": "JAVIER OSVALDO ARANDA", "goles": 1}
       ]
     },
     {
-      "local": "CRUZAZUL",
-      "visitante": "NECAXA",
-      "golesLocal": 0,
+      "local": "NECAXA",
+      "visitante": "CHAZON",
+      "golesLocal": 1,
       "golesVisitante": 0,
-      "fecha": "24/09/2025",
-      "hora": "20:00",
-      "goleadoresLocal": [],
+      "fecha": "27/09/2025",
+      "hora": "13:30",
+      "goleadoresLocal": [
+        {"nombre": "MARCOS ALEJANDRO PAPINUTTI", "goles": 1}
+      ],
       "goleadoresVisitante": []
     },
     {
-      "local": "LA CORUÑA",
-      "visitante": "CERVECEROS",
-      "golesLocal": 0,
+      "local": "CERVECEROS",
+      "visitante": "CRUZ AZUL",
+      "golesLocal": 1,
       "golesVisitante": 2,
-      "fecha": "24/09/2025",
-      "hora": "21:30",
-      "goleadoresLocal": [],
-      "goleadoresVisitante": [
-        {"nombre": "HECTOR DARIO WEBER", "goles": 1},
+      "fecha": "27/09/2025",
+      "hora": "13:30",
+      "goleadoresLocal": [
         {"nombre": "VICTOR JUSTO TULA", "goles": 1}
+      ],
+      "goleadoresVisitante": [
+        {"nombre": "CESAR DANIEL SIMEONI", "goles": 1},
+        {"nombre": "ANDRES GUILLERMO PALACIO", "goles": 1}
       ]
     },
     {
       "local": "SANTOS",
-      "visitante": "CLINICAS",
-      "golesLocal": 1,
-      "golesVisitante": 1,
-      "fecha": "24/09/2025",
-      "hora": "20:00",
+      "visitante": "UNION Y AMISTAD",
+      "golesLocal": 6,
+      "golesVisitante": 0,
+      "fecha": "27/09/2025",
+      "hora": "13:30",
       "goleadoresLocal": [
-        {"nombre": "JOSE LUCIANO LOPEZ", "goles": 1}
+        {"nombre": "JUAN PABLO DEVALLIS", "goles": 1},
+        {"nombre": "JOSE LUCIANO LOPEZ", "goles": 2},
+        {"nombre": "FRANCISCO LUIS GOMEZ", "goles": 1},
+        {"nombre": "MARTIN RAUL BASCONI", "goles": 1},
+        {"nombre": "ORLANDO DANIEL FELICIA", "goles": 1}
+      ],
+      "goleadoresVisitante": []
+    },
+    {
+      "local": "CARASUCIAS",
+      "visitante": "CLINICAS",
+      "golesLocal": 4,
+      "golesVisitante": 1,
+      "fecha": "27/09/2025",
+      "hora": "13:30",
+      "goleadoresLocal": [
+        {"nombre": "HECTOR MARIO ANGULO", "goles": 1},
+        {"nombre": "GUSTAVO SALVADOR GONZALEZ ZAMAR", "goles": 1},
+        {"nombre": "LUIS RODOLFO FARIAS", "goles": 1},
+        {"nombre": "SEBASTIAN ANTONIO PEREZ", "goles": 1}
       ],
       "goleadoresVisitante": [
-        {"nombre": "GASTON RICARDO GARCIA", "goles": 1}
+        {"nombre": "AGUSTIN AVILA BUTELER", "goles": 1}
       ]
     },
     {
-      "local": "LASALLE",
-      "visitante": "CARASUCIAS",
-      "golesLocal": 0,
+      "local": "LA CANCHITA",
+      "visitante": "LA SALLE",
+      "golesLocal": 5,
       "golesVisitante": 2,
-      "fecha": "24/09/2025",
-      "hora": "20:00",
-      "goleadoresLocal": [],
+      "fecha": "27/09/2025",
+      "hora": "13:30",
+      "goleadoresLocal": [
+        {"nombre": "PABLO JOSE DI MASI", "goles": 1},
+        {"nombre": "WALTER DANIEL VALDEZ", "goles": 4}
+      ],
       "goleadoresVisitante": [
-        {"nombre": "JORGE AUGUSTO BARBARA", "goles": 1},
-        {"nombre": "LUIS RODOLFO FARIAS", "goles": 1}
-      ]
-    },
-    {
-      "local": "UNION Y AMISTAD",
-      "visitante": "LA CANCHITA",
-      "golesLocal": 0,
-      "golesVisitante": 4,
-      "fecha": "24/09/2025",
-      "hora": "21:30",
-      "goleadoresLocal": [],
-      "goleadoresVisitante": [
-        {"nombre": "CARLOS GUSTAVO BOSSIO", "goles": 2},
-        {"nombre": "WALTER DANIEL VALDEZ", "goles": 2}
+        {"nombre": "HUGO JAVIER OSTCHEGA", "goles": 1},
+        {"nombre": "DANIEL JOSE DEMARIA", "goles": 1}
       ]
     }
   ]
