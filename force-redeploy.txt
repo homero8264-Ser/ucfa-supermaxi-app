@@ -1,2 +1,3 @@
 # Archivo temporal para forzar redeploy de GitHub Pages
 # Puedes borrar este archivo después de que la web se actualice.
+# Última actualización: 28/09/2025 - 13:15
