@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧪 DEBUG FECHA 20</title>
+  <style>
+    .debug-container { padding: 20px; font-family: Arial, sans-serif; }
+    .debug-section { margin: 20px 0; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+    .debug-title { color: #D2691E; font-weight: bold; margin-bottom: 10px; }
+    .btn { padding: 8px 15px; margin: 5px; background: #D2691E; color: white; border: none; border-radius: 20px; cursor: pointer; }
+    .btn:hover { background: #B8860B; }
+    .btn.active { background: #8B4513; }
+  </style>
+</head>
+<body>
+  <div class="debug-container">
+    <h1>🧪 DEBUG - Verificar Estructura HTML</h1>
+    
+    <div class="debug-section">
+      <div class="debug-title">1. Test HTML Original de la App:</div>
+      <div id="contenido-resultados" class="contenido-pestana">
+        <div class="resultados-header">
+          <h2>Resultados Anteriores</h2>
+          <div class="resultados-toggle">
+            <button id="btn-todos-resultados" class="btn active" onclick="testButton('todos')">TODOS</button>
+            <button id="btn-fecha-20" class="btn" onclick="testButton('fecha20')">📅 FECHA 20</button>
+          </div>
+        </div>
+        <div id="contenedor-resultados-anteriores">
+          <p>Aquí aparecerían los resultados...</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="debug-section">
+      <div class="debug-title">2. Test de Funciones JavaScript:</div>
+      <button class="btn" onclick="testJSFunctions()">🔍 Verificar Funciones JS</button>
+      <div id="js-test-result"></div>
+    </div>
+    
+    <div class="debug-section">
+      <div class="debug-title">3. Test de Elementos DOM:</div>
+      <button class="btn" onclick="testDOMElements()">🔍 Verificar DOM</button>
+      <div id="dom-test-result"></div>
+    </div>
+    
+    <div class="debug-section">
+      <div class="debug-title">4. Resultado de clicks:</div>
+      <div id="click-result">Haz clic en los botones de arriba...</div>
+    </div>
+  </div>
+
+  <script>
+    function testButton(tipo) {
+      document.getElementById('click-result').innerHTML = `✅ Botón ${tipo} clickeado correctamente!`;
+      
+      // Cambiar estados activos
+      if (tipo === 'todos') {
+        document.getElementById('btn-todos-resultados').classList.add('active');
+        document.getElementById('btn-fecha-20').classList.remove('active');
+      } else {
+        document.getElementById('btn-todos-resultados').classList.remove('active');
+        document.getElementById('btn-fecha-20').classList.add('active');
+      }
+    }
+    
+    function testJSFunctions() {
+      const result = document.getElementById('js-test-result');
+      let html = '<h4>Verificando funciones...</h4>';
+      
+      // Test si las funciones existen (sin llamarlas)
+      const funciones = ['mostrarTodosResultados', 'mostrarFecha20', 'cargarResultadosFecha20', 'formatearNombreGoleador'];
+      
+      funciones.forEach(func => {
+        const existe = typeof window[func] === 'function';
+        html += `<p>${existe ? '✅' : '❌'} ${func}: ${existe ? 'EXISTE' : 'NO EXISTE'}</p>`;
+      });
+      
+      result.innerHTML = html;
+    }
+    
+    function testDOMElements() {
+      const result = document.getElementById('dom-test-result');
+      let html = '<h4>Verificando elementos DOM...</h4>';
+      
+      const elementos = [
+        'btn-todos-resultados',
+        'btn-fecha-20', 
+        'contenedor-resultados-anteriores',
+        'contenido-resultados'
+      ];
+      
+      elementos.forEach(id => {
+        const elemento = document.getElementById(id);
+        html += `<p>${elemento ? '✅' : '❌'} #${id}: ${elemento ? 'ENCONTRADO' : 'NO ENCONTRADO'}</p>`;
+      });
+      
+      result.innerHTML = html;
+    }
+    
+    // Auto-test al cargar
+    window.onload = function() {
+      testDOMElements();
+    }
+  </script>
+</body>
+</html>
