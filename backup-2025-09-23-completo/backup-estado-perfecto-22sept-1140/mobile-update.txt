@@ -1,5 +1,0 @@
-Forzar actualización móvil: 21/09/2025 23:59
-Cambios aplicados:
-- RESULTADOS como vista por defecto con goleadores
-- TODOS para ver resultados sin goleadores
-- Timestamps actualizados para caché móvil
