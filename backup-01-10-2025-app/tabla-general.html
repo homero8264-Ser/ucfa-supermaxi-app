@@ -1,1 +1,111 @@
-<!-- Copia de tabla-general.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla General UCFA Super Maxi 2025</title>
+  <link rel="stylesheet" href="style.css?v=20250920-final">
+</head>
+<body>
+  <div class="app-container">
+    <div class="header-compacto">
+      <img src="imagenes/equipos/los-matadores.png" alt="Los Matadores" class="escudo-pequeno">
+      <span class="titulo-compacto">UCFA Super Maxi 2025</span>
+      <img src="imagenes/equipos/liga/ucfa_2024.png" alt="UCFA" class="escudo-pequeno">
+    </div>
+    <div class="navegacion-fija">
+      <nav class="navegacion-pestanas">
+        <button class="pestana active">TABLA GRAL</button>
+      </nav>
+    </div>
+    <div class="contenido-scrolleable">
+      <div id="contenido-tabla-general" class="contenido-pestana active">
+        <h2 style="color:#42a5f5;">Tabla General Completa</h2>
+        <div id="contenedor-tabla-general"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    fetch('datos.json')
+      .then(res => res.json())
+      .then(datos => {
+        // Ordenar por puntos y diferencia de gol
+        const equiposOrdenados = [...datos].sort((a, b) => {
+          if (b.puntos !== a.puntos) return b.puntos - a.puntos;
+          return b.Dif - a.Dif;
+        });
+        const contenedor = document.getElementById('contenedor-tabla-general');
+        const tabla = document.createElement('table');
+        tabla.className = 'tabla-completa';
+        tabla.innerHTML = `
+          <thead>
+            <tr>
+              <th style='width:32px;min-width:32px;text-align:center;'>🏆</th>
+              <th>Equipo</th>
+              <th style='width:28px;min-width:28px;text-align:center;'>Pts</th>
+              <th style='width:28px;min-width:28px;text-align:center;'>PJ</th>
+              <th style='width:28px;min-width:28px;text-align:center;'>PG</th>
+              <th style='width:28px;min-width:28px;text-align:center;'>PE</th>
+              <th style='width:28px;min-width:28px;text-align:center;'>PP</th>
+              <th style='width:28px;min-width:28px;text-align:center;'>GF</th>
+              <th style='width:28px;min-width:28px;text-align:center;'>GC</th>
+              <th style='width:28px;min-width:28px;text-align:center;'>Dif</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${equiposOrdenados.map((e, index) => `
+              <tr>
+                <td class='posicion-equipo' style='width:32px;min-width:32px;text-align:center;'>
+                  <span class='posicion-num'>${index + 1}</span>
+                </td>
+                <td class='equipo-con-escudo'>
+                  <div class='equipo-info'>
+                    <div class='equipo-nombre'>
+                      <img src='${getEscudo(e.equipo)}' alt='${e.equipo}' class='escudo-equipo'>
+                      ${e.equipo}
+                    </div>
+                  </div>
+                </td>
+                <td style='width:28px;min-width:28px;text-align:center;'>${e.puntos}</td>
+                <td style='width:28px;min-width:28px;text-align:center;'>${e.PJ}</td>
+                <td style='width:28px;min-width:28px;text-align:center;'>${e.PG}</td>
+                <td style='width:28px;min-width:28px;text-align:center;'>${e.PE}</td>
+                <td style='width:28px;min-width:28px;text-align:center;'>${e.PP}</td>
+                <td style='width:28px;min-width:28px;text-align:center;'>${e.GF}</td>
+                <td style='width:28px;min-width:28px;text-align:center;'>${e.GC}</td>
+                <td style='width:28px;min-width:28px;text-align:center;'>${e.Dif}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        `;
+        contenedor.appendChild(tabla);
+      });
+    // Función para obtener escudo
+    function getEscudo(nombreEquipo) {
+      const casosEspeciales = {
+        'CLINICAS': 'imagenes/equipos/clinicas.jpg',
+        'LOS MATADORES': 'imagenes/equipos/los-matadores.png',
+        'UNIÃO Y AMISTAD': 'imagenes/equipos/union-y-amistad.png',
+        'UNION Y AMISTAD': 'imagenes/equipos/union-y-amistad.png',
+        'CRUZ AZUL': 'imagenes/equipos/cruzazul.png',
+        'LASALLE': 'imagenes/equipos/lasalle.png',
+        'LA SALLE': 'imagenes/equipos/lasalle.png',
+        'BICHOS VERDES': 'imagenes/equipos/carasucias.png',
+        'CARASUCIAS': 'imagenes/equipos/carasucias.png'
+      };
+      if (casosEspeciales[nombreEquipo.toUpperCase()]) {
+        return casosEspeciales[nombreEquipo.toUpperCase()];
+      }
+      const nombre = nombreEquipo.toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/ñ/g, 'n')
+        .replace(/[áäà]/g, 'a')
+        .replace(/[éëè]/g, 'e')
+        .replace(/[íïì]/g, 'i')
+        .replace(/[óöò]/g, 'o')
+        .replace(/[úüù]/g, 'u');
+      return `imagenes/equipos/${nombre}.png`;
+    }
+  </script>
+</body>
+</html>

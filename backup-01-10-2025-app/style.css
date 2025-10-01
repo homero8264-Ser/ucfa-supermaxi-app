@@ -280,22 +280,31 @@ th:nth-child(2), td:nth-child(2) {
 }
 
 /* === POSICIONES DESTACADAS === */
-.posicion-1 {
-  background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%) !important;
-  border-left: 4px solid var(--color-primario);
+.posicion-1,
+.posicion-2,
+.posicion-3,
+.posicion-4,
+.posicion-5,
+.posicion-6,
+.posicion-7,
+.posicion-8,
+.posicion-9,
+.posicion-10 {
+  background: #c8e6c9 !important;
+  border-left: 4px solid var(--color-primario) !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
 }
-
-.posicion-2 {
-  background: linear-gradient(135deg, #dcedc8 0%, #c5e1a5 100%) !important;
-  border-left: 4px solid #8BC34A;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-}
-
-.posicion-3 {
-  background: linear-gradient(135deg, #e8f5e8 0%, #d4e9d4 100%) !important;
-  border-left: 4px solid #66BB6A;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+.posicion-1 td.posicion-equipo,
+.posicion-2 td.posicion-equipo,
+.posicion-3 td.posicion-equipo,
+.posicion-4 td.posicion-equipo,
+.posicion-5 td.posicion-equipo,
+.posicion-6 td.posicion-equipo,
+.posicion-7 td.posicion-equipo,
+.posicion-8 td.posicion-equipo,
+.posicion-9 td.posicion-equipo,
+.posicion-10 td.posicion-equipo {
+  background: #c8e6c9 !important;
 }
 
 /* === ÚLTIMOS RESULTADOS DEBAJO DEL NOMBRE === */
@@ -413,34 +422,6 @@ table {
 
 /* === MÓVIL GRANDE === */
 @media (max-width: 767px) {
-  .contenido-scrolleable {
-    padding: 16px;
-  }
-  
-  th, td {
-    font-size: 14px;
-    padding: 9px 3px;
-  }
-  
-  .escudo-equipo {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .equipo-nombre {
-    font-size: 13px !important;
-  }
-  
-  .ultimos-resultados-debajo span {
-    width: 13px !important;
-    height: 13px !important;
-    line-height: 13px !important;
-    font-size: 7px !important;
-  }
-}
-
-/* === MÓVIL PEQUEÑO === */
-@media (max-width: 480px) {
   .header-compacto {
     height: 50px;
     padding: 8px 12px;
@@ -506,71 +487,6 @@ table {
 
 /* === MÓVIL PEQUEÑO === */
 @media (max-width: 480px) {
-  .header-compacto {
-    height: 50px;
-    padding: 8px 12px;
-  }
-  
-  .escudo-pequeno {
-    width: 38px;
-    height: 38px;
-  }
-  
-  .titulo-compacto {
-    font-size: 19px;
-  }
-  
-  .navegacion-fija {
-    top: 50px;
-  }
-  
-  .contenido-scrolleable {
-    margin-top: 95px;
-  }
-  
-  th {
-    font-size: 12px !important;
-    padding: 8px 2px !important;
-  }
-  
-  td {
-    font-size: 13px !important;
-    padding: 8px 2px !important;
-  }
-  
-  th:nth-child(3), td:nth-child(3),
-  th:nth-child(4), td:nth-child(4),
-  th:nth-child(5), td:nth-child(5),
-  th:nth-child(6), td:nth-child(6),
-  th:nth-child(7), td:nth-child(7),
-  th:nth-child(8), td:nth-child(8),
-  th:nth-child(9), td:nth-child(9),
-  th:nth-child(10), td:nth-child(10) {
-    width: 26px !important;
-    min-width: 26px !important;
-    max-width: 26px !important;
-    font-size: 12px !important;
-  }
-  
-  .escudo-equipo {
-    width: 18px;
-    height: 18px;
-  }
-  
-  .equipo-nombre {
-    font-size: 12px !important;
-  }
-  
-  .ultimos-resultados-debajo span {
-    width: 12px !important;
-    height: 12px !important;
-    line-height: 12px !important;
-    font-size: 7px !important;
-  }
-}
-
-/* === FOLD CERRADO === */
-@media (max-width: 360px) {
   .header-compacto {
     height: 45px;
     padding: 6px 10px;
@@ -591,7 +507,6 @@ table {
   
   .contenido-scrolleable {
     margin-top: 85px;
-    padding: 4px;
   }
   
   th {
@@ -625,13 +540,6 @@ table {
     font-size: 11px !important;
   }
   
-  .posicion-equipo {
-    width: 28px !important;
-    min-width: 28px !important;
-    max-width: 28px !important;
-    font-size: 10px !important;
-  }
-  
   .escudo-equipo {
     width: 16px;
     height: 16px;
@@ -639,13 +547,93 @@ table {
   
   .equipo-nombre {
     font-size: 11px !important;
-    gap: 4px;
   }
   
   .ultimos-resultados-debajo span {
     width: 11px !important;
     height: 11px !important;
     line-height: 11px !important;
+    font-size: 6px !important;
+  }
+}
+
+/* === FOLD CERRADO === */
+@media (max-width: 360px) {
+  .header-compacto {
+    height: 40px;
+    padding: 5px 8px;
+  }
+  
+  .escudo-pequeno {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .titulo-compacto {
+    font-size: 15px;
+  }
+  
+  .navegacion-fija {
+    top: 40px;
+  }
+  
+  .contenido-scrolleable {
+    margin-top: 75px;
+    padding: 4px;
+  }
+  
+  th {
+    font-size: 10px !important;
+    padding: 6px 1px !important;
+  }
+  
+  td {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    padding: 6px 1px !important;
+  }
+  
+  th:nth-child(1), td:nth-child(1) {
+    width: 24px !important;
+    min-width: 24px !important;
+    max-width: 24px !important;
+  }
+  
+  th:nth-child(3), td:nth-child(3),
+  th:nth-child(4), td:nth-child(4),
+  th:nth-child(5), td:nth-child(5),
+  th:nth-child(6), td:nth-child(6),
+  th:nth-child(7), td:nth-child(7),
+  th:nth-child(8), td:nth-child(8),
+  th:nth-child(9), td:nth-child(9),
+  th:nth-child(10), td:nth-child(10) {
+    width: 22px !important;
+    min-width: 22px !important;
+    max-width: 22px !important;
+    font-size: 10px !important;
+  }
+  
+  .posicion-equipo {
+    width: 24px !important;
+    min-width: 24px !important;
+    max-width: 24px !important;
+    font-size: 10px !important;
+  }
+  
+  .escudo-equipo {
+    width: 14px !important;
+    height: 14px !important;
+  }
+  
+  .equipo-nombre {
+    font-size: 10px !important;
+    gap: 4px;
+  }
+  
+  .ultimos-resultados-debajo span {
+    width: 10px !important;
+    height: 10px !important;
+    line-height: 10px !important;
     font-size: 6px !important;
   }
 }

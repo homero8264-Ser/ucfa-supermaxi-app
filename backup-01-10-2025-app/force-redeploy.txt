@@ -1,1 +1,4 @@
-// Copia de force-redeploy.txt
+# Archivo temporal para forzar redeploy de GitHub Pages
+# Puedes borrar este archivo después de que la web se actualice.
+# Última actualización: 28/09/2025 - 13:15
+# Commit de prueba para forzar redeploy: 28/09/2025 - 13:25

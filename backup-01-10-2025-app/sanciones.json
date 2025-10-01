@@ -1,1 +1,45 @@
-// Copia de sanciones.json
+{
+  "fechaActualizacion": "2025-09-28",
+  "sanciones": [
+    {
+      "fecha": "27/09/2025",
+      "jugador": "CORTEZ Walter Hugo",
+      "equipo": "CHAZON",
+      "tarjetas": 0,
+      "fechas": 0,
+      "motivo": "PROVISORIO (06/10/2025)"
+    },
+    {
+      "fecha": "27/09/2025",
+      "jugador": "PALACIO Marcelo Raul",
+      "equipo": "HALCONES",
+      "tarjetas": 0,
+      "fechas": 6,
+      "motivo": "ART 63 B."
+    },
+    {
+      "fecha": "27/09/2025",
+      "jugador": "VILLARROEL Javier Gustavo",
+      "equipo": "LA CORUNA",
+      "tarjetas": 0,
+      "fechas": 1,
+      "motivo": "ART 62 C."
+    },
+    {
+      "fecha": "27/09/2025",
+      "jugador": "REYES Ruben Gustavo",
+      "equipo": "LA LOMITA",
+      "tarjetas": 0,
+      "fechas": 1,
+      "motivo": "ART 63 B."
+    },
+    {
+      "fecha": "27/09/2025",
+      "jugador": "FREYTAS Javier Eduardo",
+      "equipo": "PENAROL",
+      "tarjetas": 0,
+      "fechas": 2,
+      "motivo": "ART 59 C."
+    }
+  ]
+}

@@ -1,1 +1,110 @@
-// Copia de resultados.json
+[
+  {
+    "fecha": "25°",
+    "dia": "27/09",
+    "hora": "13:30",
+    "cancha": 9,
+    "local": "LA LOMITA",
+    "goles_local": 3,
+    "visitante": "DINAMO",
+    "goles_visitante": 1,
+    "goleadores_local": ["MARCOS ESTEBAN SEGOVIA", "GONZALO FERNANDO GARAY", "ESTEBAN FERREYRA"],
+    "goleadores_visitante": ["LUIS ANDRES NOLLI"]
+  },
+  {
+    "fecha": "25°",
+    "dia": "27/09",
+    "hora": "13:30",
+    "cancha": 8,
+    "local": "SAN MARTIN",
+    "goles_local": 7,
+    "visitante": "WARCALDE",
+    "goles_visitante": 0,
+    "goleadores_local": ["RAUL HORACIO CAPITAINE", "DIEGO AROSSA", "LUIS MARTIN RIVADERO", "SERGIO DANIEL LOMBARDO", "SERGIO DANIEL LOMBARDO", "JORGE NORBERTO CHAMORRO", "PABLO GABRIEL SCARPELLO"],
+    "goleadores_visitante": []
+  },
+  {
+    "fecha": "25°",
+    "dia": "27/09",
+    "hora": "13:30",
+    "cancha": 7,
+    "local": "LOS MATADORES",
+    "goles_local": 1,
+    "visitante": "HALCONES",
+    "goles_visitante": 0,
+    "goleadores_local": ["MARCELO OSCAR CAPDEVILLA"],
+    "goleadores_visitante": []
+  },
+  {
+    "fecha": "25°",
+    "dia": "27/09",
+    "hora": "13:30",
+    "cancha": 4,
+    "local": "PENAROL",
+    "goles_local": 2,
+    "visitante": "LA CORUNA",
+    "goles_visitante": 1,
+    "goleadores_local": ["CRISTIAN DARIO MARTINEZ", "HECTOR ALAMO"],
+    "goleadores_visitante": ["JAVIER OSVALDO ARANDA"]
+  },
+  {
+    "fecha": "25°",
+    "dia": "27/09",
+    "hora": "13:30",
+    "cancha": 5,
+    "local": "NECAXA",
+    "goles_local": 1,
+    "visitante": "CHAZON",
+    "goles_visitante": 0,
+    "goleadores_local": ["MARCOS ALEJANDRO PAPINUTTI"],
+    "goleadores_visitante": []
+  },
+  {
+    "fecha": "25°",
+    "dia": "27/09",
+    "hora": "13:30",
+    "cancha": 6,
+    "local": "CERVECEROS",
+    "goles_local": 1,
+    "visitante": "CRUZ AZUL",
+    "goles_visitante": 2,
+    "goleadores_local": ["VICTOR JUSTO TULA"],
+    "goleadores_visitante": ["CESAR DANIEL SIMEONI", "ANDRES GUILLERMO PALACIO"]
+  },
+  {
+    "fecha": "25°",
+    "dia": "27/09",
+    "hora": "13:30",
+    "cancha": 1,
+    "local": "SANTOS",
+    "goles_local": 6,
+    "visitante": "UNION Y AMISTAD",
+    "goles_visitante": 0,
+    "goleadores_local": ["JUAN PABLO DEVALLIS", "JOSE LUCIANO LOPEZ", "JOSE LUCIANO LOPEZ", "FRANCISCO LUIS GOMEZ", "MARTIN RAUL BASCONI", "ORLANDO DANIEL FELICIA"],
+    "goleadores_visitante": []
+  },
+  {
+    "fecha": "25°",
+    "dia": "27/09",
+    "hora": "13:30",
+    "cancha": 2,
+    "local": "CARASUCIAS",
+    "goles_local": 4,
+    "visitante": "CLINICAS",
+    "goles_visitante": 1,
+    "goleadores_local": ["HECTOR MARIO ANGULO", "GUSTAVO SALVADOR GONZALEZ ZAMAR", "LUIS RODOLFO FARIAS", "SEBASTIAN ANTONIO PEREZ"],
+    "goleadores_visitante": ["AGUSTIN AVILA BUTELER"]
+  },
+  {
+    "fecha": "25°",
+    "dia": "27/09",
+    "hora": "13:30",
+    "cancha": 3,
+    "local": "LA CANCHITA",
+    "goles_local": 5,
+    "visitante": "LA SALLE",
+    "goles_visitante": 2,
+    "goleadores_local": ["PABLO JOSE DI MASI", "WALTER DANIEL VALDEZ", "WALTER DANIEL VALDEZ", "WALTER DANIEL VALDEZ", "WALTER DANIEL VALDEZ"],
+    "goleadores_visitante": ["HUGO JAVIER OSTCHEGA", "DANIEL JOSE DEMARIA"]
+  }
+]
