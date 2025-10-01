@@ -280,22 +280,31 @@ th:nth-child(2), td:nth-child(2) {
 }
 
 /* === POSICIONES DESTACADAS === */
-.posicion-1 {
-  background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%) !important;
-  border-left: 4px solid var(--color-primario);
+.posicion-1,
+.posicion-2,
+.posicion-3,
+.posicion-4,
+.posicion-5,
+.posicion-6,
+.posicion-7,
+.posicion-8,
+.posicion-9,
+.posicion-10 {
+  background: #c8e6c9 !important;
+  border-left: 4px solid var(--color-primario) !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
 }
-
-.posicion-2 {
-  background: linear-gradient(135deg, #dcedc8 0%, #c5e1a5 100%) !important;
-  border-left: 4px solid #8BC34A;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-}
-
-.posicion-3 {
-  background: linear-gradient(135deg, #e8f5e8 0%, #d4e9d4 100%) !important;
-  border-left: 4px solid #66BB6A;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+.posicion-1 td.posicion-equipo,
+.posicion-2 td.posicion-equipo,
+.posicion-3 td.posicion-equipo,
+.posicion-4 td.posicion-equipo,
+.posicion-5 td.posicion-equipo,
+.posicion-6 td.posicion-equipo,
+.posicion-7 td.posicion-equipo,
+.posicion-8 td.posicion-equipo,
+.posicion-9 td.posicion-equipo,
+.posicion-10 td.posicion-equipo {
+  background: #c8e6c9 !important;
 }
 
 /* === ÚLTIMOS RESULTADOS DEBAJO DEL NOMBRE === */

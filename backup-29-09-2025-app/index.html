@@ -27,12 +27,11 @@
 
     <div class="contenido-scrolleable">
       <div id="contenido-clasificacion" class="contenido-pestana active">
-        <h2>Tabla de Posiciones</h2>
-        <div id="contenedor-tablas"></div>
-        <h2>Resultados Última Fecha</h2>
-        <div id="contenedor-resultados"></div>
-        <h2>Próxima Fecha</h2>
-        <div id="proxima-fecha-container"></div>
+  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+    <button id="boton-ver-mas" class="boton-vista" onclick="alternarVistaTabla()">VER MENOS</button>
+    <button id="boton-tabla-gral" class="boton-vista" style="background: #42a5f5; color: #fff; border-radius: 8px; font-weight: bold; font-size: 13px; padding: 6px 16px; border: none; box-shadow: 0 2px 8px rgba(66,165,245,0.15); cursor: pointer;" onclick="alternarTablaGeneral()">TABLA GRAL</button>
+  </div>
+  <div id="contenedor-tablas"></div>
       </div>
 
       <div id="contenido-goleadores" class="contenido-pestana">

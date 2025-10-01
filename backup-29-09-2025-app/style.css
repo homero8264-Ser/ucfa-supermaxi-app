@@ -2,42 +2,32 @@
    CSS OPTIMIZADO - TABLA DE FÚTBOL RESPONSIVE
    ============================================= */
 /* ÚLTIMA ACTUALIZACIÓN: 22-SEPT-2025 01:40 - NÚMEROS MÓVILES GRANDES */
-
-/* === VARIABLES CSS === */
-:root {
-  --color-primario: #4CAF50;
-  --color-secundario: #2E8B57;
-  --color-fondo: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --color-blanco: #ffffff;
-  --color-texto: #333;
-  --sombra-principal: 0 4px 15px rgba(0,0,0,0.1);
-  --border-radius: 8px;
+.posicion-1,
+.posicion-2,
+.posicion-3,
+.posicion-4,
+.posicion-5,
+.posicion-6,
+.posicion-7,
+.posicion-8,
+.posicion-9,
+.posicion-10 {
+  background: #c8e6c9 !important;
+  border-left: 4px solid var(--color-primario) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
 }
-
-/* === OCULTAR SECCIONES NO DESEADAS === */
-#contenedor-resultados,
-#resultados-ultima-fecha,
-#proxima-fecha-container,
-.resultados-ultima-fecha,
-.proxima-fecha,
-.resultado-partido,
-.partido-proximo,
-.partido-resultado {
-  display: none !important;
+.posicion-1 td.posicion-equipo,
+.posicion-2 td.posicion-equipo,
+.posicion-3 td.posicion-equipo,
+.posicion-4 td.posicion-equipo,
+.posicion-5 td.posicion-equipo,
+.posicion-6 td.posicion-equipo,
+.posicion-7 td.posicion-equipo,
+.posicion-8 td.posicion-equipo,
+.posicion-9 td.posicion-equipo,
+.posicion-10 td.posicion-equipo {
+  background: #c8e6c9 !important;
 }
-
-/* === ESTILOS GENERALES === */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: var(--color-fondo);
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  color: var(--color-texto);
 }
 
 /* === CONTENEDOR PRINCIPAL === */

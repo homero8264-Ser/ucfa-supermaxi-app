@@ -48,9 +48,24 @@ function generarUltimos5Resultados(equipoNombre) {
     return generarResultadosVacios();
   }
 
-  // Filtrar partidos del equipo
+  // Equivalencias de nombres para equipos
+  const equivalencias = {
+    'CRUZAZUL': ['CRUZ AZUL', 'CRUZAZUL'],
+    'LA CORUNA': ['LA CORUNA', 'LA CORUÑA'],
+    'LA CORUÑA': ['LA CORUNA', 'LA CORUÑA'],
+    'LASALLE': ['LA SALLE', 'LASALLE'],
+    // Puedes agregar más equivalencias si es necesario
+  };
+
+  // Normalizar el nombre para buscar equivalencias
+  let nombresBusqueda = [equipoNombre];
+  if (equivalencias[equipoNombre.toUpperCase()]) {
+    nombresBusqueda = equivalencias[equipoNombre.toUpperCase()];
+  }
+
+  // Filtrar partidos del equipo considerando equivalencias
   const partidosEquipo = resultadosActuales.filter(r => 
-    r.local === equipoNombre || r.visitante === equipoNombre
+    nombresBusqueda.includes(r.local) || nombresBusqueda.includes(r.visitante)
   );
   
   console.log(`📋 Partidos encontrados para ${equipoNombre}:`, partidosEquipo.length);
@@ -219,19 +234,7 @@ function cargarTablaPosiciones() {
       const contenedor = document.getElementById("contenedor-tablas");
       contenedor.innerHTML = '';
       
-      let botonContainer = document.getElementById("boton-ver-mas-container");
-      if (!botonContainer) {
-        botonContainer = document.createElement("div");
-        botonContainer.id = "boton-ver-mas-container";
-        contenedor.parentNode.insertBefore(botonContainer, contenedor);
-      }
-      
-      botonContainer.innerHTML = '';
-      const boton = document.createElement("button");
-      boton.textContent = vistaCompleta ? "Ver menos" : "Ver más";
-      boton.className = "boton-vista";
-      boton.onclick = alternarVistaTabla;
-      botonContainer.appendChild(boton);
+      // Eliminar el botón VER MENOS de abajo, solo queda el de arriba
       
       // Agrupar equipos por grupo
       const datos_por_grupo = {};
