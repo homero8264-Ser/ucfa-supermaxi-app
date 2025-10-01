@@ -1,0 +1,236 @@
+{
+  "fechaActualizacion": "2025-09-28",
+  "resultados": [
+    {
+      "etapa": 25,
+      "fecha": "27/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 9,
+      "local": "LA LOMITA",
+      "golesLocal": 3,
+      "visitante": "DINAMO",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 25,
+      "fecha": "27/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 8,
+      "local": "SAN MARTIN",
+      "golesLocal": 7,
+      "visitante": "WARCALDE",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 25,
+      "fecha": "27/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 7,
+      "local": "LOS MATADORES",
+      "golesLocal": 1,
+      "visitante": "HALCONES",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 25,
+      "fecha": "27/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 4,
+      "local": "PENAROL",
+      "golesLocal": 2,
+      "visitante": "LA CORUNA",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 25,
+      "fecha": "27/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 5,
+      "local": "NECAXA",
+      "golesLocal": 1,
+      "visitante": "CHAZON",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 24,
+      "fecha": "20/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 1,
+      "local": "DINAMO",
+      "golesLocal": 2,
+      "visitante": "PENAROL",
+      "golesVisitante": 2
+    },
+    {
+      "etapa": 24,
+      "fecha": "20/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 2,
+      "local": "HALCONES",
+      "golesLocal": 1,
+      "visitante": "LA CORUNA",
+      "golesVisitante": 3
+    },
+    {
+      "etapa": 24,
+      "fecha": "20/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 3,
+      "local": "WARCALDE",
+      "golesLocal": 0,
+      "visitante": "LOS MATADORES",
+      "golesVisitante": 4
+    },
+    {
+      "etapa": 24,
+      "fecha": "20/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 4,
+      "local": "LA LOMITA",
+      "golesLocal": 2,
+      "visitante": "SAN MARTIN",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 23,
+      "fecha": "13/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 1,
+      "local": "PENAROL",
+      "golesLocal": 3,
+      "visitante": "HALCONES",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 23,
+      "fecha": "13/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 2,
+      "local": "LA CORUNA",
+      "golesLocal": 1,
+      "visitante": "DINAMO",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 23,
+      "fecha": "13/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 3,
+      "local": "LOS MATADORES",
+      "golesLocal": 2,
+      "visitante": "LA LOMITA",
+      "golesVisitante": 2
+    },
+    {
+      "etapa": 23,
+      "fecha": "13/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 4,
+      "local": "SAN MARTIN",
+      "golesLocal": 3,
+      "visitante": "HALCONES",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 22,
+      "fecha": "06/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 1,
+      "local": "HALCONES",
+      "golesLocal": 2,
+      "visitante": "LA LOMITA",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 22,
+      "fecha": "06/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 2,
+      "local": "DINAMO",
+      "golesLocal": 0,
+      "visitante": "LOS MATADORES",
+      "golesVisitante": 3
+    },
+    {
+      "etapa": 22,
+      "fecha": "06/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 3,
+      "local": "PENAROL",
+      "golesLocal": 1,
+      "visitante": "SAN MARTIN",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 22,
+      "fecha": "06/09",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 4,
+      "local": "LA CORUNA",
+      "golesLocal": 2,
+      "visitante": "WARCALDE",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 21,
+      "fecha": "30/08",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 1,
+      "local": "LA LOMITA",
+      "golesLocal": 4,
+      "visitante": "PENAROL",
+      "golesVisitante": 2
+    },
+    {
+      "etapa": 21,
+      "fecha": "30/08",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 2,
+      "local": "LOS MATADORES",
+      "golesLocal": 3,
+      "visitante": "LA CORUNA",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 21,
+      "fecha": "30/08",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 3,
+      "local": "SAN MARTIN",
+      "golesLocal": 2,
+      "visitante": "DINAMO",
+      "golesVisitante": 2
+    },
+    {
+      "etapa": 21,
+      "fecha": "30/08",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 4,
+      "local": "HALCONES",
+      "golesLocal": 1,
+      "visitante": "WARCALDE",
+      "golesVisitante": 0
+    }
+  ]
+}
