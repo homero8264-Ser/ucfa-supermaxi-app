@@ -2,6 +2,105 @@
   "fechaActualizacion": "2025-10-01",
   "resultados": [
     {
+      "etapa": 26,
+      "fecha": "04/10",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 1,
+      "local": "LA LOMITA",
+      "golesLocal": 2,
+      "visitante": "HALCONES",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 26,
+      "fecha": "04/10",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 2,
+      "local": "LOS MATADORES",
+      "golesLocal": 1,
+      "visitante": "SAN MARTIN",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 26,
+      "fecha": "04/10",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 3,
+      "local": "DINAMO",
+      "golesLocal": 4,
+      "visitante": "WARCALDE",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 26,
+      "fecha": "04/10",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 4,
+      "local": "PENAROL",
+      "golesLocal": 2,
+      "visitante": "CRUZ AZUL",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 26,
+      "fecha": "04/10",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 5,
+      "local": "CERVECEROS",
+      "golesLocal": 0,
+      "visitante": "NECAXA",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 26,
+      "fecha": "04/10",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 6,
+      "local": "SANTOS",
+      "golesLocal": 2,
+      "visitante": "LA SALLE",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 26,
+      "fecha": "04/10",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 7,
+      "local": "LA CORUNA",
+      "golesLocal": 2,
+      "visitante": "CHAZON",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 26,
+      "fecha": "04/10",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 8,
+      "local": "LA CANCHITA",
+      "golesLocal": 4,
+      "visitante": "CARASUCIAS",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 26,
+      "fecha": "04/10",
+      "dia": "Sábado",
+      "hora": "13:30",
+      "cancha": 9,
+      "local": "UNION Y AMISTAD",
+      "golesLocal": 0,
+      "visitante": "CLINICAS",
+      "golesVisitante": 2
+    },
+    {
       "etapa": 25,
       "fecha": "27/09",
       "dia": "Sábado",

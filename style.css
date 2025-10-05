@@ -647,3 +647,223 @@ table {
   outline: 3px solid var(--color-primario) !important;
   outline-offset: 2px !important;
 }
+/* =============================================
+   CSS ADICIONAL PARA TABLA DE SANCIONES
+   AGREGAR AL FINAL DE TU style.css
+   ============================================= */
+
+/* === ESTILOS BASE PARA SANCIONES === */
+#contenedor-sanciones table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+#contenedor-sanciones thead th {
+  padding: 12px 4px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+#contenedor-sanciones tbody td {
+  padding: 10px 4px;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Columnas específicas */
+#contenedor-sanciones th:nth-child(1),
+#contenedor-sanciones td:nth-child(1) {
+  width: 60px;
+  text-align: center;
+}
+
+#contenedor-sanciones th:nth-child(2),
+#contenedor-sanciones td:nth-child(2) {
+  width: 35%;
+  text-align: left;
+  padding-left: 8px;
+}
+
+#contenedor-sanciones th:nth-child(3),
+#contenedor-sanciones td:nth-child(3) {
+  width: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#contenedor-sanciones th:nth-child(4),
+#contenedor-sanciones td:nth-child(4) {
+  width: auto;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* =============================================
+   RESPONSIVE PARA SANCIONES
+   ============================================= */
+
+/* === TABLET === */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #contenedor-sanciones thead th {
+    font-size: 12px;
+    padding: 10px 3px;
+  }
+  
+  #contenedor-sanciones tbody td {
+    font-size: 13px;
+    padding: 9px 3px;
+  }
+  
+  #contenedor-sanciones th:nth-child(1),
+  #contenedor-sanciones td:nth-child(1) {
+    width: 55px;
+  }
+  
+  #contenedor-sanciones th:nth-child(3),
+  #contenedor-sanciones td:nth-child(3) {
+    width: 65px;
+  }
+}
+
+/* === MÓVIL GRANDE === */
+@media (max-width: 767px) {
+  #contenedor-sanciones thead th {
+    font-size: 11px;
+    padding: 8px 2px;
+  }
+  
+  #contenedor-sanciones tbody td {
+    font-size: 12px;
+    padding: 8px 2px;
+  }
+  
+  #contenedor-sanciones th:nth-child(1),
+  #contenedor-sanciones td:nth-child(1) {
+    width: 50px;
+  }
+  
+  #contenedor-sanciones th:nth-child(2),
+  #contenedor-sanciones td:nth-child(2) {
+    width: 40%;
+  }
+  
+  #contenedor-sanciones th:nth-child(3),
+  #contenedor-sanciones td:nth-child(3) {
+    width: 60px;
+  }
+  
+  /* Escudos más pequeños en móvil */
+  #contenedor-sanciones img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}
+
+/* === MÓVIL PEQUEÑO === */
+@media (max-width: 480px) {
+  #contenedor-sanciones thead th {
+    font-size: 10px;
+    padding: 7px 1px;
+    letter-spacing: 0;
+  }
+  
+  #contenedor-sanciones tbody td {
+    font-size: 11px;
+    padding: 7px 1px;
+  }
+  
+  #contenedor-sanciones th:nth-child(1),
+  #contenedor-sanciones td:nth-child(1) {
+    width: 45px;
+  }
+  
+  #contenedor-sanciones th:nth-child(2),
+  #contenedor-sanciones td:nth-child(2) {
+    width: 38%;
+    font-size: 10px;
+  }
+  
+  #contenedor-sanciones th:nth-child(3),
+  #contenedor-sanciones td:nth-child(3) {
+    width: 55px;
+    font-size: 12px;
+  }
+  
+  #contenedor-sanciones th:nth-child(4),
+  #contenedor-sanciones td:nth-child(4) {
+    font-size: 10px;
+  }
+  
+  /* Escudos aún más pequeños */
+  #contenedor-sanciones img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+/* === FOLD CERRADO / MÓVIL MUY PEQUEÑO === */
+@media (max-width: 360px) {
+  #contenedor-sanciones thead th {
+    font-size: 9px;
+    padding: 6px 1px;
+  }
+  
+  #contenedor-sanciones tbody td {
+    font-size: 10px;
+    padding: 6px 1px;
+  }
+  
+  #contenedor-sanciones th:nth-child(1),
+  #contenedor-sanciones td:nth-child(1) {
+    width: 40px;
+  }
+  
+  #contenedor-sanciones th:nth-child(2),
+  #contenedor-sanciones td:nth-child(2) {
+    width: 35%;
+    font-size: 9px;
+  }
+  
+  #contenedor-sanciones th:nth-child(3),
+  #contenedor-sanciones td:nth-child(3) {
+    width: 50px;
+    font-size: 11px;
+  }
+  
+  #contenedor-sanciones th:nth-child(4),
+  #contenedor-sanciones td:nth-child(4) {
+    font-size: 9px;
+    padding: 6px 2px;
+  }
+  
+  /* Escudos más pequeños en Fold cerrado */
+  #contenedor-sanciones img {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+
+/* === ASEGURAR VISIBILIDAD DEL TEXTO === */
+#contenedor-sanciones td {
+  overflow: visible !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+/* === MEJORAS DE LEGIBILIDAD === */
+#contenedor-sanciones tbody tr:hover {
+  background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%) !important;
+  transform: scale(1.01);
+  transition: all 0.2s ease;
+}
+
+#contenedor-sanciones tbody tr {
+  transition: all 0.2s ease;
+}

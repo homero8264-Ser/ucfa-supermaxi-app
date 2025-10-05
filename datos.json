@@ -1,23 +1,22 @@
 [
-  
-  {"grupo": "A", "equipo": "LA LOMITA", "puntos": 49, "PJ": 21, "PG": 14, "PE": 7, "PP": 0, "GF": 48, "GC": 14, "Dif": 34, "Des": 0, "Am": 3, "ultimos5": ["V", "-", "-", "-", "-"]},
-  {"grupo": "A", "equipo": "LOS MATADORES", "puntos": 33, "PJ": 21, "PG": 9, "PE": 6, "PP": 6, "GF": 50, "GC": 39, "Dif": 11, "Des": 0, "Am": 0, "ultimos5": ["E", "-", "-", "-", "-"]},
-  {"grupo": "A", "equipo": "SAN MARTIN", "puntos": 33, "PJ": 21, "PG": 10, "PE": 3, "PP": 8, "GF": 36, "GC": 31, "Dif": 5, "Des": 0, "Am": 2, "ultimos5": ["V", "-", "-", "-", "-"]},
-  {"grupo": "A", "equipo": "DINAMO", "puntos": 25, "PJ": 21, "PG": 6, "PE": 7, "PP": 8, "GF": 33, "GC": 43, "Dif": -10, "Des": 0, "Am": 1, "ultimos5": ["E", "-", "-", "-", "-"]},
-  {"grupo": "A", "equipo": "HALCONES", "puntos": 24, "PJ": 21, "PG": 7, "PE": 3, "PP": 11, "GF": 30, "GC": 32, "Dif": -2, "Des": 0, "Am": 3, "ultimos5": ["D", "-", "-", "-", "-"]},
-  {"grupo": "A", "equipo": "WARCALDE", "puntos": 8, "PJ": 21, "PG": 2, "PE": 2, "PP": 17, "GF": 14, "GC": 62, "Dif": -48, "Des": 0, "Am": 1, "ultimos5": ["D", "-", "-", "-", "-"]},
-  
-  {"grupo": "B", "equipo": "PENAROL", "puntos": 44, "PJ": 21, "PG": 13, "PE": 5, "PP": 3, "GF": 53, "GC": 20, "Dif": 33, "Des": 0, "Am": 0, "ultimos5": ["V", "-", "-", "-", "-"]},
-  {"grupo": "B", "equipo": "CERVECEROS", "puntos": 33, "PJ": 21, "PG": 10, "PE": 3, "PP": 8, "GF": 36, "GC": 28, "Dif": 8, "Des": 0, "Am": 0, "ultimos5": ["V", "-", "-", "-", "-"]},
-  {"grupo": "B", "equipo": "NECAXA", "puntos": 33, "PJ": 21, "PG": 9, "PE": 6, "PP": 6, "GF": 31, "GC": 30, "Dif": 1, "Des": 0, "Am": 2, "ultimos5": ["E", "-", "-", "-", "-"]},
-  {"grupo": "B", "equipo": "CRUZAZUL", "puntos": 26, "PJ": 21, "PG": 7, "PE": 5, "PP": 9, "GF": 27, "GC": 35, "Dif": -8, "Des": 0, "Am": 2, "ultimos5": ["E", "-", "-", "-", "-"]},
-  {"grupo": "B", "equipo": "LA CORUÑA", "puntos": 22, "PJ": 21, "PG": 6, "PE": 4, "PP": 11, "GF": 30, "GC": 30, "Dif": 0, "Des": 0, "Am": 0, "ultimos5": ["D", "-", "-", "-", "-"]},
-  {"grupo": "B", "equipo": "CHAZON", "puntos": 19, "PJ": 21, "PG": 5, "PE": 4, "PP": 12, "GF": 27, "GC": 48, "Dif": -21, "Des": 0, "Am": 4, "ultimos5": ["D", "-", "-", "-", "-"]},
-  
-  {"grupo": "C", "equipo": "LA CANCHITA", "puntos": 40, "PJ": 21, "PG": 12, "PE": 4, "PP": 5, "GF": 35, "GC": 18, "Dif": 17, "Des": 0, "Am": 1, "ultimos5": ["V", "-", "-", "-", "-"]},
-  {"grupo": "C", "equipo": "SANTOS", "puntos": 39, "PJ": 21, "PG": 11, "PE": 6, "PP": 4, "GF": 51, "GC": 26, "Dif": 25, "Des": 0, "Am": 0, "ultimos5": ["E", "-", "-", "-", "-"]},
-  {"grupo": "C", "equipo": "CARASUCIAS", "puntos": 34, "PJ": 21, "PG": 9, "PE": 7, "PP": 5, "GF": 33, "GC": 22, "Dif": 11, "Des": 0, "Am": 1, "ultimos5": ["V", "-", "-", "-", "-"]},
-  {"grupo": "C", "equipo": "UNION Y AMISTAD", "puntos": 24, "PJ": 21, "PG": 7, "PE": 3, "PP": 11, "GF": 30, "GC": 48, "Dif": -18, "Des": 0, "Am": 1, "ultimos5": ["D", "-", "-", "-", "-"]},
-  {"grupo": "C", "equipo": "LASALLE", "puntos": 23, "PJ": 21, "PG": 7, "PE": 2, "PP": 12, "GF": 31, "GC": 52, "Dif": -21, "Des": 0, "Am": 2, "ultimos5": ["D", "-", "-", "-", "-"]},
-  {"grupo": "C", "equipo": "CLINICAS", "puntos": 18, "PJ": 21, "PG": 5, "PE": 3, "PP": 13, "GF": 27, "GC": 44, "Dif": -17, "Des": 0, "Am": 0, "ultimos5": ["E", "-", "-", "-", "-"]}
-]
+  {"grupo": "A", "equipo": "LA LOMITA", "puntos": 52, "PJ": 22, "PG": 15, "PE": 7, "PP": 0, "GF": 50, "GC": 14, "Dif": 36, "Des": 0, "Am": 3, "ultimos5": ["V", "V", "E", "V", "V"]},
+  {"grupo": "A", "equipo": "LOS MATADORES", "puntos": 34, "PJ": 22, "PG": 9, "PE": 7, "PP": 6, "GF": 51, "GC": 40, "Dif": 11, "Des": 0, "Am": 0, "ultimos5": ["V", "D", "E", "V", "E"]},
+  {"grupo": "A", "equipo": "SAN MARTIN", "puntos": 34, "PJ": 22, "PG": 10, "PE": 4, "PP": 8, "GF": 37, "GC": 32, "Dif": 5, "Des": 0, "Am": 2, "ultimos5": ["V", "V", "D", "V", "E"]},
+  {"grupo": "A", "equipo": "DINAMO", "puntos": 28, "PJ": 22, "PG": 7, "PE": 7, "PP": 8, "GF": 37, "GC": 43, "Dif": -6, "Des": 0, "Am": 1, "ultimos5": ["E", "D", "V", "E", "V"]},
+  {"grupo": "A", "equipo": "HALCONES", "puntos": 24, "PJ": 22, "PG": 7, "PE": 3, "PP": 12, "GF": 30, "GC": 34, "Dif": -4, "Des": 0, "Am": 3, "ultimos5": ["D", "V", "D", "D", "D"]},
+  {"grupo": "A", "equipo": "WARCALDE", "puntos": 8, "PJ": 22, "PG": 2, "PE": 2, "PP": 18, "GF": 14, "GC": 66, "Dif": -52, "Des": 0, "Am": 1, "ultimos5": ["D", "D", "D", "D", "D"]},
+
+  {"grupo": "B", "equipo": "PENAROL", "puntos": 47, "PJ": 22, "PG": 14, "PE": 5, "PP": 3, "GF": 55, "GC": 21, "Dif": 34, "Des": 0, "Am": 0, "ultimos5": ["V", "V", "E", "V", "V"]},
+  {"grupo": "B", "equipo": "CERVECEROS", "puntos": 34, "PJ": 22, "PG": 10, "PE": 4, "PP": 8, "GF": 36, "GC": 28, "Dif": 8, "Des": 0, "Am": 0, "ultimos5": ["E", "V", "D", "V", "E"]},
+  {"grupo": "B", "equipo": "NECAXA", "puntos": 34, "PJ": 22, "PG": 9, "PE": 7, "PP": 6, "GF": 31, "GC": 30, "Dif": 1, "Des": 0, "Am": 2, "ultimos5": ["V", "E", "V", "D", "E"]},
+  {"grupo": "B", "equipo": "CRUZ AZUL", "puntos": 26, "PJ": 22, "PG": 7, "PE": 5, "PP": 10, "GF": 28, "GC": 37, "Dif": -9, "Des": 0, "Am": 2, "ultimos5": ["D", "E", "V", "D", "D"]},
+  {"grupo": "B", "equipo": "LA CORUNA", "puntos": 25, "PJ": 22, "PG": 7, "PE": 4, "PP": 11, "GF": 32, "GC": 31, "Dif": 1, "Des": 0, "Am": 0, "ultimos5": ["V", "D", "E", "V", "V"]},
+  {"grupo": "B", "equipo": "CHAZON", "puntos": 19, "PJ": 22, "PG": 5, "PE": 4, "PP": 13, "GF": 28, "GC": 50, "Dif": -22, "Des": 0, "Am": 4, "ultimos5": ["D", "V", "D", "D", "D"]},
+
+  {"grupo": "C", "equipo": "LA CANCHITA", "puntos": 43, "PJ": 22, "PG": 13, "PE": 4, "PP": 5, "GF": 39, "GC": 18, "Dif": 21, "Des": 0, "Am": 1, "ultimos5": ["V", "V", "E", "V", "V"]},
+  {"grupo": "C", "equipo": "SANTOS", "puntos": 42, "PJ": 22, "PG": 12, "PE": 6, "PP": 4, "GF": 53, "GC": 26, "Dif": 27, "Des": 0, "Am": 0, "ultimos5": ["E", "V", "V", "E", "V"]},
+  {"grupo": "C", "equipo": "CARASUCIAS", "puntos": 34, "PJ": 22, "PG": 9, "PE": 7, "PP": 6, "GF": 33, "GC": 26, "Dif": 7, "Des": 0, "Am": 1, "ultimos5": ["D", "V", "E", "D", "D"]},
+  {"grupo": "C", "equipo": "UNION Y AMISTAD", "puntos": 24, "PJ": 22, "PG": 7, "PE": 3, "PP": 12, "GF": 30, "GC": 50, "Dif": -20, "Des": 0, "Am": 1, "ultimos5": ["D", "D", "V", "D", "D"]},
+  {"grupo": "C", "equipo": "LA SALLE", "puntos": 23, "PJ": 22, "PG": 7, "PE": 2, "PP": 13, "GF": 31, "GC": 54, "Dif": -23, "Des": 0, "Am": 2, "ultimos5": ["V", "D", "E", "D", "D"]},
+  {"grupo": "C", "equipo": "CLINICAS", "puntos": 21, "PJ": 22, "PG": 6, "PE": 3, "PP": 13, "GF": 29, "GC": 44, "Dif": -15, "Des": 0, "Am": 0, "ultimos5": ["E", "V", "D", "V", "V"]}
+  ]
