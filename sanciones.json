@@ -1,44 +1,28 @@
 {
-  "fechaActualizacion": "2025-09-28",
+  "fechaActualizacion": "2025-10-04",
   "sanciones": [
     {
-      "fecha": "27/09/2025",
-      "jugador": "CORTEZ Walter Hugo",
+      "tipo": "pendientes",
       "equipo": "CHAZON",
-      "tarjetas": 0,
-      "fechas": 0,
-      "motivo": "PROVISORIO (06/10/2025)"
+      "jugador": "CORTEZ Walter Hugo",
+      "sancion": "31/12/2025",
+      "fechas": "31/12/2025",
+      "motivo": ""
     },
     {
-      "fecha": "27/09/2025",
-      "jugador": "PALACIO Marcelo Raul",
+      "tipo": "pendientes",
       "equipo": "HALCONES",
-      "tarjetas": 0,
-      "fechas": 6,
+      "jugador": "PALACIO Marcelo Raul",
+      "sancion": "5 partidos",
+      "fechas": "5 partidos",
       "motivo": "ART 63 B."
     },
     {
-      "fecha": "27/09/2025",
-      "jugador": "VILLARROEL Javier Gustavo",
-      "equipo": "LA CORUNA",
-      "tarjetas": 0,
-      "fechas": 1,
-      "motivo": "ART 62 C."
-    },
-    {
-      "fecha": "27/09/2025",
-      "jugador": "REYES Ruben Gustavo",
-      "equipo": "LA LOMITA",
-      "tarjetas": 0,
-      "fechas": 1,
-      "motivo": "ART 63 B."
-    },
-    {
-      "fecha": "27/09/2025",
-      "jugador": "FREYTAS Javier Eduardo",
+      "tipo": "pendientes",
       "equipo": "PENAROL",
-      "tarjetas": 0,
-      "fechas": 2,
+      "jugador": "FREYTAS Javier Eduardo",
+      "sancion": "1 partido",
+      "fechas": "1 partido",
       "motivo": "ART 59 C."
     }
   ]
