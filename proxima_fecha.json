@@ -1,65 +1,65 @@
 [
   {
     "equipo_local": {"nombre": "SANTOS", "escudo": "imagenes/equipos/santos.png"},
-    "equipo_visitante": {"nombre": "LA SALLE", "escudo": "imagenes/equipos/lasalle.png"},
-    "fecha": "2025-10-04",
+    "equipo_visitante": {"nombre": "NECAXA", "escudo": "imagenes/equipos/necaxa.png"},
+    "fecha": "2025-10-10",
     "hora": "13:30",
     "cancha": "Cancha 1"
   },
   {
-    "equipo_local": {"nombre": "LA CANCHITA", "escudo": "imagenes/equipos/la-canchita.png"},
-    "equipo_visitante": {"nombre": "CARASUCIAS", "escudo": "imagenes/equipos/carasucias.png"},
-    "fecha": "2025-10-04",
-    "hora": "13:30",
-    "cancha": "Cancha 2"
-  },
-  {
-    "equipo_local": {"nombre": "CERVECEROS", "escudo": "imagenes/equipos/cerveceros.png"},
-    "equipo_visitante": {"nombre": "NECAXA", "escudo": "imagenes/equipos/necaxa.png"},
-    "fecha": "2025-10-04",
-    "hora": "13:30",
-    "cancha": "Cancha 3"
-  },
-  {
-    "equipo_local": {"nombre": "UNION Y AMISTAD", "escudo": "imagenes/equipos/union-y-amistad.png"},
-    "equipo_visitante": {"nombre": "CLINICAS", "escudo": "imagenes/equipos/clinicas.jpg"},
-    "fecha": "2025-10-04",
+    "equipo_local": {"nombre": "CARASUCIAS", "escudo": "imagenes/equipos/carasucias.png"},
+    "equipo_visitante": {"nombre": "PENAROL", "escudo": "imagenes/equipos/penarol.png"},
+    "fecha": "2025-10-10",
     "hora": "13:30",
     "cancha": "Cancha 4"
   },
   {
     "equipo_local": {"nombre": "LA LOMITA", "escudo": "imagenes/equipos/la-lomita.png"},
-    "equipo_visitante": {"nombre": "HALCONES", "escudo": "imagenes/equipos/halcones.png"},
-    "fecha": "2025-10-04",
+    "equipo_visitante": {"nombre": "SAN MARTIN", "escudo": "imagenes/equipos/san-martin.png"},
+    "fecha": "2025-10-10",
     "hora": "13:30",
     "cancha": "Cancha 5"
   },
   {
-    "equipo_local": {"nombre": "DINAMO", "escudo": "imagenes/equipos/dinamo.png"},
-    "equipo_visitante": {"nombre": "WARCALDE", "escudo": "imagenes/equipos/warcalde.png"},
-    "fecha": "2025-10-04",
+    "equipo_local": {"nombre": "LA CANCHITA", "escudo": "imagenes/equipos/la-canchita.png"},
+    "equipo_visitante": {"nombre": "CERVECEROS", "escudo": "imagenes/equipos/cerveceros.png"},
+    "fecha": "2025-10-10",
     "hora": "13:30",
     "cancha": "Cancha 6"
   },
   {
-    "equipo_local": {"nombre": "PENAROL", "escudo": "imagenes/equipos/penarol.png"},
-    "equipo_visitante": {"nombre": "CRUZ AZUL", "escudo": "imagenes/equipos/cruzazul.png"},
-    "fecha": "2025-10-04",
+    "equipo_local": {"nombre": "CHAZON", "escudo": "imagenes/equipos/chazon.png"},
+    "equipo_visitante": {"nombre": "HALCONES", "escudo": "imagenes/equipos/halcones.png"},
+    "fecha": "2025-10-10",
     "hora": "13:30",
     "cancha": "Cancha 7"
   },
   {
-    "equipo_local": {"nombre": "LA CORUNA", "escudo": "imagenes/equipos/la-coruna.png"},
-    "equipo_visitante": {"nombre": "CHAZON", "escudo": "imagenes/equipos/chazon.png"},
-    "fecha": "2025-10-04",
+    "equipo_local": {"nombre": "CRUZ AZUL", "escudo": "imagenes/equipos/cruzazul.png"},
+    "equipo_visitante": {"nombre": "LA CORUNA", "escudo": "imagenes/equipos/la-coruna.png"},
+    "fecha": "2025-10-10",
     "hora": "13:30",
     "cancha": "Cancha 8"
   },
   {
-    "equipo_local": {"nombre": "LOS MATADORES", "escudo": "imagenes/equipos/los-matadores.png"},
-    "equipo_visitante": {"nombre": "SAN MARTIN", "escudo": "imagenes/equipos/san-martin.png"},
-    "fecha": "2025-10-04",
+    "equipo_local": {"nombre": "UNION Y AMISTAD", "escudo": "imagenes/equipos/union-y-amistad.png"},
+    "equipo_visitante": {"nombre": "LA SALLE", "escudo": "imagenes/equipos/lasalle.png"},
+    "fecha": "2025-10-10",
     "hora": "13:30",
     "cancha": "Cancha 9"
+  },
+  {
+    "equipo_local": {"nombre": "LOS MATADORES", "escudo": "imagenes/equipos/los-matadores.png"},
+    "equipo_visitante": {"nombre": "DINAMO", "escudo": "imagenes/equipos/dinamo.png"},
+    "fecha": "2025-10-10",
+    "hora": "13:30",
+    "cancha": "Cancha 10"
+  },
+  {
+    "equipo_local": {"nombre": "CLINICAS", "escudo": "imagenes/equipos/clinicas.jpg"},
+    "equipo_visitante": {"nombre": "WARCALDE", "escudo": "imagenes/equipos/warcalde.png"},
+    "fecha": "2025-10-10",
+    "hora": "13:30",
+    "cancha": "Cancha 11"
   }
 ]
