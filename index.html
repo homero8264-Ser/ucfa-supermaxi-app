@@ -13,6 +13,8 @@
     <div class="header-compacto">
       <img src="imagenes/equipos/los-matadores.png" alt="Los Matadores" class="escudo-pequeno">
       <span class="titulo-compacto">UCFA Super Maxi 2025</span>
+  <span id="app-version" style="margin-left:10px; font-size:12px; color:rgba(255,255,255,0.9); font-weight:700;"></span>
+  <button id="btn-install" style="display:none; margin-left:8px; background:#fff; color:#333; border-radius:6px; padding:6px 8px; border:none; cursor:pointer; font-weight:700;">Instalar</button>
       <img src="imagenes/equipos/liga/ucfa_2024.png" alt="UCFA" class="escudo-pequeno">
     </div>
     
@@ -145,6 +147,12 @@
     }
   </script>
   <script>
+    // Cargar version.json y mostrar en header
+    fetch('version.json').then(r => r.json()).then(v => {
+      const el = document.getElementById('app-version');
+      if (el) el.textContent = v.fechaActualizacion || '';
+    }).catch(() => {});
+
     // Detect SW updates and show update banner
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.addEventListener('controllerchange', () => {
@@ -181,6 +189,40 @@
         };
       }
     }
+  </script>
+  <script>
+    // PWA install helper: capture beforeinstallprompt and show install button
+    (function(){
+      let deferredPrompt;
+      const btn = document.getElementById('btn-install');
+
+      window.addEventListener('beforeinstallprompt', (e) => {
+        // Prevent the mini-infobar from appearing on mobile
+        e.preventDefault();
+        deferredPrompt = e;
+        if (btn) {
+          btn.style.display = 'inline-block';
+        }
+      });
+
+      if (btn) {
+        btn.addEventListener('click', async () => {
+          if (!deferredPrompt) return;
+          btn.disabled = true;
+          deferredPrompt.prompt();
+          const choiceResult = await deferredPrompt.userChoice;
+          console.log('User choice', choiceResult);
+          deferredPrompt = null;
+          btn.style.display = 'none';
+          btn.disabled = false;
+        });
+      }
+
+      window.addEventListener('appinstalled', () => {
+        console.log('PWA instalada');
+        if (btn) btn.style.display = 'none';
+      });
+    })();
   </script>
 </body>
 </html>
