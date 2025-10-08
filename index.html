@@ -6,6 +6,9 @@
   <title>UCFA Super Maxi 2025</title>
   <link rel="stylesheet" href="style.css?v=20250920-final">
   <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4CAF50">
+  <link rel="icon" href="imagenes/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="imagenes/icons/icon-192.png">
   <!-- Actualización forzada: 29/09/2025 -->
 </head>
 <body>
@@ -207,14 +210,18 @@
 
       if (btn) {
         btn.addEventListener('click', async () => {
-          if (!deferredPrompt) return;
-          btn.disabled = true;
-          deferredPrompt.prompt();
-          const choiceResult = await deferredPrompt.userChoice;
-          console.log('User choice', choiceResult);
-          deferredPrompt = null;
-          btn.style.display = 'none';
-          btn.disabled = false;
+          if (deferredPrompt) {
+            btn.disabled = true;
+            deferredPrompt.prompt();
+            const choiceResult = await deferredPrompt.userChoice;
+            console.log('User choice', choiceResult);
+            deferredPrompt = null;
+            btn.style.display = 'none';
+            btn.disabled = false;
+          } else {
+            // fallback: show short help to add to home screen
+            alert('Para instalar la app: abra el menú del navegador y seleccione "Agregar a la pantalla de inicio" (Android) o use "Agregar a pantalla de inicio" en Safari (iOS).');
+          }
         });
       }
 
