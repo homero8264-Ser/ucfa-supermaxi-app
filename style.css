@@ -800,6 +800,19 @@ table {
     width: 24px !important;
     height: 24px !important;
   }
+
+  /* Stack rows: make each table row a block so all fields are visible on narrow screens */
+  #contenedor-sanciones table { display: block; }
+  #contenedor-sanciones thead { display: none; }
+  #contenedor-sanciones tbody { display: block; }
+  #contenedor-sanciones tbody tr { display: block; margin-bottom: 10px; background: #fff; border-radius: 8px; padding: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  #contenedor-sanciones tbody td { display: block; width: 100%; box-sizing: border-box; padding: 6px 8px; text-align: left; }
+
+  /* Add small labels before each cell for clarity (match header order) */
+  #contenedor-sanciones tbody td:nth-child(1)::before { content: "# "; font-weight:700; margin-right:6px; }
+  #contenedor-sanciones tbody td:nth-child(2)::before { content: "Equipo: "; font-weight:700; margin-right:6px; }
+  #contenedor-sanciones tbody td:nth-child(3)::before { content: "Tarjetas: "; font-weight:700; margin-right:6px; }
+  #contenedor-sanciones tbody td:nth-child(4)::before { content: "Info: "; font-weight:700; margin-right:6px; }
 }
 
 /* === MÓVIL PEQUEÑO === */
