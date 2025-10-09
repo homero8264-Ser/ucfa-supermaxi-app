@@ -811,24 +811,26 @@ table {
   #contenedor-sanciones thead th:nth-child(3),
   #contenedor-sanciones thead th:nth-child(4) { flex: 0 0 70px; text-align: center; }
   #contenedor-sanciones tbody { display: block; }
-  #contenedor-sanciones tbody tr { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; background: #fff; border-radius: 8px; padding: 6px 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  /* use space-between so right columns sit near the card's right edge and no empty gap remains */
+  #contenedor-sanciones tbody tr { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; background: #fff; border-radius: 8px; padding: 6px 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
   #contenedor-sanciones tbody td { display: block; box-sizing: border-box; padding: 6px 8px; text-align: left; vertical-align: middle; }
   /* Layout: icon | equipo (flexible) | tarjetas (fixed) | info (fixed) */
   #contenedor-sanciones tbody td:nth-child(1) { flex: 0 0 40px; text-align: center; }
-  #contenedor-sanciones tbody td:nth-child(2) { flex: 1 1 auto; min-width: 120px; }
-  /* make dates and motive columns wider on mobile and allow wrapping */
-  #contenedor-sanciones tbody td:nth-child(3) { flex: 0 0 100px; text-align: center; white-space: normal !important; overflow-wrap: break-word; font-size: 12px; }
-  #contenedor-sanciones tbody td:nth-child(4) { flex: 0 0 140px; text-align: left; white-space: normal !important; overflow-wrap: break-word; font-size: 12px; }
-  /* ensure text wraps naturally (not breaking per character) */
+  /* allow the equipo column to shrink more so right-side columns can use leftover space */
+  #contenedor-sanciones tbody td:nth-child(2) { flex: 1 1 0; min-width: 0; max-width: 45%; }
+  /* increase room for dates and motive: reduce fecha basis slightly and give motivo the ability to grow into remaining space */
+  #contenedor-sanciones tbody td:nth-child(3) { flex: 0 0 80px; flex-grow: 0; text-align: center; white-space: normal !important; overflow-wrap: break-word; font-size: 12px; }
+  #contenedor-sanciones tbody td:nth-child(4) { flex: 0 0 180px; flex-grow: 1; text-align: left; white-space: normal !important; overflow-wrap: break-word; font-size: 12px; }
+  /* ensure text wraps naturally and cells can expand vertically to show full content */
   #contenedor-sanciones tbody td { white-space: normal !important; overflow-wrap: anywhere; word-break: normal !important; }
-  /* Prevent tarjeta cell from wrapping vertically: keep single-line, use ellipsis when too long */
   #contenedor-sanciones tbody td:nth-child(3),
   #contenedor-sanciones tbody td:nth-child(4) {
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
+    /* allow wrapping and visible overflow so long texts are fully shown */
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
     font-size: 12px;
-    line-height: 1.1;
+    line-height: 1.2;
   }
   /* hide per-row inline labels when the header is visible */
   #contenedor-sanciones tbody td:nth-child(2)::before,
@@ -874,6 +876,10 @@ table {
   #contenedor-sanciones td:nth-child(4) {
     font-size: 10px;
   }
+  /* ensure right columns can wrap on small screens */
+  #contenedor-sanciones tbody td:nth-child(3) { flex: 0 0 80px; white-space: normal !important; overflow: visible !important; }
+  /* give motive column more room on small screens and allow it to grow into remaining space */
+  #contenedor-sanciones tbody td:nth-child(4) { flex: 0 0 180px; flex-grow: 1; white-space: normal !important; overflow: visible !important; }
   
   /* Escudos aún más pequeños */
   #contenedor-sanciones img {
