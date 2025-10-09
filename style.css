@@ -81,6 +81,23 @@ body {
   text-transform: uppercase;
 }
 
+/* Reserve space for app version and keep install button stable */
+#app-version {
+  min-width: 90px;
+  max-width: 160px;
+  display: inline-block;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+
+#btn-install {
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
 /* === NAVEGACIÓN FIJA === */
 .navegacion-fija {
   position: fixed;

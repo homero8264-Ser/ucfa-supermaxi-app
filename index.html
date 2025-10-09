@@ -165,6 +165,20 @@
       if (el) el.textContent = v.fechaActualizacion || '';
     }).catch(() => {});
 
+    // Helper to show install button when deferredPrompt is ready
+    function showInstallButtonIfReady() {
+      const btn = document.getElementById('btn-install');
+      if (!btn) return;
+      if (window.__deferredPrompt) {
+        btn.style.display = 'inline-block';
+      }
+    }
+
+    // ensure button appears when DOM is ready
+    document.addEventListener('DOMContentLoaded', () => {
+      try { showInstallButtonIfReady(); } catch (e) {}
+    });
+
     // Detect SW updates and show update banner
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.addEventListener('controllerchange', () => {
