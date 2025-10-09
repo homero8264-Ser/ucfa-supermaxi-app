@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PWA Install Diagnostic</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:18px;color:#222}
+    pre{background:#f6f8fa;border:1px solid #e1e4e8;padding:12px;white-space:pre-wrap}
+    button{margin:6px 4px;padding:8px 10px}
+  </style>
+</head>
+<body>
+  <h1>Diagnóstico PWA — Install Prompt</h1>
+  <p>Usa esta página en el mismo navegador/móvil donde no aparece el botón de instalar. Pulsa los botones y copia el resultado aquí para que pueda ayudarte a depurar.</p>
+
+  <div>
+    <button id="btn-fetch-manifest">Comprobar manifest.json</button>
+    <button id="btn-check-sw">Comprobar Service Worker</button>
+    <button id="btn-unregister">Unregister SW & Clear Caches</button>
+  </div>
+
+  <h3>Link rel=manifest en la página</h3>
+  <pre id="manifest-link">(pendiente)</pre>
+
+  <h3>Manifest.json (respuesta)</h3>
+  <pre id="manifest-result">(pendiente)</pre>
+
+  <h3>Service Worker (registro)</h3>
+  <pre id="sw-result">(pendiente)</pre>
+
+  <h3>Notas / Pasos recomendados</h3>
+  <ol>
+    <li>Abrir esta URL desde el móvil: <code id="page-url"></code></li>
+    <li>Pulsa <strong>Comprobar manifest.json</strong> y pega aquí la salida.</li>
+    <li>Pulsa <strong>Comprobar Service Worker</strong> y pega la salida.</li>
+    <li>Si quieres forzar una instalación limpia, pulsa <strong>Unregister SW & Clear Caches</strong>, recarga y vuelve a comprobar.</li>
+  </ol>
+
+  <script>
+    const pageUrlEl = document.getElementById('page-url');
+    pageUrlEl.textContent = location.href;
+
+    document.getElementById('btn-fetch-manifest').addEventListener('click', async () => {
+      const link = document.querySelector('link[rel="manifest"]');
+      document.getElementById('manifest-link').textContent = link ? link.href : 'No se encontró <link rel="manifest"> en esta página';
+
+      try {
+        const r = await fetch('./manifest.json', {cache: 'no-store'});
+        const text = await r.text();
+        let parsed = text;
+        try { parsed = JSON.stringify(JSON.parse(text), null, 2); } catch(e) { /* leave raw */ }
+        document.getElementById('manifest-result').textContent = 'HTTP ' + r.status + '\n\n' + parsed;
+      } catch (err) {
+        document.getElementById('manifest-result').textContent = 'ERROR fetching manifest.json: ' + err.message;
+      }
+    });
+
+    document.getElementById('btn-check-sw').addEventListener('click', async () => {
+      if (!('serviceWorker' in navigator)) {
+        document.getElementById('sw-result').textContent = 'Service Worker API no disponible en este navegador';
+        return;
+      }
+
+      try {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        if (!regs || regs.length === 0) {
+          document.getElementById('sw-result').textContent = 'No hay service workers registrados';
+          return;
+        }
+
+        const out = [];
+        for (const r of regs) {
+          out.push('Scope: ' + r.scope);
+          const sw = r.active || r.waiting || r.installing || null;
+          out.push('State: ' + (sw ? sw.state : 'no-active-sw'));
+          out.push('---');
+        }
+        document.getElementById('sw-result').textContent = out.join('\n');
+      } catch (err) {
+        document.getElementById('sw-result').textContent = 'ERROR checking service workers: ' + err.message;
+      }
+    });
+
+    document.getElementById('btn-unregister').addEventListener('click', async () => {
+      if (!('serviceWorker' in navigator)) {
+        alert('Service Worker API no disponible');
+        return;
+      }
+      try {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        for (const r of regs) {
+          await r.unregister();
+        }
+        // clear caches
+        if ('caches' in window) {
+          const keys = await caches.keys();
+          await Promise.all(keys.map(k => caches.delete(k)));
+        }
+        alert('Service workers unregistered and caches cleared. Por favor recarga la página (hard reload).');
+      } catch (err) {
+        alert('Error: ' + err.message);
+      }
+    });
+  </script>
+</body>
+</html>
