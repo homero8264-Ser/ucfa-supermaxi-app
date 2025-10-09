@@ -823,6 +823,10 @@ table {
     font-size: 12px;
     line-height: 1.1;
   }
+  /* Inline labels for mobile: show a short label before the value (inline, not block) */
+  #contenedor-sanciones tbody td:nth-child(2)::before { content: "Jugador: "; font-weight:700; margin-right:6px; display:inline-block; }
+  #contenedor-sanciones tbody td:nth-child(3)::before { content: "Fechas: "; font-weight:700; margin-right:6px; display:inline-block; }
+  #contenedor-sanciones tbody td:nth-child(4)::before { content: "Motivo: "; font-weight:700; margin-right:6px; display:inline-block; }
 }
 
 /* === MÓVIL PEQUEÑO === */
