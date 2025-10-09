@@ -41,9 +41,20 @@ self.addEventListener('activate', event => {
 async function networkFirst(request) {
   try {
     const response = await fetch(request);
-    // Update cache with fresh copy
-    const cache = await caches.open(CACHE_NAME);
-    cache.put(request, response.clone());
+    // Update cache with fresh copy (only for successful, cachable responses)
+    try {
+      if (response && response.ok) {
+        const cache = await caches.open(CACHE_NAME);
+        try {
+          await cache.put(request, response.clone());
+        } catch (e) {
+          // cloning/put can fail if the body stream was already used or for opaque responses
+          console.warn('Cache put failed (networkFirst):', e);
+        }
+      }
+    } catch (e) {
+      console.warn('Opening cache failed (networkFirst):', e);
+    }
     return response;
   } catch (err) {
     const cached = await caches.match(request);
@@ -72,8 +83,21 @@ self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(request).then(cached => {
       const fetchPromise = fetch(request).then(networkResponse => {
-        // update cache asynchronously
-        caches.open(CACHE_NAME).then(cache => cache.put(request, networkResponse.clone()));
+        // update cache asynchronously for cachable responses
+        (async () => {
+          try {
+            if (networkResponse && networkResponse.ok) {
+              const cache = await caches.open(CACHE_NAME);
+              try {
+                await cache.put(request, networkResponse.clone());
+              } catch (e) {
+                console.warn('Cache put failed (fetch handler):', e);
+              }
+            }
+          } catch (e) {
+            console.warn('Cache open failed (fetch handler):', e);
+          }
+        })();
         return networkResponse;
       }).catch(() => null);
       return cached || fetchPromise;

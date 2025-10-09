@@ -6,6 +6,22 @@
   <title>UCFA Super Maxi 2025</title>
   <link rel="stylesheet" href="style.css?v=20250920-final">
   <link rel="manifest" href="manifest.json">
+  <script>
+    // Early capture of beforeinstallprompt so we don't miss it (useful on Fast/Local servers)
+    window.__deferredPrompt = null;
+    window.__beforeinstallprompt_received = false;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      try { e.preventDefault(); } catch (err) {}
+      window.__deferredPrompt = e;
+      window.__beforeinstallprompt_received = true;
+      console.log('beforeinstallprompt captured early (head)');
+      // if btn exists show it
+      try {
+        const btn = document.getElementById('btn-install');
+        if (btn) btn.style.display = 'inline-block';
+      } catch (err) {}
+    });
+  </script>
   <meta name="theme-color" content="#4CAF50">
   <link rel="icon" href="imagenes/icons/icon-192.png">
   <link rel="apple-touch-icon" href="imagenes/icons/icon-192.png">
@@ -143,13 +159,6 @@
 
   <script src="app.js"></script>
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('Service Worker registrado'))
-        .catch(err => console.warn('Error registrando Service Worker:', err));
-    }
-  </script>
-  <script>
     // Cargar version.json y mostrar en header
     fetch('version.json').then(r => r.json()).then(v => {
       const el = document.getElementById('app-version');
@@ -196,28 +205,27 @@
   <script>
     // PWA install helper: capture beforeinstallprompt and show install button
     (function(){
-      let deferredPrompt;
+      // Use early-captured prompt when available
       const btn = document.getElementById('btn-install');
 
-      window.addEventListener('beforeinstallprompt', (e) => {
-        // Prevent the mini-infobar from appearing on mobile
-        e.preventDefault();
-        deferredPrompt = e;
-        if (btn) {
-          btn.style.display = 'inline-block';
-        }
-      });
+      // Show button if we already captured the prompt in the head
+      if (window.__deferredPrompt && btn) {
+        btn.style.display = 'inline-block';
+        window.__beforeinstallprompt_received = true;
+      }
 
       if (btn) {
         btn.addEventListener('click', async () => {
-          if (deferredPrompt) {
-            btn.disabled = true;
-            deferredPrompt.prompt();
-            const choiceResult = await deferredPrompt.userChoice;
+          const promptEvent = window.__deferredPrompt;
+          if (promptEvent) {
+            try { btn.disabled = true; } catch (e) {}
+            promptEvent.prompt();
+            const choiceResult = await promptEvent.userChoice;
             console.log('User choice', choiceResult);
-            deferredPrompt = null;
+            window.__deferredPrompt = null;
+            window.__beforeinstallprompt_received = false;
             btn.style.display = 'none';
-            btn.disabled = false;
+            try { btn.disabled = false; } catch (e) {}
           } else {
             // fallback: show short help to add to home screen
             alert('Para instalar la app: abra el menú del navegador y seleccione "Agregar a la pantalla de inicio" (Android) o use "Agregar a pantalla de inicio" en Safari (iOS).');
@@ -231,5 +239,79 @@
       });
     })();
   </script>
+  <!-- PWA debug panel -->
+<div id="pwa-debug-panel" style="position:fixed;left:12px;bottom:12px;z-index:10000;background:rgba(0,0,0,0.75);color:#fff;padding:10px;border-radius:8px;font-family:monospace;font-size:13px;max-width:340px;line-height:1.3">
+  <strong>PWA debug</strong>
+  <div id="pwa-debug-content" style="margin-top:8px;white-space:pre-wrap">Cargando diagnóstico...</div>
+  <div style="margin-top:8px;text-align:right"><button id="pwa-debug-refresh" style="background:#4CAF50;border:none;color:#fff;padding:6px 8px;border-radius:6px;cursor:pointer">Refrescar</button></div>
+</div>
+
+<script>
+(function(){
+  const out = document.getElementById('pwa-debug-content');
+  const refresh = document.getElementById('pwa-debug-refresh');
+  function logLine(s){ out.textContent += '\n' + s; }
+  function clear(){ out.textContent = ''; }
+
+  async function runChecks(){
+    clear();
+    logLine('URL: ' + location.href);
+    logLine('Protocol: ' + location.protocol + '  Host: ' + location.hostname);
+
+    // Manifest
+    try{
+      const r = await fetch('./manifest.json', {cache: 'no-store'});
+      logLine('manifest.json HTTP: ' + r.status);
+      const text = await r.text();
+      try{
+        const j = JSON.parse(text);
+        logLine('manifest.name: ' + (j.name || '(missing)'));
+        logLine('manifest.short_name: ' + (j.short_name || '(missing)'));
+        logLine('manifest.start_url: ' + (j.start_url || '(missing)'));
+        logLine('manifest.scope: ' + (j.scope || '(missing)'));
+        if (Array.isArray(j.icons)) logLine('manifest.icons: ' + j.icons.map(i=>i.sizes || i.src).join(', '));
+      }catch(e){ logLine('manifest parse error: ' + e.message); }
+    }catch(err){ logLine('fetch manifest error: ' + err.message); }
+
+    // Service worker
+    if ('serviceWorker' in navigator){
+      try{
+        const regs = await navigator.serviceWorker.getRegistrations();
+        if (!regs || regs.length === 0){ logLine('ServiceWorker: no registrations'); }
+        else{
+          for (const r of regs){
+            logLine('SW registration scope: ' + r.scope);
+            const sw = r.active || r.waiting || r.installing || null;
+            logLine('SW state: ' + (sw ? sw.state : '(no active sw)'));
+          }
+        }
+        logLine('navigator.serviceWorker.controller: ' + (!!navigator.serviceWorker.controller));
+      }catch(e){ logLine('SW check error: ' + e.message); }
+    } else {
+      logLine('ServiceWorker API not available');
+    }
+
+    // beforeinstallprompt detection state
+    logLine('Has beforeinstallprompt listener: ' + (!!window.__beforeinstallprompt_received));
+    logLine('Is display-mode standalone? ' + (window.matchMedia('(display-mode: standalone)').matches));
+
+    // Quick advice
+    logLine('---');
+    logLine('Advice: Manifest + SW + HTTPS/localhost required.');
+    logLine('If manifest fetch returns non-200 or parse error, fix manifest path.');
+    logLine('If SW not controlling page, try unregistering SW and hard reload.');
+  }
+
+  refresh.addEventListener('click', runChecks);
+  runChecks();
+
+  // hook beforeinstallprompt globally so panel shows if it happened
+  window.addEventListener('beforeinstallprompt', (e) => {
+    window.__beforeinstallprompt_received = true;
+    // let existing code still handle it
+    console.log('beforeinstallprompt fired (debug panel)');
+  });
+})();
+</script>
 </body>
 </html>
