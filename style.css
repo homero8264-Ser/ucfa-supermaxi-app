@@ -816,8 +816,9 @@ table {
   /* Layout: icon | equipo (flexible) | tarjetas (fixed) | info (fixed) */
   #contenedor-sanciones tbody td:nth-child(1) { flex: 0 0 40px; text-align: center; }
   #contenedor-sanciones tbody td:nth-child(2) { flex: 1 1 auto; min-width: 120px; }
-  #contenedor-sanciones tbody td:nth-child(3) { flex: 0 0 70px; text-align: center; }
-  #contenedor-sanciones tbody td:nth-child(4) { flex: 0 0 70px; text-align: center; }
+  /* make dates and motive columns wider on mobile and allow wrapping */
+  #contenedor-sanciones tbody td:nth-child(3) { flex: 0 0 100px; text-align: center; white-space: normal !important; overflow-wrap: break-word; font-size: 12px; }
+  #contenedor-sanciones tbody td:nth-child(4) { flex: 0 0 140px; text-align: left; white-space: normal !important; overflow-wrap: break-word; font-size: 12px; }
   /* ensure text wraps naturally (not breaking per character) */
   #contenedor-sanciones tbody td { white-space: normal !important; overflow-wrap: anywhere; word-break: normal !important; }
   /* Prevent tarjeta cell from wrapping vertically: keep single-line, use ellipsis when too long */
@@ -833,6 +834,10 @@ table {
   #contenedor-sanciones tbody td:nth-child(2)::before,
   #contenedor-sanciones tbody td:nth-child(3)::before,
   #contenedor-sanciones tbody td:nth-child(4)::before { display: none; }
+
+  /* adjust header columns to match new mobile widths */
+  #contenedor-sanciones thead th:nth-child(3),
+  #contenedor-sanciones thead th:nth-child(4) { text-align: center; }
 }
 
 /* === MÓVIL PEQUEÑO === */
