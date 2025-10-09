@@ -803,7 +803,13 @@ table {
 
   /* Horizontal row layout on mobile: show cells side-by-side using flex */
   #contenedor-sanciones table { display: block; }
-  #contenedor-sanciones thead { display: none; }
+  /* show header on mobile as a compact flex row */
+  #contenedor-sanciones thead { display: block; margin-bottom: 8px; }
+  #contenedor-sanciones thead tr { display: flex; align-items: center; gap: 10px; }
+  #contenedor-sanciones thead th { flex: 0 0 40px; padding: 6px 8px; background: transparent; color: #fff; font-size: 13px; }
+  #contenedor-sanciones thead th:nth-child(2) { flex: 1 1 auto; }
+  #contenedor-sanciones thead th:nth-child(3),
+  #contenedor-sanciones thead th:nth-child(4) { flex: 0 0 70px; text-align: center; }
   #contenedor-sanciones tbody { display: block; }
   #contenedor-sanciones tbody tr { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; background: #fff; border-radius: 8px; padding: 6px 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
   #contenedor-sanciones tbody td { display: block; box-sizing: border-box; padding: 6px 8px; text-align: left; vertical-align: middle; }
@@ -823,10 +829,10 @@ table {
     font-size: 12px;
     line-height: 1.1;
   }
-  /* Inline labels for mobile: show a short label before the value (inline, not block) */
-  #contenedor-sanciones tbody td:nth-child(2)::before { content: "Jugador: "; font-weight:700; margin-right:6px; display:inline-block; }
-  #contenedor-sanciones tbody td:nth-child(3)::before { content: "Fechas: "; font-weight:700; margin-right:6px; display:inline-block; }
-  #contenedor-sanciones tbody td:nth-child(4)::before { content: "Motivo: "; font-weight:700; margin-right:6px; display:inline-block; }
+  /* hide per-row inline labels when the header is visible */
+  #contenedor-sanciones tbody td:nth-child(2)::before,
+  #contenedor-sanciones tbody td:nth-child(3)::before,
+  #contenedor-sanciones tbody td:nth-child(4)::before { display: none; }
 }
 
 /* === MÓVIL PEQUEÑO === */
