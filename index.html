@@ -26,13 +26,15 @@
     </div>
 
     <div class="contenido-scrolleable">
-      <div id="contenido-clasificacion" class="contenido-pestana active">
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
-    <button id="boton-ver-mas" class="boton-vista" onclick="alternarVistaTabla()">VER MENOS</button>
-    <button id="boton-liguilla" class="boton-vista" style="background: #ff6b35; color: #fff; border-radius: 8px; font-weight: bold; font-size: 13px; padding: 6px 16px; border: none; box-shadow: 0 2px 8px rgba(255,107,53,0.15); cursor: pointer;" onclick="mostrarLiguilla()">LIGUILLA</button>
-    <button id="boton-tabla-gral" class="boton-vista" style="background: #42a5f5; color: #fff; border-radius: 8px; font-weight: bold; font-size: 13px; padding: 6px 16px; border: none; box-shadow: 0 2px 8px rgba(66,165,245,0.15); cursor: pointer;" onclick="alternarTablaGeneral()">TABLA GRAL</button>
-  </div>
-  <div id="contenedor-tablas"></div>
+      <div id="contenido-clasificacion" class="contenido-pestana">
+        <div id="botones-navegacion" style="margin-bottom: 16px; text-align: center;">
+          <button id="boton-ver-menos" onclick="alternarVistaTabla()">VER MENOS</button>
+          <button id="boton-tabla-gral" onclick="alternarTablaGeneral()">TABLA GRAL</button>
+          <button id="boton-liguilla" onclick="mostrarLiguilla()">LIGUILLA</button>
+        </div>
+        <div id="contenedor-tablas">
+          <!-- Aquí se renderizan todas las tablas: general, grupos, liguilla -->
+        </div>
       </div>
 
       <div id="contenido-goleadores" class="contenido-pestana">
@@ -55,27 +57,6 @@
         <div id="contenedor-proxima-fecha"></div>
       </div>
 
-      <div id="contenido-liguilla" class="contenido-pestana">
-        <h2 style="color: #ff6b35; margin-bottom: 16px;">🏆 LIGUILLA</h2>
-        
-        <!-- GRUPO A -->
-        <div class="grupo-liguilla">
-          <h3 style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px; border-radius: 8px; margin-bottom: 8px;">Grupo A</h3>
-          <div id="tabla-grupo-a"></div>
-        </div>
-
-        <!-- GRUPO B -->
-        <div class="grupo-liguilla" style="margin-top: 20px;">
-          <h3 style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 8px; border-radius: 8px; margin-bottom: 8px;">Grupo B</h3>
-          <div id="tabla-grupo-b"></div>
-        </div>
-
-        <!-- DESCENSO -->
-        <div class="grupo-liguilla" style="margin-top: 20px;">
-          <h3 style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; padding: 8px; border-radius: 8px; margin-bottom: 8px;">Descenso</h3>
-          <div id="tabla-descenso"></div>
-        </div>
-      </div>
       <div id="contenido-admin" class="contenido-pestana">
         <h2>⚙️ Administración UCFA</h2>
         <div class="admin-section">

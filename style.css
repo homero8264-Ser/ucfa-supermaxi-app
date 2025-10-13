@@ -189,6 +189,36 @@ h2, .titulo-tabla, .titulo-grupo {
   margin-bottom: 15px !important;
 }
 
+/* --- TÍTULOS DE LIGUILLA, GRUPOS Y DESCENSO (más pequeños) --- */
+.grupo-liguilla h3,
+#tabla-descenso h3,
+#tabla-grupo-a h3,
+#tabla-grupo-b h3,
+.liguilla-titulo,
+.liguilla-titulo h2 {
+  font-size: 1em !important;
+  padding: 6px 0 !important;
+}
+.liguilla-titulo {
+  font-size: 1.15em !important;
+  font-weight: 800 !important;
+}
+
+/* --- TÍTULO LIGUILLA CON TROFEO MÁS PEQUEÑO (ajuste extra) --- */
+.liguilla-titulo {
+  font-size: 0.85em !important;
+  font-weight: 700 !important;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.liguilla-titulo img,
+.liguilla-titulo .icono-trofeo {
+  width: 16px !important;
+  height: 16px !important;
+  vertical-align: middle;
+}
+
 /* === TABLAS BASE === */
 table {
   width: 100%;
@@ -388,6 +418,48 @@ th:nth-child(2), td:nth-child(2) {
 .boton-vista:hover {
   background: rgba(255, 107, 107, 1) !important;
   transform: translateY(-1px);
+}
+
+/* --- BOTONES DE NAVEGACIÓN DE TABLA (más pequeños) --- */
+#botones-navegacion {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+#botones-navegacion button {
+  background: #ff6b81;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 11px;
+  padding: 4px 8px;
+  min-width: 56px;
+  max-width: 110px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#botones-navegacion button:hover {
+  background: #ff4757;
+}
+#botones-navegacion button.active {
+  background: #fff;
+  color: #ff6b81;
+  border: 2px solid #ff6b81;
+  box-shadow: 0 2px 8px rgba(255,107,129,0.15);
+}
+@media (max-width: 480px) {
+  #botones-navegacion button {
+    font-size: 10px;
+    padding: 3px 6px;
+    min-width: 44px;
+  }
 }
 
 /* === EFECTOS Y ANIMACIONES === */
