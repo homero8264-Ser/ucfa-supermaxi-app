@@ -1,0 +1,22 @@
+[
+  {"equipo": "LA LOMITA", "grupo": "A", "puntos": 3, "PJ": 1, "PG": 1, "PE": 0, "PP": 0, "GF": 1, "GC": 0, "Dif": 1},
+  {"equipo": "LA CANCHITA", "grupo": "A", "puntos": 1, "PJ": 1, "PG": 0, "PE": 1, "PP": 0, "GF": 1, "GC": 1, "Dif": 0},
+  {"equipo": "CERVECEROS", "grupo": "A", "puntos": 1, "PJ": 1, "PG": 0, "PE": 1, "PP": 0, "GF": 1, "GC": 1, "Dif": 0},
+  {"equipo": "SAN MARTIN", "grupo": "A", "puntos": 0, "PJ": 1, "PG": 0, "PE": 0, "PP": 1, "GF": 0, "GC": 1, "Dif": -1},
+  {"equipo": "CARASUCIAS", "grupo": "A", "puntos": 0, "PJ": 1, "PG": 0, "PE": 0, "PP": 1, "GF": 0, "GC": 1, "Dif": -1},
+  
+  {"equipo": "PENAROL", "grupo": "B", "puntos": 3, "PJ": 1, "PG": 1, "PE": 0, "PP": 0, "GF": 1, "GC": 0, "Dif": 1},
+  {"equipo": "LOS MATADORES", "grupo": "B", "puntos": 3, "PJ": 1, "PG": 1, "PE": 0, "PP": 0, "GF": 1, "GC": 0, "Dif": 1},
+  {"equipo": "SANTOS", "grupo": "B", "puntos": 3, "PJ": 1, "PG": 1, "PE": 0, "PP": 0, "GF": 3, "GC": 0, "Dif": 3},
+  {"equipo": "NECAXA", "grupo": "B", "puntos": 0, "PJ": 1, "PG": 0, "PE": 0, "PP": 1, "GF": 0, "GC": 3, "Dif": -3},
+  {"equipo": "DINAMO", "grupo": "B", "puntos": 0, "PJ": 1, "PG": 0, "PE": 0, "PP": 1, "GF": 0, "GC": 1, "Dif": -1},
+  
+  {"equipo": "LA CORUNA", "grupo": "D", "puntos": 28, "PJ": 23, "PG": 8, "PE": 4, "PP": 11, "GF": 38, "GC": 31, "Dif": 7},
+  {"equipo": "LA SALLE", "grupo": "D", "puntos": 26, "PJ": 23, "PG": 8, "PE": 2, "PP": 13, "GF": 36, "GC": 54, "Dif": -18},
+  {"equipo": "HALCONES", "grupo": "D", "puntos": 27, "PJ": 23, "PG": 8, "PE": 3, "PP": 12, "GF": 34, "GC": 35, "Dif": -1},
+  {"equipo": "WARCALDE", "grupo": "D", "puntos": 8, "PJ": 23, "PG": 2, "PE": 2, "PP": 19, "GF": 14, "GC": 67, "Dif": -53},
+  {"equipo": "CLINICAS", "grupo": "D", "puntos": 24, "PJ": 23, "PG": 7, "PE": 3, "PP": 13, "GF": 30, "GC": 44, "Dif": -14},
+  {"equipo": "CHAZON", "grupo": "D", "puntos": 19, "PJ": 23, "PG": 5, "PE": 4, "PP": 14, "GF": 29, "GC": 54, "Dif": -25},
+  {"equipo": "UNION Y AMISTAD", "grupo": "D", "puntos": 24, "PJ": 23, "PG": 7, "PE": 3, "PP": 13, "GF": 30, "GC": 55, "Dif": -25},
+  {"equipo": "CRUZ AZUL", "grupo": "D", "puntos": 26, "PJ": 23, "PG": 7, "PE": 5, "PP": 11, "GF": 28, "GC": 43, "Dif": -15}
+]

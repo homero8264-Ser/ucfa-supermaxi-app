@@ -1,6 +1,105 @@
 {
-  "fechaActualizacion": "2025-10-01",
+  "fechaActualizacion": "2025-01-15",
   "resultados": [
+    {
+      "etapa": 27,
+      "fecha": "15/01",
+      "dia": "Miércoles",
+      "hora": "20:00",
+      "cancha": 1,
+      "local": "LA LOMITA",
+      "golesLocal": 1,
+      "visitante": "SAN MARTIN",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 27,
+      "fecha": "15/01",
+      "dia": "Miércoles",
+      "hora": "20:00",
+      "cancha": 2,
+      "local": "LA CANCHITA",
+      "golesLocal": 1,
+      "visitante": "CERVECEROS",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 27,
+      "fecha": "15/01",
+      "dia": "Miércoles",
+      "hora": "20:00",
+      "cancha": 3,
+      "local": "LOS MATADORES",
+      "golesLocal": 1,
+      "visitante": "DINAMO",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 27,
+      "fecha": "15/01",
+      "dia": "Miércoles",
+      "hora": "20:00",
+      "cancha": 4,
+      "local": "SANTOS",
+      "golesLocal": 3,
+      "visitante": "NECAXA",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 27,
+      "fecha": "15/01",
+      "dia": "Miércoles",
+      "hora": "20:00",
+      "cancha": 5,
+      "local": "CARASUCIAS",
+      "golesLocal": 0,
+      "visitante": "PENAROL",
+      "golesVisitante": 1
+    },
+    {
+      "etapa": 27,
+      "fecha": "15/01",
+      "dia": "Miércoles",
+      "hora": "20:00",
+      "cancha": 6,
+      "local": "CRUZ AZUL",
+      "golesLocal": 0,
+      "visitante": "LA CORUNA",
+      "golesVisitante": 6
+    },
+    {
+      "etapa": 27,
+      "fecha": "15/01",
+      "dia": "Miércoles",
+      "hora": "20:00",
+      "cancha": 7,
+      "local": "CLINICAS",
+      "golesLocal": 1,
+      "visitante": "WARCALDE",
+      "golesVisitante": 0
+    },
+    {
+      "etapa": 27,
+      "fecha": "15/01",
+      "dia": "Miércoles",
+      "hora": "20:00",
+      "cancha": 8,
+      "local": "UNION Y AMISTAD",
+      "golesLocal": 0,
+      "visitante": "LA SALLE",
+      "golesVisitante": 5
+    },
+    {
+      "etapa": 27,
+      "fecha": "15/01",
+      "dia": "Miércoles",
+      "hora": "20:00",
+      "cancha": 9,
+      "local": "CHAZON",
+      "golesLocal": 1,
+      "visitante": "HALCONES",
+      "golesVisitante": 4
+    },
     {
       "etapa": 26,
       "fecha": "04/10",

@@ -4,27 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UCFA Super Maxi 2025</title>
-  <link rel="stylesheet" href="style.css?v=20250920-final">
-  <link rel="manifest" href="manifest.json">
-  <script>
-    // Early capture of beforeinstallprompt so we don't miss it (useful on Fast/Local servers)
-    window.__deferredPrompt = null;
-    window.__beforeinstallprompt_received = false;
-    window.addEventListener('beforeinstallprompt', (e) => {
-      try { e.preventDefault(); } catch (err) {}
-      window.__deferredPrompt = e;
-      window.__beforeinstallprompt_received = true;
-      console.log('beforeinstallprompt captured early (head)');
-      // if btn exists show it
-      try {
-        const btn = document.getElementById('btn-install');
-        if (btn) btn.style.display = 'inline-block';
-      } catch (err) {}
-    });
-  </script>
-  <meta name="theme-color" content="#4CAF50">
-  <link rel="icon" href="imagenes/icons/icon-192.png">
-  <link rel="apple-touch-icon" href="imagenes/icons/icon-192.png">
+  <link rel="stylesheet" href="style.css?v=20250115">
   <!-- Actualización forzada: 29/09/2025 -->
 </head>
 <body>
@@ -32,8 +12,6 @@
     <div class="header-compacto">
       <img src="imagenes/equipos/los-matadores.png" alt="Los Matadores" class="escudo-pequeno">
       <span class="titulo-compacto">UCFA Super Maxi 2025</span>
-  <span id="app-version" style="margin-left:10px; font-size:12px; color:rgba(255,255,255,0.9); font-weight:700;"></span>
-  <button id="btn-install" style="display:none; margin-left:8px; background:#fff; color:#333; border-radius:6px; padding:6px 8px; border:none; cursor:pointer; font-weight:700;">Instalar</button>
       <img src="imagenes/equipos/liga/ucfa_2024.png" alt="UCFA" class="escudo-pequeno">
     </div>
     
@@ -48,13 +26,11 @@
     </div>
 
     <div class="contenido-scrolleable">
-      <div id="update-banner" style="display:none; position: fixed; right: 14px; bottom: 18px; background: #333; color: #fff; padding: 8px 12px; border-radius: 8px; z-index: 2000; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-        Nueva versión disponible&nbsp;<button id="btn-update" style="background:#4CAF50;color:#fff;border:none;padding:6px 8px;border-radius:6px;cursor:pointer;margin-left:8px;">Actualizar</button>
-      </div>
       <div id="contenido-clasificacion" class="contenido-pestana active">
-  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
     <button id="boton-ver-mas" class="boton-vista" onclick="alternarVistaTabla()">VER MENOS</button>
-          <button id="boton-tabla-gral" class="boton-vista" style="background: #42a5f5; color: #fff; border-radius: 8px; font-weight: bold; font-size: 13px; padding: 6px 16px; border: none; box-shadow: 0 2px 8px rgba(66,165,245,0.15); cursor: pointer;" onclick="alternarTablaGeneral()">TABLA GRAL</button>
+    <button id="boton-liguilla" class="boton-vista" style="background: #ff6b35; color: #fff; border-radius: 8px; font-weight: bold; font-size: 13px; padding: 6px 16px; border: none; box-shadow: 0 2px 8px rgba(255,107,53,0.15); cursor: pointer;" onclick="mostrarLiguilla()">LIGUILLA</button>
+    <button id="boton-tabla-gral" class="boton-vista" style="background: #42a5f5; color: #fff; border-radius: 8px; font-weight: bold; font-size: 13px; padding: 6px 16px; border: none; box-shadow: 0 2px 8px rgba(66,165,245,0.15); cursor: pointer;" onclick="alternarTablaGeneral()">TABLA GRAL</button>
   </div>
   <div id="contenedor-tablas"></div>
       </div>
@@ -79,6 +55,27 @@
         <div id="contenedor-proxima-fecha"></div>
       </div>
 
+      <div id="contenido-liguilla" class="contenido-pestana">
+        <h2 style="color: #ff6b35; margin-bottom: 16px;">🏆 LIGUILLA</h2>
+        
+        <!-- GRUPO A -->
+        <div class="grupo-liguilla">
+          <h3 style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px; border-radius: 8px; margin-bottom: 8px;">Grupo A</h3>
+          <div id="tabla-grupo-a"></div>
+        </div>
+
+        <!-- GRUPO B -->
+        <div class="grupo-liguilla" style="margin-top: 20px;">
+          <h3 style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 8px; border-radius: 8px; margin-bottom: 8px;">Grupo B</h3>
+          <div id="tabla-grupo-b"></div>
+        </div>
+
+        <!-- DESCENSO -->
+        <div class="grupo-liguilla" style="margin-top: 20px;">
+          <h3 style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; padding: 8px; border-radius: 8px; margin-bottom: 8px;">Descenso</h3>
+          <div id="tabla-descenso"></div>
+        </div>
+      </div>
       <div id="contenido-admin" class="contenido-pestana">
         <h2>⚙️ Administración UCFA</h2>
         <div class="admin-section">
@@ -157,102 +154,6 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
-  <script>
-    // Cargar version.json y mostrar en header
-    fetch('version.json').then(r => r.json()).then(v => {
-      const el = document.getElementById('app-version');
-      if (el) el.textContent = v.fechaActualizacion || '';
-    }).catch(() => {});
-
-    // Helper to show install button when deferredPrompt is ready
-    function showInstallButtonIfReady() {
-      const btn = document.getElementById('btn-install');
-      if (!btn) return;
-      if (window.__deferredPrompt) {
-        btn.style.display = 'inline-block';
-      }
-    }
-
-    // ensure button appears when DOM is ready
-    document.addEventListener('DOMContentLoaded', () => {
-      try { showInstallButtonIfReady(); } catch (e) {}
-    });
-
-    // Detect SW updates and show update banner
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.addEventListener('controllerchange', () => {
-        // another SW has taken control
-        console.log('Service worker controller changed');
-      });
-
-  navigator.serviceWorker.register('service-worker.js').then(reg => {
-        if (!navigator.serviceWorker.controller) return;
-
-        if (reg.waiting) {
-          showUpdateBanner(reg);
-        }
-
-        reg.addEventListener('updatefound', () => {
-          const newSW = reg.installing;
-          newSW.addEventListener('statechange', () => {
-            if (newSW.state === 'installed' && navigator.serviceWorker.controller) {
-              showUpdateBanner(reg);
-            }
-          });
-        });
-      });
-
-      function showUpdateBanner(reg) {
-        const banner = document.getElementById('update-banner');
-        banner.style.display = 'block';
-        document.getElementById('btn-update').onclick = () => {
-          if (reg.waiting) {
-            reg.waiting.postMessage({ action: 'skipWaiting' });
-          }
-          // reload to let the new SW take control
-          window.location.reload();
-        };
-      }
-    }
-  </script>
-  <script>
-    // PWA install helper: capture beforeinstallprompt and show install button
-    (function(){
-      // Use early-captured prompt when available
-      const btn = document.getElementById('btn-install');
-
-      // Show button if we already captured the prompt in the head
-      if (window.__deferredPrompt && btn) {
-        btn.style.display = 'inline-block';
-        window.__beforeinstallprompt_received = true;
-      }
-
-      if (btn) {
-        btn.addEventListener('click', async () => {
-          const promptEvent = window.__deferredPrompt;
-          if (promptEvent) {
-            try { btn.disabled = true; } catch (e) {}
-            promptEvent.prompt();
-            const choiceResult = await promptEvent.userChoice;
-            console.log('User choice', choiceResult);
-            window.__deferredPrompt = null;
-            window.__beforeinstallprompt_received = false;
-            btn.style.display = 'none';
-            try { btn.disabled = false; } catch (e) {}
-          } else {
-            // fallback: show short help to add to home screen
-            alert('Para instalar la app: abra el menú del navegador y seleccione "Agregar a la pantalla de inicio" (Android) o use "Agregar a pantalla de inicio" en Safari (iOS).');
-          }
-        });
-      }
-
-      window.addEventListener('appinstalled', () => {
-        console.log('PWA instalada');
-        if (btn) btn.style.display = 'none';
-      });
-    })();
-  </script>
-
+  <script src="app.js?v=20250115"></script>
 </body>
 </html>

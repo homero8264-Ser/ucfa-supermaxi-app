@@ -1,29 +1,52 @@
 {
-  "fechaActualizacion": "2025-10-04",
   "sanciones": [
     {
-      "tipo": "pendientes",
+      "equipo": "CARASUCIAS",
+      "jugador": "GOMEZ Daniel Alejandro",
+      "fechas": 1,
+      "motivo": "ART 59 B."
+    },
+    {
       "equipo": "CHAZON",
       "jugador": "CORTEZ Walter Hugo",
-      "sancion": "31/12/2025",
       "fechas": "31/12/2025",
       "motivo": ""
     },
     {
-      "tipo": "pendientes",
+      "equipo": "CLINICAS",
+      "jugador": "GARCIA Gaston Ricardo",
+      "fechas": 1,
+      "motivo": "ART 59 B."
+    },
+    {
       "equipo": "HALCONES",
       "jugador": "PALACIO Marcelo Raul",
-      "sancion": "5 partidos",
-      "fechas": "5 partidos",
+      "fechas": 4,
       "motivo": "ART 63 B."
     },
     {
-      "tipo": "pendientes",
+      "equipo": "LA CANCHITA",
+      "jugador": "CAFFARATTI Marcelo Lucas",
+      "fechas": 5,
+      "motivo": "ART 62 C."
+    },
+    {
+      "equipo": "LA LOMITA",
+      "jugador": "SOSA Pablo Hugo",
+      "fechas": 1,
+      "motivo": "ART 62."
+    },
+    {
       "equipo": "PENAROL",
       "jugador": "FREYTAS Javier Eduardo",
-      "sancion": "1 partido",
-      "fechas": "1 partido",
+      "fechas": 1,
       "motivo": "ART 59 C."
+    },
+    {
+      "equipo": "UNION Y AMISTAD",
+      "jugador": "BASSI Ricardo Alberto",
+      "fechas": 2,
+      "motivo": "ART 61."
     }
   ]
 }
